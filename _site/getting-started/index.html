@@ -177,7 +177,7 @@
 <h3 id="download-bower">Install with Bower</h3>
 <p>You can also install and manage ID7's Less, CSS, JavaScript, and fonts using <a href="http://bower.io">Bower</a>:</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>bower install https://repo.elab.warwick.ac.uk/scm/id/id7.git</code></pre></div>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bower install https://repo.elab.warwick.ac.uk/scm/id/id7.git</code></pre></div>
 <h2 id="whats-included">What's included</h2>
 
 <p class="lead">ID7 is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.</p>
@@ -244,39 +244,39 @@ Then, from the command line:
 
 <p>Copy the HTML below to begin working with a minimal ID7 layout.</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- Add class="id7-homepage-layout" for a large hero image --&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- Add class=&quot;id7-homepage-layout&quot; for a large hero image --&gt;</span>
 <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;title&gt;</span>ID7 Template<span class="nt">&lt;/title&gt;</span>
 
   <span class="c">&lt;!-- ID7 --&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/id7.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/id7.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
 
   <span class="c">&lt;!-- Default styling. You will probably want to replace with your own site.css --&gt;</span>
-  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/id7-default-style.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/id7-default-style.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
 
   <span class="c">&lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;</span>
-  <span class="c">&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;</span>
+  <span class="c">&lt;!-- WARNING: Respond.js doesn&#39;t work if you view the page via file:// --&gt;</span>
 
-  <span class="c">&lt;!--[if lt IE 10]&gt;
-  &lt;script src="js/vendor/matchMedia.js"&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;</span>
+  <span class="c">&lt;!--[if lt IE 10]&gt;</span>
+<span class="c">  &lt;script src=&quot;js/vendor/matchMedia.js&quot;&gt;&lt;/script&gt;</span>
+<span class="c">  &lt;![endif]--&gt;</span>
 
-  <span class="c">&lt;!--[if lt IE 9]&gt;
-  &lt;script src="js/vendor/html5shiv-3.7.2.min.js"&gt;&lt;/script&gt;
-  &lt;script src="js/vendor/respond-1.4.2.min.js"&gt;&lt;/script&gt;
-  &lt;![endif]--&gt;</span>
+  <span class="c">&lt;!--[if lt IE 9]&gt;</span>
+<span class="c">  &lt;script src=&quot;js/vendor/html5shiv-3.7.2.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="c">  &lt;script src=&quot;js/vendor/respond-1.4.2.min.js&quot;&gt;&lt;/script&gt;</span>
+<span class="c">  &lt;![endif]--&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
 <span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-left-border"</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">"id7-fixed-width-container"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span> <span class="na">href=</span><span class="s">"#id7-main-content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-left-border&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;main</span> <span class="na">id=</span><span class="s">&quot;id7-fixed-width-container&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;sr-only sr-only-focusable&quot;</span> <span class="na">href=</span><span class="s">&quot;#id7-main-content&quot;</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
 
-    <span class="nt">&lt;header</span> <span class="na">id=</span><span class="s">"id7-page-header"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-utility-masthead"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-utility-bar"</span> <span class="na">data-spy=</span><span class="s">"affix"</span> <span class="na">class=</span><span class="s">"affix"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;header</span> <span class="na">id=</span><span class="s">&quot;id7-page-header&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-utility-masthead&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-utility-bar&quot;</span> <span class="na">data-spy=</span><span class="s">&quot;affix&quot;</span> <span class="na">class=</span><span class="s">&quot;affix&quot;</span><span class="nt">&gt;</span>
           <span class="nt">&lt;nav&gt;</span>
             <span class="nt">&lt;ul&gt;</span>
               <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
@@ -284,42 +284,42 @@ Then, from the command line:
           <span class="nt">&lt;/nav&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-masthead"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-masthead-contents"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-logo-column"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-logo-row"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-logo"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk"</span> <span class="na">title=</span><span class="s">"Warwick homepage"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/shim.gif"</span> <span class="na">alt=</span><span class="s">"Warwick"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-masthead&quot;</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-masthead-contents&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-logo-column&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-logo-row&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-logo&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk&quot;</span> <span class="na">title=</span><span class="s">&quot;Warwick homepage&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/shim.gif&quot;</span> <span class="na">alt=</span><span class="s">&quot;Warwick&quot;</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;/a&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"id7-site-links"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">&quot;id7-site-links&quot;</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;ul&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk/study"</span><span class="nt">&gt;</span>Study<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk/research"</span><span class="nt">&gt;</span>Research<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk/business"</span><span class="nt">&gt;</span>Business<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk/alumni"</span><span class="nt">&gt;</span>Alumni<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk/news"</span><span class="nt">&gt;</span>News<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"http://warwick.ac.uk/about"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk/study&quot;</span><span class="nt">&gt;</span>Study<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk/research&quot;</span><span class="nt">&gt;</span>Research<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk/business&quot;</span><span class="nt">&gt;</span>Business<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk/alumni&quot;</span><span class="nt">&gt;</span>Alumni<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk/news&quot;</span><span class="nt">&gt;</span>News<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://warwick.ac.uk/about&quot;</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
                   <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/nav&gt;</span>
               <span class="nt">&lt;/div&gt;</span>
 
-              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-header-text"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-header-text&quot;</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;h1&gt;</span>
-                  <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"id7-current-site-link"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Site title<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+                  <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;id7-current-site-link&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>Site title<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
                 <span class="nt">&lt;/h1&gt;</span>
               <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-search-column"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-search"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"http://search.warwick.ac.uk/website"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"source"</span> <span class="na">value=</span><span class="s">"http://warwick.ac.uk"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- Replace with the current page URL --&gt;</span>
-                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"id7-search-box"</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-search-box-container"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">class=</span><span class="s">"form-control input-lg"</span> <span class="na">id=</span><span class="s">"id7-search-box"</span> <span class="na">name=</span><span class="s">"q"</span> <span class="na">placeholder=</span><span class="s">"Type your search here"</span> <span class="na">data-suggest=</span><span class="s">"go"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search fa-2x"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-search-column&quot;</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-search&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;http://search.warwick.ac.uk/website&quot;</span> <span class="na">role=</span><span class="s">&quot;search&quot;</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;hidden&quot;</span> <span class="na">name=</span><span class="s">&quot;source&quot;</span> <span class="na">value=</span><span class="s">&quot;http://warwick.ac.uk&quot;</span><span class="nt">&gt;</span> <span class="c">&lt;!-- Replace with the current page URL --&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-group&quot;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span> <span class="na">for=</span><span class="s">&quot;id7-search-box&quot;</span><span class="nt">&gt;</span>Search<span class="nt">&lt;/label&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-search-box-container&quot;</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;search&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control input-lg&quot;</span> <span class="na">id=</span><span class="s">&quot;id7-search-box&quot;</span> <span class="na">name=</span><span class="s">&quot;q&quot;</span> <span class="na">placeholder=</span><span class="s">&quot;Type your search here&quot;</span> <span class="na">data-suggest=</span><span class="s">&quot;go&quot;</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;fa fa-search fa-2x&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
                     <span class="nt">&lt;/div&gt;</span>
                   <span class="nt">&lt;/div&gt;</span>
                 <span class="nt">&lt;/form&gt;</span>
@@ -329,33 +329,33 @@ Then, from the command line:
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
 
-      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-header-image-container"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-navigation"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-header-image-container&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-navigation&quot;</span><span class="nt">&gt;</span>
           <span class="c">&lt;!-- Include the navigation component here if used --&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/header&gt;</span>
 
-    <span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">"id7-main-content-section"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;header</span> <span class="na">id=</span><span class="s">"id7-main-content-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-page-title"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">id=</span><span class="s">&quot;id7-main-content-section&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;header</span> <span class="na">id=</span><span class="s">&quot;id7-main-content-header&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-page-title&quot;</span><span class="nt">&gt;</span>
           <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/header&gt;</span>
 
-      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-main-content"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-main-content&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>Page content goes here<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/section&gt;</span>
 
-    <span class="nt">&lt;footer</span> <span class="na">id=</span><span class="s">"id7-page-footer"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-site-footer"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;footer</span> <span class="na">id=</span><span class="s">&quot;id7-page-footer&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-site-footer&quot;</span><span class="nt">&gt;</span>
         <span class="nt">&lt;p&gt;</span>Site footer<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-app-footer"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"id7-logo-bleed"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-app-footer&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;id7-logo-bleed&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
 
-        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"id7-footer-utility"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;id7-footer-utility&quot;</span><span class="nt">&gt;</span>
           <span class="nt">&lt;ul&gt;</span>
             <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
           <span class="nt">&lt;/ul&gt;</span>
@@ -365,29 +365,29 @@ Then, from the command line:
   <span class="nt">&lt;/main&gt;</span>
 
   <span class="c">&lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
     <span class="nb">window</span><span class="p">.</span><span class="nx">WebFontConfig</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="na">custom</span><span class="p">:</span> <span class="p">{</span>
-        <span class="na">families</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Avenir Next:n1,i1,n5,i5,n7,i7'</span><span class="p">],</span>
-        <span class="na">urls</span><span class="p">:</span> <span class="p">[</span><span class="s1">'css/avenir-next.css'</span><span class="p">]</span>
+      <span class="nx">custom</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">families</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Avenir Next:n1,i1,n5,i5,n7,i7&#39;</span><span class="p">],</span>
+        <span class="nx">urls</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;css/avenir-next.css&#39;</span><span class="p">]</span>
       <span class="p">},</span>
-      <span class="na">active</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s1">'html'</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'fonts-loaded'</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">'id7:fonts-loaded'</span><span class="p">);</span>
+      <span class="nx">active</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;fonts-loaded&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">).</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;id7:fonts-loaded&#39;</span><span class="p">);</span>
       <span class="p">}</span>
     <span class="p">};</span>
   <span class="nt">&lt;/script&gt;</span>
 
-  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/id7-bundle.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;js/id7-bundle.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 
   <span class="c">&lt;!-- Avenir Next usage for fonts.com --&gt;</span>
-  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-    <span class="kd">var</span> <span class="nx">MTIProjectId</span><span class="o">=</span><span class="s1">'6473447e-ab65-4836-bf8e-65b5ecc63c87'</span><span class="p">;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+    <span class="kd">var</span> <span class="nx">MTIProjectId</span><span class="o">=</span><span class="s1">&#39;6473447e-ab65-4836-bf8e-65b5ecc63c87&#39;</span><span class="p">;</span>
     <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-      <span class="kd">var</span> <span class="nx">mtiTracking</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'script'</span><span class="p">);</span>
-      <span class="nx">mtiTracking</span><span class="p">.</span><span class="nx">type</span><span class="o">=</span><span class="s1">'text/javascript'</span><span class="p">;</span>
-      <span class="nx">mtiTracking</span><span class="p">.</span><span class="nx">async</span><span class="o">=</span><span class="s1">'true'</span><span class="p">;</span>
-      <span class="nx">mtiTracking</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="p">(</span><span class="s1">'https:'</span><span class="o">==</span><span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span><span class="p">?</span><span class="s1">'https:'</span><span class="p">:</span><span class="s1">'http:'</span><span class="p">)</span><span class="o">+</span><span class="s1">'//fast.fonts.net/t/trackingCode.js'</span><span class="p">;</span>
-      <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'head'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">||</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">mtiTracking</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">mtiTracking</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span>
+      <span class="nx">mtiTracking</span><span class="p">.</span><span class="nx">type</span><span class="o">=</span><span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span>
+      <span class="nx">mtiTracking</span><span class="p">.</span><span class="nx">async</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">;</span>
+      <span class="nx">mtiTracking</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;https:&#39;</span><span class="o">==</span><span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span><span class="o">?</span><span class="s1">&#39;https:&#39;</span><span class="o">:</span><span class="s1">&#39;http:&#39;</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;//fast.fonts.net/t/trackingCode.js&#39;</span><span class="p">;</span>
+      <span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">||</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">mtiTracking</span><span class="p">);</span>
     <span class="p">})();</span>
   <span class="nt">&lt;/script&gt;</span>
 <span class="nt">&lt;/body&gt;</span>
