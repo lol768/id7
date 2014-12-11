@@ -60,7 +60,7 @@ body .brand-text {
 body .brand-border {
   border-color: #7a3b83;
 }
-body #utility-masthead::after {
+body #id7-utility-masthead::after {
   background-color: #7a3b83;
 }
 body #id7-utility-masthead,

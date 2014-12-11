@@ -21,7 +21,7 @@ body.brand-purple .brand-text {
 body.brand-purple .brand-border {
   border-color: #7a3b83;
 }
-body.brand-purple #utility-masthead::after {
+body.brand-purple #id7-utility-masthead::after {
   background-color: #7a3b83;
 }
 body.brand-purple #id7-utility-masthead,
@@ -438,7 +438,7 @@ body.brand-grey .brand-text {
 body.brand-grey .brand-border {
   border-color: #8a8a8d;
 }
-body.brand-grey #utility-masthead::after {
+body.brand-grey #id7-utility-masthead::after {
   background-color: #8a8a8d;
 }
 body.brand-grey #id7-utility-masthead,
@@ -855,7 +855,7 @@ body.brand-yellow .brand-text {
 body.brand-yellow .brand-border {
   border-color: #c4a11c;
 }
-body.brand-yellow #utility-masthead::after {
+body.brand-yellow #id7-utility-masthead::after {
   background-color: #c4a11c;
 }
 body.brand-yellow #id7-utility-masthead,
@@ -1272,7 +1272,7 @@ body.brand-blue .brand-text {
 body.brand-blue .brand-border {
   border-color: #7e9bc0;
 }
-body.brand-blue #utility-masthead::after {
+body.brand-blue #id7-utility-masthead::after {
   background-color: #7e9bc0;
 }
 body.brand-blue #id7-utility-masthead,
@@ -1689,7 +1689,7 @@ body.brand-orange .brand-text {
 body.brand-orange .brand-border {
   border-color: #e75300;
 }
-body.brand-orange #utility-masthead::after {
+body.brand-orange #id7-utility-masthead::after {
   background-color: #e75300;
 }
 body.brand-orange #id7-utility-masthead,
@@ -2106,7 +2106,7 @@ body.brand-green .brand-text {
 body.brand-green .brand-border {
   border-color: #9b9b30;
 }
-body.brand-green #utility-masthead::after {
+body.brand-green #id7-utility-masthead::after {
   background-color: #9b9b30;
 }
 body.brand-green #id7-utility-masthead,
@@ -2523,7 +2523,7 @@ body.brand-red .brand-text {
 body.brand-red .brand-border {
   border-color: #a93439;
 }
-body.brand-red #utility-masthead::after {
+body.brand-red #id7-utility-masthead::after {
   background-color: #a93439;
 }
 body.brand-red #id7-utility-masthead,
@@ -2940,7 +2940,7 @@ body.brand-red-bold .brand-text {
 body.brand-red-bold .brand-border {
   border-color: #b71622;
 }
-body.brand-red-bold #utility-masthead::after {
+body.brand-red-bold #id7-utility-masthead::after {
   background-color: #b71622;
 }
 body.brand-red-bold #id7-utility-masthead,
