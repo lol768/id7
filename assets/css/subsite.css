@@ -1,0 +1,277 @@
+.row-spacer > [class*='col-'] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.slideshow {
+  background: black;
+  color: white;
+  margin-bottom: 15px;
+}
+.slideshow .carousel {
+  height: 400px;
+}
+.slideshow .carousel .carousel-inner,
+.slideshow .carousel .carousel-inner > .item {
+  height: 100%;
+}
+.slideshow .carousel-inner > .item > .caption {
+  width: 290px;
+  max-width: 100%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 45px;
+  padding: 15px;
+  background-color: #555555;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+.slideshow .carousel-inner > .item > .caption h1,
+.slideshow .carousel-inner > .item > .caption h2,
+.slideshow .carousel-inner > .item > .caption h3,
+.slideshow .carousel-inner > .item > .caption h4,
+.slideshow .carousel-inner > .item > .caption h5,
+.slideshow .carousel-inner > .item > .caption h6,
+.slideshow .carousel-inner > .item > .caption .h1,
+.slideshow .carousel-inner > .item > .caption .h2,
+.slideshow .carousel-inner > .item > .caption .h3,
+.slideshow .carousel-inner > .item > .caption .h4,
+.slideshow .carousel-inner > .item > .caption .h5,
+.slideshow .carousel-inner > .item > .caption .h6 {
+  color: inherit;
+  border: 0;
+}
+.slideshow .carousel-controls {
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #555555;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow .carousel-controls a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.slideshow .carousel-controls a:hover,
+.slideshow .carousel-controls a:focus {
+  color: #ededed;
+  text-decoration: underline;
+}
+.boxstyle_.box1 {
+  background: #e8d2eb;
+  color: inherit;
+}
+.boxstyle_.box2 {
+  background: #dbc6d7;
+  color: #333333;
+}
+.boxstyle_.box2 h1,
+.boxstyle_.box2 h2,
+.boxstyle_.box2 h3,
+.boxstyle_.box2 h4,
+.boxstyle_.box2 h5,
+.boxstyle_.box2 h6,
+.boxstyle_.box2 .h1,
+.boxstyle_.box2 .h2,
+.boxstyle_.box2 .h3,
+.boxstyle_.box2 .h4,
+.boxstyle_.box2 .h5,
+.boxstyle_.box2 .h6 {
+  color: inherit;
+}
+.boxstyle_.box3 {
+  background: #e6e6e6;
+  color: inherit;
+}
+.boxstyle_.feature-image1 {
+  background: url(../site/site1/banner-image.jpg) top right no-repeat;
+  color: #ffffff;
+}
+.boxstyle_.feature-image1 h1,
+.boxstyle_.feature-image1 h2,
+.boxstyle_.feature-image1 h3,
+.boxstyle_.feature-image1 h4,
+.boxstyle_.feature-image1 h5,
+.boxstyle_.feature-image1 h6,
+.boxstyle_.feature-image1 .h1,
+.boxstyle_.feature-image1 .h2,
+.boxstyle_.feature-image1 .h3,
+.boxstyle_.feature-image1 .h4,
+.boxstyle_.feature-image1 .h5,
+.boxstyle_.feature-image1 .h6 {
+  color: inherit;
+}
+.boxstyle_.feature-image2 {
+  background: url(../site/site3/banner-image.jpg) top right no-repeat;
+  color: #ffffff;
+}
+.boxstyle_.feature-image2 h1,
+.boxstyle_.feature-image2 h2,
+.boxstyle_.feature-image2 h3,
+.boxstyle_.feature-image2 h4,
+.boxstyle_.feature-image2 h5,
+.boxstyle_.feature-image2 h6,
+.boxstyle_.feature-image2 .h1,
+.boxstyle_.feature-image2 .h2,
+.boxstyle_.feature-image2 .h3,
+.boxstyle_.feature-image2 .h4,
+.boxstyle_.feature-image2 .h5,
+.boxstyle_.feature-image2 .h6 {
+  color: inherit;
+}
+.feature-box {
+  position: relative;
+}
+.feature-box .heading {
+  display: inline-block;
+  margin-left: -22.5px;
+  padding: 7.5px 15px;
+}
+.feature-box .heading h1,
+.feature-box .heading h2,
+.feature-box .heading h3,
+.feature-box .heading h4,
+.feature-box .heading h5,
+.feature-box .heading h6,
+.feature-box .heading .h1,
+.feature-box .heading .h2,
+.feature-box .heading .h3,
+.feature-box .heading .h4,
+.feature-box .heading .h5,
+.feature-box .heading .h6 {
+  color: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.feature-box .caption {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 15px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0);
+}
+.feature-box .caption > :last-child {
+  margin-bottom: 0;
+}
+.feature-image1 {
+  color: white;
+  min-height: 200px;
+  font-weight: bold;
+}
+.feature-image1 .heading {
+  background: #6b3251;
+  color: #ffffff;
+}
+.feature-image2 {
+  color: white;
+  min-height: 200px;
+  font-weight: bold;
+}
+.feature-image2 .heading {
+  background-color: #555555;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.btn-block {
+  font-size: 160%;
+  text-align: left;
+  padding: 0;
+  min-height: 60px;
+  position: relative;
+}
+.btn-block > span {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+.btn-colour1 {
+  background: #1f2121;
+  color: #dbc6d7;
+}
+.btn-colour1:hover,
+.btn-colour1:active {
+  background: #060707;
+  color: #efe5ed;
+}
+.btn-colour2 {
+  background: #6b3251;
+  color: #dbc6d7;
+}
+.btn-colour2:hover,
+.btn-colour2:active {
+  background: #482237;
+  color: #efe5ed;
+}
+blockquote.no-margin {
+  margin: 0;
+}
+.nav-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-lines: multiple;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-box-lines: multiple;
+  -o-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nav-flex > li {
+  float: none;
+  margin: 0 !important;
+}
+@media (min-width: 768px) {
+  .nav-flex > li {
+    width: 55px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-flex > li {
+    width: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-flex > li {
+    width: 43px;
+  }
+}
+.nav-flex > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.nav-flex > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
