@@ -10461,6 +10461,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
       if (o.trimLinkTitles) this.trimLinkTitles();
       if (o.fixed) this.affix();
       if (o.flipBreadcrumbIcons) this.flipBreadcrumbIcons();
+      if (o.fitToWidth) this.onScreenResize();
 
       this.wireEventHandlers();
     }
