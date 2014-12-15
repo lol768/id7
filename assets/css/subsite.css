@@ -60,10 +60,12 @@
   text-decoration: underline;
 }
 .boxstyle_.box1 {
+  border: 0;
   background: #e8d2eb;
   color: inherit;
 }
 .boxstyle_.box2 {
+  border: 0;
   background: #dbc6d7;
   color: #333333;
 }
@@ -82,10 +84,12 @@
   color: inherit;
 }
 .boxstyle_.box3 {
+  border: 0;
   background: #e6e6e6;
   color: inherit;
 }
 .boxstyle_.feature-image1 {
+  border: 0;
   background: url(../site/site1/banner-image.jpg) top right no-repeat;
   color: #ffffff;
 }
@@ -104,6 +108,7 @@
   color: inherit;
 }
 .boxstyle_.feature-image2 {
+  border: 0;
   background: url(../site/site3/banner-image.jpg) top right no-repeat;
   color: #ffffff;
 }
