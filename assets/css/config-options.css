@@ -40,7 +40,6 @@ body.brand-purple .navbar-primary .navbar-text {
 }
 body.brand-purple .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-purple .navbar-primary .navbar-nav > li:hover,
 body.brand-purple .navbar-primary .navbar-nav > li:focus {
@@ -153,7 +152,6 @@ body.brand-purple .navbar-breadcrumbs .navbar-text {
 }
 body.brand-purple .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-purple .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-purple .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -257,7 +255,6 @@ body.brand-purple .navbar-secondary .navbar-text {
 }
 body.brand-purple .navbar-secondary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-purple .navbar-secondary .navbar-nav > li:hover,
 body.brand-purple .navbar-secondary .navbar-nav > li:focus {
@@ -390,9 +387,7 @@ body.brand-purple #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-purple #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-purple #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-purple #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-purple #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #7a3b83;
 }
 body.brand-purple #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -487,7 +482,6 @@ body.brand-grey .navbar-primary .navbar-text {
 }
 body.brand-grey .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-grey .navbar-primary .navbar-nav > li:hover,
 body.brand-grey .navbar-primary .navbar-nav > li:focus {
@@ -600,7 +594,6 @@ body.brand-grey .navbar-breadcrumbs .navbar-text {
 }
 body.brand-grey .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-grey .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-grey .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -704,7 +697,6 @@ body.brand-grey .navbar-secondary .navbar-text {
 }
 body.brand-grey .navbar-secondary .navbar-nav > li {
   color: #000000;
-  cursor: pointer;
 }
 body.brand-grey .navbar-secondary .navbar-nav > li:hover,
 body.brand-grey .navbar-secondary .navbar-nav > li:focus {
@@ -837,9 +829,7 @@ body.brand-grey #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-grey #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-grey #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-grey #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-grey #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #8a8a8d;
 }
 body.brand-grey #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -934,7 +924,6 @@ body.brand-yellow .navbar-primary .navbar-text {
 }
 body.brand-yellow .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-yellow .navbar-primary .navbar-nav > li:hover,
 body.brand-yellow .navbar-primary .navbar-nav > li:focus {
@@ -1047,7 +1036,6 @@ body.brand-yellow .navbar-breadcrumbs .navbar-text {
 }
 body.brand-yellow .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-yellow .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-yellow .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -1151,7 +1139,6 @@ body.brand-yellow .navbar-secondary .navbar-text {
 }
 body.brand-yellow .navbar-secondary .navbar-nav > li {
   color: #000000;
-  cursor: pointer;
 }
 body.brand-yellow .navbar-secondary .navbar-nav > li:hover,
 body.brand-yellow .navbar-secondary .navbar-nav > li:focus {
@@ -1284,9 +1271,7 @@ body.brand-yellow #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-yellow #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-yellow #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-yellow #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-yellow #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #c4a11c;
 }
 body.brand-yellow #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -1381,7 +1366,6 @@ body.brand-blue .navbar-primary .navbar-text {
 }
 body.brand-blue .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-blue .navbar-primary .navbar-nav > li:hover,
 body.brand-blue .navbar-primary .navbar-nav > li:focus {
@@ -1494,7 +1478,6 @@ body.brand-blue .navbar-breadcrumbs .navbar-text {
 }
 body.brand-blue .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-blue .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-blue .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -1598,7 +1581,6 @@ body.brand-blue .navbar-secondary .navbar-text {
 }
 body.brand-blue .navbar-secondary .navbar-nav > li {
   color: #000000;
-  cursor: pointer;
 }
 body.brand-blue .navbar-secondary .navbar-nav > li:hover,
 body.brand-blue .navbar-secondary .navbar-nav > li:focus {
@@ -1731,9 +1713,7 @@ body.brand-blue #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-blue #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-blue #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-blue #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-blue #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #7e9bc0;
 }
 body.brand-blue #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -1828,7 +1808,6 @@ body.brand-orange .navbar-primary .navbar-text {
 }
 body.brand-orange .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-orange .navbar-primary .navbar-nav > li:hover,
 body.brand-orange .navbar-primary .navbar-nav > li:focus {
@@ -1941,7 +1920,6 @@ body.brand-orange .navbar-breadcrumbs .navbar-text {
 }
 body.brand-orange .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-orange .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-orange .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -2045,7 +2023,6 @@ body.brand-orange .navbar-secondary .navbar-text {
 }
 body.brand-orange .navbar-secondary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-orange .navbar-secondary .navbar-nav > li:hover,
 body.brand-orange .navbar-secondary .navbar-nav > li:focus {
@@ -2178,9 +2155,7 @@ body.brand-orange #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-orange #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-orange #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-orange #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-orange #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #e75300;
 }
 body.brand-orange #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -2275,7 +2250,6 @@ body.brand-green .navbar-primary .navbar-text {
 }
 body.brand-green .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-green .navbar-primary .navbar-nav > li:hover,
 body.brand-green .navbar-primary .navbar-nav > li:focus {
@@ -2388,7 +2362,6 @@ body.brand-green .navbar-breadcrumbs .navbar-text {
 }
 body.brand-green .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-green .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-green .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -2492,7 +2465,6 @@ body.brand-green .navbar-secondary .navbar-text {
 }
 body.brand-green .navbar-secondary .navbar-nav > li {
   color: #000000;
-  cursor: pointer;
 }
 body.brand-green .navbar-secondary .navbar-nav > li:hover,
 body.brand-green .navbar-secondary .navbar-nav > li:focus {
@@ -2625,9 +2597,7 @@ body.brand-green #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-green #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-green #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-green #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-green #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #9b9b30;
 }
 body.brand-green #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -2722,7 +2692,6 @@ body.brand-red .navbar-primary .navbar-text {
 }
 body.brand-red .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-red .navbar-primary .navbar-nav > li:hover,
 body.brand-red .navbar-primary .navbar-nav > li:focus {
@@ -2835,7 +2804,6 @@ body.brand-red .navbar-breadcrumbs .navbar-text {
 }
 body.brand-red .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-red .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-red .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -2939,7 +2907,6 @@ body.brand-red .navbar-secondary .navbar-text {
 }
 body.brand-red .navbar-secondary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-red .navbar-secondary .navbar-nav > li:hover,
 body.brand-red .navbar-secondary .navbar-nav > li:focus {
@@ -3072,9 +3039,7 @@ body.brand-red #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-red #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-red #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-red #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-red #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #a93439;
 }
 body.brand-red #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
@@ -3169,7 +3134,6 @@ body.brand-red-bold .navbar-primary .navbar-text {
 }
 body.brand-red-bold .navbar-primary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-red-bold .navbar-primary .navbar-nav > li:hover,
 body.brand-red-bold .navbar-primary .navbar-nav > li:focus {
@@ -3282,7 +3246,6 @@ body.brand-red-bold .navbar-breadcrumbs .navbar-text {
 }
 body.brand-red-bold .navbar-breadcrumbs .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-red-bold .navbar-breadcrumbs .navbar-nav > li:hover,
 body.brand-red-bold .navbar-breadcrumbs .navbar-nav > li:focus {
@@ -3386,7 +3349,6 @@ body.brand-red-bold .navbar-secondary .navbar-text {
 }
 body.brand-red-bold .navbar-secondary .navbar-nav > li {
   color: #ffffff;
-  cursor: pointer;
 }
 body.brand-red-bold .navbar-secondary .navbar-nav > li:hover,
 body.brand-red-bold .navbar-secondary .navbar-nav > li:focus {
@@ -3519,9 +3481,7 @@ body.brand-red-bold #id7-masthead .search .fa {
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
-body.brand-red-bold #id7-masthead .search .twitter-typeahead:active + .fa,
-body.brand-red-bold #id7-masthead .search .twitter-typeahead:hover + .fa,
-body.brand-red-bold #id7-masthead .search .twitter-typeahead:focus + .fa {
+body.brand-red-bold #id7-masthead .search .twitter-typeahead:hover + .fa {
   color: #b71622;
 }
 body.brand-red-bold #id7-masthead .search .twitter-typeahead .tt-suggestion.tt-cursor {
