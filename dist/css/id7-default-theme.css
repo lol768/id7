@@ -70,15 +70,42 @@ body .navbar-primary .navbar-nav > li > a:focus {
 }
 body .navbar-primary .navbar-nav > .active,
 body .navbar-primary .navbar-nav > .active:hover,
-body .navbar-primary .navbar-nav > .active:focus {
+body .navbar-primary .navbar-nav > .active:focus,
+body .navbar-primary .navbar-nav > .active.nav-breadcrumb,
+body .navbar-primary .navbar-nav > .active.nav-breadcrumb:hover,
+body .navbar-primary .navbar-nav > .active.nav-breadcrumb:focus {
   color: #fff;
   background-color: #b169bb;
+}
+body .navbar-primary .navbar-nav > .active::after,
+body .navbar-primary .navbar-nav > .active:hover::after,
+body .navbar-primary .navbar-nav > .active:focus::after,
+body .navbar-primary .navbar-nav > .active.nav-breadcrumb::after,
+body .navbar-primary .navbar-nav > .active.nav-breadcrumb:hover::after,
+body .navbar-primary .navbar-nav > .active.nav-breadcrumb:focus::after {
+  border-left-color: #b169bb !important;
 }
 body .navbar-primary .navbar-nav > .disabled,
 body .navbar-primary .navbar-nav > .disabled:hover,
 body .navbar-primary .navbar-nav > .disabled:focus {
   color: #fff;
   background-color: #63306a;
+}
+body .navbar-primary .navbar-nav > .nav-breadcrumb {
+  color: #fff;
+  background-color: #9b4ba6;
+}
+body .navbar-primary .navbar-nav > .nav-breadcrumb::after {
+  border-left-color: #9b4ba6 !important;
+}
+body .navbar-primary .navbar-nav > .nav-breadcrumb:hover,
+body .navbar-primary .navbar-nav > .nav-breadcrumb:focus {
+  color: #fff;
+  background-color: #63306a;
+}
+body .navbar-primary .navbar-nav > .nav-breadcrumb:hover::after,
+body .navbar-primary .navbar-nav > .nav-breadcrumb:focus::after {
+  border-left-color: #63306a !important;
 }
 body .navbar-primary .navbar-toggle {
   color: #fff;
@@ -182,15 +209,42 @@ body .navbar-breadcrumbs .navbar-nav > li > a:focus {
 }
 body .navbar-breadcrumbs .navbar-nav > .active,
 body .navbar-breadcrumbs .navbar-nav > .active:hover,
-body .navbar-breadcrumbs .navbar-nav > .active:focus {
+body .navbar-breadcrumbs .navbar-nav > .active:focus,
+body .navbar-breadcrumbs .navbar-nav > .active.nav-breadcrumb,
+body .navbar-breadcrumbs .navbar-nav > .active.nav-breadcrumb:hover,
+body .navbar-breadcrumbs .navbar-nav > .active.nav-breadcrumb:focus {
   color: #fff;
   background-color: #c38ccb;
+}
+body .navbar-breadcrumbs .navbar-nav > .active::after,
+body .navbar-breadcrumbs .navbar-nav > .active:hover::after,
+body .navbar-breadcrumbs .navbar-nav > .active:focus::after,
+body .navbar-breadcrumbs .navbar-nav > .active.nav-breadcrumb::after,
+body .navbar-breadcrumbs .navbar-nav > .active.nav-breadcrumb:hover::after,
+body .navbar-breadcrumbs .navbar-nav > .active.nav-breadcrumb:focus::after {
+  border-left-color: #c38ccb !important;
 }
 body .navbar-breadcrumbs .navbar-nav > .disabled,
 body .navbar-breadcrumbs .navbar-nav > .disabled:hover,
 body .navbar-breadcrumbs .navbar-nav > .disabled:focus {
   color: #fff;
   background-color: #84408e;
+}
+body .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb {
+  color: #fff;
+  background-color: #b169bb;
+}
+body .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb::after {
+  border-left-color: #b169bb !important;
+}
+body .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb:hover,
+body .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb:focus {
+  color: #fff;
+  background-color: #84408e;
+}
+body .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb:hover::after,
+body .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb:focus::after {
+  border-left-color: #84408e !important;
 }
 body .navbar-breadcrumbs .navbar-toggle {
   color: #fff;
@@ -285,15 +339,42 @@ body .navbar-secondary .navbar-nav > li > a:focus {
 }
 body .navbar-secondary .navbar-nav > .active,
 body .navbar-secondary .navbar-nav > .active:hover,
-body .navbar-secondary .navbar-nav > .active:focus {
-  color: #fff;
-  background-color: #7a3b83;
+body .navbar-secondary .navbar-nav > .active:focus,
+body .navbar-secondary .navbar-nav > .active.nav-breadcrumb,
+body .navbar-secondary .navbar-nav > .active.nav-breadcrumb:hover,
+body .navbar-secondary .navbar-nav > .active.nav-breadcrumb:focus {
+  color: #000;
+  background-color: #fff;
+}
+body .navbar-secondary .navbar-nav > .active::after,
+body .navbar-secondary .navbar-nav > .active:hover::after,
+body .navbar-secondary .navbar-nav > .active:focus::after,
+body .navbar-secondary .navbar-nav > .active.nav-breadcrumb::after,
+body .navbar-secondary .navbar-nav > .active.nav-breadcrumb:hover::after,
+body .navbar-secondary .navbar-nav > .active.nav-breadcrumb:focus::after {
+  border-left-color: #fff !important;
 }
 body .navbar-secondary .navbar-nav > .disabled,
 body .navbar-secondary .navbar-nav > .disabled:hover,
 body .navbar-secondary .navbar-nav > .disabled:focus {
   color: #fff;
   background-color: #a450b0;
+}
+body .navbar-secondary .navbar-nav > .nav-breadcrumb {
+  color: #fff;
+  background-color: #c38ccb;
+}
+body .navbar-secondary .navbar-nav > .nav-breadcrumb::after {
+  border-left-color: #c38ccb !important;
+}
+body .navbar-secondary .navbar-nav > .nav-breadcrumb:hover,
+body .navbar-secondary .navbar-nav > .nav-breadcrumb:focus {
+  color: #fff;
+  background-color: #a450b0;
+}
+body .navbar-secondary .navbar-nav > .nav-breadcrumb:hover::after,
+body .navbar-secondary .navbar-nav > .nav-breadcrumb:focus::after {
+  border-left-color: #a450b0 !important;
 }
 body .navbar-secondary .navbar-toggle {
   color: #fff;
@@ -330,8 +411,8 @@ body .navbar-secondary .navbar-nav .dropdown-menu > li > a:focus {
 body .navbar-secondary .navbar-nav .dropdown-menu > .active > a,
 body .navbar-secondary .navbar-nav .dropdown-menu > .active > a:hover,
 body .navbar-secondary .navbar-nav .dropdown-menu > .active > a:focus {
-  color: #fff;
-  background-color: #7a3b83;
+  color: #000;
+  background-color: #fff;
 }
 body .navbar-secondary .navbar-nav .dropdown-menu > .disabled > a,
 body .navbar-secondary .navbar-nav .dropdown-menu > .disabled > a:hover,

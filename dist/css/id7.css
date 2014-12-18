@@ -8485,13 +8485,10 @@ body {
   content: '';
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 14px solid #c3d0e1;
+  border-left: 14px solid transparent;
   -webkit-transition: border-color .15s linear;
        -o-transition: border-color .15s linear;
           transition: border-color .15s linear;
-}
-#id7-navigation .navbar-nav > li.nav-breadcrumb:hover::after {
-  border-left-color: #abbed6;
 }
 #id7-main-content-header {
   padding-right: 15px;
