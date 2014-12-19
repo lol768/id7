@@ -438,6 +438,9 @@ fieldset[disabled] .navbar-secondary .btn-link:hover,
 fieldset[disabled] .navbar-secondary .btn-link:focus {
   color: #000000;
 }
+.navbar-secondary .breadcrumb > li + li:before {
+  color: #7e9bc0;
+}
 .opaque-navigation .navbar-primary {
   background-color: #7e9bc0;
   -webkit-transition: none;
