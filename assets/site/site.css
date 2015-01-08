@@ -557,6 +557,20 @@ body .boxstyle_.box1 .h6 {
 body .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body .boxstyle_.box2 h1,
+body .boxstyle_.box2 h2,
+body .boxstyle_.box2 h3,
+body .boxstyle_.box2 h4,
+body .boxstyle_.box2 h5,
+body .boxstyle_.box2 h6,
+body .boxstyle_.box2 .h1,
+body .boxstyle_.box2 .h2,
+body .boxstyle_.box2 .h3,
+body .boxstyle_.box2 .h4,
+body .boxstyle_.box2 .h5,
+body .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body .boxstyle_.box3 {

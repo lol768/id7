@@ -527,6 +527,20 @@ fieldset[disabled] .navbar-secondary .btn-link:focus {
 .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+.boxstyle_.box2 h1,
+.boxstyle_.box2 h2,
+.boxstyle_.box2 h3,
+.boxstyle_.box2 h4,
+.boxstyle_.box2 h5,
+.boxstyle_.box2 h6,
+.boxstyle_.box2 .h1,
+.boxstyle_.box2 .h2,
+.boxstyle_.box2 .h3,
+.boxstyle_.box2 .h4,
+.boxstyle_.box2 .h5,
+.boxstyle_.box2 .h6 {
   color: inherit;
 }
 .boxstyle_.box3 {

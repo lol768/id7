@@ -512,6 +512,20 @@ body.brand-purple .boxstyle_.box1 .h6 {
 body.brand-purple .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-purple .boxstyle_.box2 h1,
+body.brand-purple .boxstyle_.box2 h2,
+body.brand-purple .boxstyle_.box2 h3,
+body.brand-purple .boxstyle_.box2 h4,
+body.brand-purple .boxstyle_.box2 h5,
+body.brand-purple .boxstyle_.box2 h6,
+body.brand-purple .boxstyle_.box2 .h1,
+body.brand-purple .boxstyle_.box2 .h2,
+body.brand-purple .boxstyle_.box2 .h3,
+body.brand-purple .boxstyle_.box2 .h4,
+body.brand-purple .boxstyle_.box2 .h5,
+body.brand-purple .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-purple .boxstyle_.box3 {
@@ -1038,6 +1052,20 @@ body.brand-gray .boxstyle_.box1 .h6 {
 body.brand-gray .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-gray .boxstyle_.box2 h1,
+body.brand-gray .boxstyle_.box2 h2,
+body.brand-gray .boxstyle_.box2 h3,
+body.brand-gray .boxstyle_.box2 h4,
+body.brand-gray .boxstyle_.box2 h5,
+body.brand-gray .boxstyle_.box2 h6,
+body.brand-gray .boxstyle_.box2 .h1,
+body.brand-gray .boxstyle_.box2 .h2,
+body.brand-gray .boxstyle_.box2 .h3,
+body.brand-gray .boxstyle_.box2 .h4,
+body.brand-gray .boxstyle_.box2 .h5,
+body.brand-gray .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-gray .boxstyle_.box3 {
@@ -1564,6 +1592,20 @@ body.brand-gold .boxstyle_.box1 .h6 {
 body.brand-gold .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-gold .boxstyle_.box2 h1,
+body.brand-gold .boxstyle_.box2 h2,
+body.brand-gold .boxstyle_.box2 h3,
+body.brand-gold .boxstyle_.box2 h4,
+body.brand-gold .boxstyle_.box2 h5,
+body.brand-gold .boxstyle_.box2 h6,
+body.brand-gold .boxstyle_.box2 .h1,
+body.brand-gold .boxstyle_.box2 .h2,
+body.brand-gold .boxstyle_.box2 .h3,
+body.brand-gold .boxstyle_.box2 .h4,
+body.brand-gold .boxstyle_.box2 .h5,
+body.brand-gold .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-gold .boxstyle_.box3 {
@@ -2090,6 +2132,20 @@ body.brand-blue .boxstyle_.box1 .h6 {
 body.brand-blue .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-blue .boxstyle_.box2 h1,
+body.brand-blue .boxstyle_.box2 h2,
+body.brand-blue .boxstyle_.box2 h3,
+body.brand-blue .boxstyle_.box2 h4,
+body.brand-blue .boxstyle_.box2 h5,
+body.brand-blue .boxstyle_.box2 h6,
+body.brand-blue .boxstyle_.box2 .h1,
+body.brand-blue .boxstyle_.box2 .h2,
+body.brand-blue .boxstyle_.box2 .h3,
+body.brand-blue .boxstyle_.box2 .h4,
+body.brand-blue .boxstyle_.box2 .h5,
+body.brand-blue .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-blue .boxstyle_.box3 {
@@ -2616,6 +2672,20 @@ body.brand-orange .boxstyle_.box1 .h6 {
 body.brand-orange .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-orange .boxstyle_.box2 h1,
+body.brand-orange .boxstyle_.box2 h2,
+body.brand-orange .boxstyle_.box2 h3,
+body.brand-orange .boxstyle_.box2 h4,
+body.brand-orange .boxstyle_.box2 h5,
+body.brand-orange .boxstyle_.box2 h6,
+body.brand-orange .boxstyle_.box2 .h1,
+body.brand-orange .boxstyle_.box2 .h2,
+body.brand-orange .boxstyle_.box2 .h3,
+body.brand-orange .boxstyle_.box2 .h4,
+body.brand-orange .boxstyle_.box2 .h5,
+body.brand-orange .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-orange .boxstyle_.box3 {
@@ -3142,6 +3212,20 @@ body.brand-green .boxstyle_.box1 .h6 {
 body.brand-green .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-green .boxstyle_.box2 h1,
+body.brand-green .boxstyle_.box2 h2,
+body.brand-green .boxstyle_.box2 h3,
+body.brand-green .boxstyle_.box2 h4,
+body.brand-green .boxstyle_.box2 h5,
+body.brand-green .boxstyle_.box2 h6,
+body.brand-green .boxstyle_.box2 .h1,
+body.brand-green .boxstyle_.box2 .h2,
+body.brand-green .boxstyle_.box2 .h3,
+body.brand-green .boxstyle_.box2 .h4,
+body.brand-green .boxstyle_.box2 .h5,
+body.brand-green .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-green .boxstyle_.box3 {
@@ -3668,6 +3752,20 @@ body.brand-red .boxstyle_.box1 .h6 {
 body.brand-red .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
+  color: #000000;
+}
+body.brand-red .boxstyle_.box2 h1,
+body.brand-red .boxstyle_.box2 h2,
+body.brand-red .boxstyle_.box2 h3,
+body.brand-red .boxstyle_.box2 h4,
+body.brand-red .boxstyle_.box2 h5,
+body.brand-red .boxstyle_.box2 h6,
+body.brand-red .boxstyle_.box2 .h1,
+body.brand-red .boxstyle_.box2 .h2,
+body.brand-red .boxstyle_.box2 .h3,
+body.brand-red .boxstyle_.box2 .h4,
+body.brand-red .boxstyle_.box2 .h5,
+body.brand-red .boxstyle_.box2 .h6 {
   color: inherit;
 }
 body.brand-red .boxstyle_.box3 {
