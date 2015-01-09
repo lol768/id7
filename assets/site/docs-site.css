@@ -106,6 +106,11 @@ h6,
 .navbar-primary .navbar-nav > .nav-breadcrumb:focus::after {
   border-left-color: #537da2 !important;
 }
+.navbar-primary .navbar-nav > .nav-breadcrumb.open > a:hover,
+.navbar-primary .navbar-nav > .nav-breadcrumb.open > a:focus {
+  color: #ffffff;
+  background-color: #537da2;
+}
 .navbar-primary .navbar-toggle {
   border: none;
   color: #ffffff;
@@ -245,6 +250,11 @@ fieldset[disabled] .navbar-primary .btn-link:focus {
 .navbar-breadcrumbs .navbar-nav > .nav-breadcrumb:focus::after {
   border-left-color: #426482 !important;
 }
+.navbar-breadcrumbs .navbar-nav > .nav-breadcrumb.open > a:hover,
+.navbar-breadcrumbs .navbar-nav > .nav-breadcrumb.open > a:focus {
+  color: #ffffff;
+  background-color: #426482;
+}
 .navbar-breadcrumbs .navbar-toggle {
   border: none;
   color: #ffffff;
@@ -374,6 +384,11 @@ fieldset[disabled] .navbar-breadcrumbs .btn-link:focus {
 .navbar-secondary .navbar-nav > .nav-breadcrumb:hover::after,
 .navbar-secondary .navbar-nav > .nav-breadcrumb:focus::after {
   border-left-color: #8da2b3 !important;
+}
+.navbar-secondary .navbar-nav > .nav-breadcrumb.open > a:hover,
+.navbar-secondary .navbar-nav > .nav-breadcrumb.open > a:focus {
+  color: #000000;
+  background-color: #8da2b3;
 }
 .navbar-secondary .navbar-toggle {
   border: none;
