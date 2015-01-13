@@ -43,7 +43,7 @@ html.site3 #id7-utility-bar.affix {
     background-image: url("/assets/site/site3/border-image-right.jpg");
   }
 }
-body html {
+body html.lt-ie9 {
   background: #9568a5;
 }
 body h1,
@@ -59,6 +59,15 @@ body .h4,
 body .h5,
 body .h6 {
   color: #7b428e;
+}
+body a {
+  color: #7b428e;
+  text-decoration: none;
+}
+body a:hover,
+body a:focus {
+  color: #663776;
+  text-decoration: underline;
 }
 body .brand-bg {
   background: #7b428e;

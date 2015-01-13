@@ -1,4 +1,4 @@
-body.brand-purple html {
+body.brand-purple html.lt-ie9 {
   background: #9568a5;
 }
 body.brand-purple h1,
@@ -14,6 +14,15 @@ body.brand-purple .h4,
 body.brand-purple .h5,
 body.brand-purple .h6 {
   color: #7b428e;
+}
+body.brand-purple a {
+  color: #7b428e;
+  text-decoration: none;
+}
+body.brand-purple a:hover,
+body.brand-purple a:focus {
+  color: #663776;
+  text-decoration: underline;
 }
 body.brand-purple .brand-bg {
   background: #7b428e;
@@ -553,7 +562,7 @@ body.brand-purple .boxstyle_.box4 {
   border: 1px solid #777777;
   color: inherit;
 }
-body.brand-gray html {
+body.brand-gray html.lt-ie9 {
   background: #9ba3aa;
 }
 body.brand-gray h1,
@@ -569,6 +578,15 @@ body.brand-gray .h4,
 body.brand-gray .h5,
 body.brand-gray .h6 {
   color: #828c95;
+}
+body.brand-gray a {
+  color: #828c95;
+  text-decoration: none;
+}
+body.brand-gray a:hover,
+body.brand-gray a:focus {
+  color: #707a84;
+  text-decoration: underline;
 }
 body.brand-gray .brand-bg {
   background: #828c95;
@@ -1108,7 +1126,7 @@ body.brand-gray .boxstyle_.box4 {
   border: 1px solid #777777;
   color: inherit;
 }
-body.brand-gold html {
+body.brand-gold html.lt-ie9 {
   background: #e3cb57;
 }
 body.brand-gold h1,
@@ -1124,6 +1142,15 @@ body.brand-gold .h4,
 body.brand-gold .h5,
 body.brand-gold .h6 {
   color: #dcbe2d;
+}
+body.brand-gold a {
+  color: #dcbe2d;
+  text-decoration: none;
+}
+body.brand-gold a:hover,
+body.brand-gold a:focus {
+  color: #c5a821;
+  text-decoration: underline;
 }
 body.brand-gold .brand-bg {
   background: #dcbe2d;
@@ -1663,7 +1690,7 @@ body.brand-gold .boxstyle_.box4 {
   border: 1px solid #777777;
   color: inherit;
 }
-body.brand-blue html {
+body.brand-blue html.lt-ie9 {
   background: #89b6dd;
 }
 body.brand-blue h1,
@@ -1679,6 +1706,15 @@ body.brand-blue .h4,
 body.brand-blue .h5,
 body.brand-blue .h6 {
   color: #6ca4d4;
+}
+body.brand-blue a {
+  color: #6ca4d4;
+  text-decoration: none;
+}
+body.brand-blue a:hover,
+body.brand-blue a:focus {
+  color: #5093cc;
+  text-decoration: underline;
 }
 body.brand-blue .brand-bg {
   background: #6ca4d4;
@@ -2218,7 +2254,7 @@ body.brand-blue .boxstyle_.box4 {
   border: 1px solid #777777;
   color: inherit;
 }
-body.brand-orange html {
+body.brand-orange html.lt-ie9 {
   background: #f49e63;
 }
 body.brand-orange h1,
@@ -2234,6 +2270,15 @@ body.brand-orange .h4,
 body.brand-orange .h5,
 body.brand-orange .h6 {
   color: #f1863c;
+}
+body.brand-orange a {
+  color: #f1863c;
+  text-decoration: none;
+}
+body.brand-orange a:hover,
+body.brand-orange a:focus {
+  color: #ef711b;
+  text-decoration: underline;
 }
 body.brand-orange .brand-bg {
   background: #f1863c;
@@ -2773,7 +2818,7 @@ body.brand-orange .boxstyle_.box4 {
   border: 1px solid #777777;
   color: inherit;
 }
-body.brand-green html {
+body.brand-green html.lt-ie9 {
   background: #b7bc55;
 }
 body.brand-green h1,
@@ -2789,6 +2834,15 @@ body.brand-green .h4,
 body.brand-green .h5,
 body.brand-green .h6 {
   color: #a5ab2a;
+}
+body.brand-green a {
+  color: #a5ab2a;
+  text-decoration: none;
+}
+body.brand-green a:hover,
+body.brand-green a:focus {
+  color: #898e23;
+  text-decoration: underline;
 }
 body.brand-green .brand-bg {
   background: #a5ab2a;
@@ -3328,7 +3382,7 @@ body.brand-green .boxstyle_.box4 {
   border: 1px solid #777777;
   color: inherit;
 }
-body.brand-red html {
+body.brand-red html.lt-ie9 {
   background: #ca656f;
 }
 body.brand-red h1,
@@ -3344,6 +3398,15 @@ body.brand-red .h4,
 body.brand-red .h5,
 body.brand-red .h6 {
   color: #bd3f4b;
+}
+body.brand-red a {
+  color: #bd3f4b;
+  text-decoration: none;
+}
+body.brand-red a:hover,
+body.brand-red a:focus {
+  color: #a23640;
+  text-decoration: underline;
 }
 body.brand-red .brand-bg {
   background: #bd3f4b;

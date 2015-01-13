@@ -13,7 +13,7 @@
     background-image: url("/assets/site/docs-site/border-image-right.jpg");
   }
 }
-html {
+html.lt-ie9 {
   background: #89b6dd;
 }
 h1,
@@ -29,6 +29,15 @@ h6,
 .h5,
 .h6 {
   color: #6ca4d4;
+}
+a {
+  color: #6ca4d4;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #5093cc;
+  text-decoration: underline;
 }
 .brand-bg {
   background: #6ca4d4;

@@ -3,37 +3,34 @@
  */
 
 
-/*global _:false */
+/*global _:false, console:false */
 
 (function ($) {
   'use strict';
 
   var Config = {
-    Template: _.template([
-      '<div class="account-info row">',
-      '<div class="col-xs-4">',
-      '<img class="photo" src="<%- photo %>">',
-      '</div>',
-      '<div class="col-xs-8">',
-      '<div class="full-name"><%= fullName %></div>',
-      '<div class="email"><%= email %></div>',
-      '<div class="user-id"><%= userId %></div>',
-      '<div class="description"><%= description %></div>',
-      '</div>',
-      '</div>',
-      '<div class="row actions">',
-      '<div class="btn-group btn-group-justified">',
-      '<div class="btn-group">',
-      '<button data-action="change-password" type="button" class="btn btn-default">Change password</button>' +
-      '</div>',
-      '<div class="btn-group">',
-      '<button data-action="sign-out" type="button" class="btn btn-default">Sign out</button>',
-      '</div>',
-      '</div>',
-      '</div>'
-    ].join('')),
+    Templates: {
+      Popover: _.template([
+        '<div class="account-info">',
+        '<iframe src="<%- iframelink %>" scrolling="no" frameborder="0" allowtransparency="true" seamless></iframe>',
+        '</div>',
+        '<div class="row actions">',
+        '<div class="btn-group btn-group-justified">',
+        '<div class="btn-group">',
+        '<a href="<%- logoutlink %>" class="btn btn-default">Sign out</a>',
+        '</div>',
+        '</div>',
+        '</div>'
+      ].join('')),
+      Action: _.template([
+        '<div class="btn-group">',
+        '<a href="<%- href %>" class="btn btn-default"><%= title %></a>',
+        '</div>'
+      ].join(''))
+    },
     Defaults: {
       container: false,
+      iframelink: 'https://websignon.warwick.ac.uk/origin/account/popover',
       template: [
         '<div class="popover account-information">',
         '<div class="arrow"></div>',
@@ -42,7 +39,8 @@
         '</div>',
         '</div>'
       ].join('')
-    }
+    },
+    MessagePrefix: 'message.id7.account-popover.'
   };
 
   /**
@@ -60,7 +58,6 @@
     $.extend(AccountPopover.prototype, {
       wireEventHandlers: function wireEventHandlers() {
         var $trigger = this.$trigger;
-        var user = this.options.user;
 
         $trigger.on('click', function (e) {
           e.preventDefault();
@@ -68,7 +65,7 @@
           return false;
         }).popover({
           container: this.options.container,
-          content: Config.Template(user),
+          content: Config.Templates.Popover(this.options),
           template: this.options.template,
           html: true,
           placement: 'bottom',
@@ -83,6 +80,20 @@
             $trigger.popover('hide');
           }
         });
+      },
+      onMessage: function onMessage(messageType, data) {
+        var $popover = this.$trigger.next('.popover');
+
+        switch (messageType) {
+          case 'addAction':
+            $popover.find('.actions > .btn-group').prepend(Config.Templates.Action(data));
+            break;
+          case 'resizeIframe':
+            $popover.find('.account-info iframe').height(data.height);
+            break;
+          default:
+            console.error('Unexpected message type: ' + messageType);
+        }
       }
     });
 
@@ -94,7 +105,7 @@
 
     function attach(i, element) {
       var $trigger = $(element);
-      var accountPopover = new AccountPopover($.extend(o, {
+      var accountPopover = new AccountPopover($.extend({}, $trigger.data(), o, {
         trigger: $trigger
       }));
 
@@ -105,15 +116,31 @@
   };
 
   $(function () {
-    $('[data-toggle="id7:account-popover"]').accountPopover({
-      user: {
-        photo: 'http://www.gravatar.com/avatar/ed08722fea72ddf208e404d92c20b01d',
-        fullName: 'Mathew Mannion',
-        email: 'M.Mannion@warwick.ac.uk',
-        userId: 'u0672089',
-        description: 'Staff, IT Services'
-      }
-    });
+    $('[data-toggle="id7:account-popover"]').accountPopover();
+
+    // Listen to relevant messages and send them through
+    $(window).on('message', function (e) {
+      var origin = e.originalEvent.origin;
+
+      try {
+        var data = JSON.parse(e.originalEvent.data);
+        if (data.type && data.type.indexOf(Config.MessagePrefix) === 0) {
+          var messageType = data.type.substring(Config.MessagePrefix.length);
+
+          // Send the message out to each instance
+          $('[data-toggle="id7:account-popover"]').each(function () {
+            var $trigger = $(this);
+            var accountPopover = $trigger.data('id7.account-popover');
+
+            if (accountPopover.options.iframelink.indexOf(origin) !== 0) {
+              console.error('Ignored message of type ' + messageType + ' because origin ' + origin + ' didn\'t match iframe link ' + accountPopover.options.iframelink);
+            } else {
+              accountPopover.onMessage(messageType, data);
+            }
+          });
+        }
+      } catch (error) {}
+    })
   });
 
 })(jQuery);
@@ -294,7 +321,7 @@
           // If we have any parent breadcrumbs collapsed, un-collapse them
           $moreBreadcrumbsContainer.find('> .dropdown-menu > li').each(function () {
             var $li = $(this);
-            $moreBreadcrumbsContainer.after($li);
+            $nav.find('> .nav-breadcrumb:not(.active)').last().after($li);
           });
 
           var $parentBreadcrumbs = $nav.find('> li.nav-breadcrumb:not(.active):not(.dropdown)');
@@ -477,6 +504,76 @@
           '&goSearchQuery=' + encodeURIComponent($(this).data('original-query'));
       });
     });
+  });
+
+})(jQuery);
+
+(function ($) {
+  'use strict';
+
+  var Config = {
+    Defaults: {
+      wrapper: 'id7-wide-table-wrapper', // Set to false to disable
+      popout: false
+    }
+  };
+
+  /**
+   * Wrap wide tables in a class to allow them to be scrolled without breaking
+   * the container, and optionally add in a popout link.
+   */
+  var WideTables = (function () {
+    function WideTables(o) {
+      o = $.extend({}, Config.Defaults, o);
+
+      // Allow wrapper: true to use the default
+      if (o.wrapper && typeof o.wrapper !== 'string') {
+        o.wrapper = Config.Defaults.wrapper;
+      }
+
+      this.options = o;
+
+      this.findWideTables().each($.proxy(function (i, el) {
+        if (o.wrapper) this.wrap($(el));
+        if (o.popout) this.popout($(el));
+      }, this));
+    }
+
+    $.extend(WideTables.prototype, {
+      findWideTables: function findWideTables() {
+        return this.options.container.find('table').filter(function () {
+          var $table = $(this);
+          return Math.floor($table.width()) > $table.parent().width();
+        });
+      },
+      wrap: function wrap($table) {
+        $table.wrap($('<div />').addClass(this.options.wrapper));
+      },
+      popout: function popout($table) {
+        return $table; // Nothing to do, for now
+      }
+    });
+
+    return WideTables;
+  })();
+
+  $.fn.wideTables = function (o) {
+    o = o || {};
+
+    function attach(i, element) {
+      var $container = $(element);
+      var wideTables = new WideTables($.extend(o, {
+        container: $container
+      }));
+
+      $container.data('id7.wide-tables', wideTables);
+    }
+
+    return this.each(attach);
+  };
+
+  $(function () {
+    $('#id7-main-content').wideTables();
   });
 
 })(jQuery);
