@@ -134,6 +134,17 @@ module.exports = function (grunt) {
         src: 'less/id7.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       },
+      compileId6Bootstrap: {
+        options: {
+          strictMath: true,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'id6-bootstrap.css.map',
+          sourceMapFilename: 'dist/css/id6-bootstrap.css.map'
+        },
+        src: 'less/id6-bootstrap.less',
+        dest: 'dist/css/id6-bootstrap.css'
+      },
       compileDefaultTheme: {
         options: {
           strictMath: true,
@@ -374,6 +385,9 @@ module.exports = function (grunt) {
 
   // Docs task.
   grunt.registerTask('docs', ['clean:docs', 'copy:docs', 'markdown:readme', 'less:compileDocs']);
+
+  // Compatiblity version of Bootstrap for ID6
+  grunt.registerTask('id6-shims', [/*'clean:dist', */'less:compileId6Bootstrap']);
 
   // Run Jekyll and watch for asset changes.
   grunt.registerTask('serve', ['concurrent:serve'])
