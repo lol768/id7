@@ -1,13 +1,25 @@
+// Font-Awesome
+@import 'font-awesome/variables.less';
+
+@import 'font-awesome/mixins.less';
+@import 'font-awesome/path.less';
+@import 'font-awesome/core.less';
+@import 'font-awesome/larger.less';
+@import 'font-awesome/fixed-width.less';
+@import 'font-awesome/list.less';
+@import 'font-awesome/bordered-pulled.less';
+@import 'font-awesome/spinning.less';
+@import 'font-awesome/rotated-flipped.less';
+@import 'font-awesome/stacked.less';
+@import 'font-awesome/icons.less';
+
 // Bootstrap core variables and mixins
 @import 'bootstrap/variables.less';
 @import 'bootstrap/mixins.less';
 
-// Reset and dependencies
-//@import 'bootstrap/normalize.less';
-//@import 'bootstrap/print.less';
-
 // Bootstrap core CSS
 //@import 'bootstrap/scaffolding.less';
+@import 'id6-scaffolding.less';
 @import 'bootstrap/grid.less';
 @import 'bootstrap/component-animations.less';
 @import 'bootstrap/modals.less';
@@ -17,11 +29,9 @@
 @import 'bootstrap/utilities.less';
 @import 'bootstrap/responsive-utilities.less';
 
-// This is in scaffolding but it includes way too much other stuff
-* {
-  .box-sizing(border-box);
-}
-*:before,
-*:after {
-  .box-sizing(border-box);
-}
+// ID7 Brand configuration variables
+@import 'variables.less';
+@import 'mixins.less';
+
+// This is only an interim solution so let's fetch FA fonts from CDN.
+@fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts";

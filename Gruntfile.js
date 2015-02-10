@@ -246,6 +246,10 @@ module.exports = function (grunt) {
         src: 'js/vendor/*',
         dest: 'dist/'
       },
+      id6Shims: {
+        src: 'js/id6-bootstrap.js',
+        dest: 'dist/',
+      },
       docs: {
         src: 'dist/**/*',
         dest: 'docs/'
@@ -387,7 +391,7 @@ module.exports = function (grunt) {
   grunt.registerTask('docs', ['clean:docs', 'copy:docs', 'markdown:readme', 'less:compileDocs']);
 
   // Compatiblity version of Bootstrap for ID6
-  grunt.registerTask('id6-shims', [/*'clean:dist', */'less:compileId6Bootstrap']);
+  grunt.registerTask('id6-shims', [/*'clean:dist', */ 'copy:id6Shims', 'less:compileId6Bootstrap']);
 
   // Run Jekyll and watch for asset changes.
   grunt.registerTask('serve', ['concurrent:serve'])
