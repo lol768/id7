@@ -106,7 +106,7 @@ body .navbar-primary .navbar-nav > li > a:focus {
   color: inherit;
   background: none;
 }
-body .navbar-primary .navbar-nav > .active::after {
+body .navbar-primary .navbar-nav > .active::before {
   border-bottom-color: #cab3d2 !important;
 }
 body .navbar-primary .navbar-nav > .disabled,
@@ -147,7 +147,7 @@ body .navbar-primary .navbar-nav .dropdown-menu > li > a:focus {
   color: #ffffff;
   background-color: #6f3b80;
 }
-body .navbar-primary .navbar-nav .dropdown-menu > .active > a::after {
+body .navbar-primary .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: #cab3d2 !important;
 }
 body .navbar-primary .navbar-nav .dropdown-menu > .disabled > a,
@@ -212,7 +212,7 @@ body .navbar-breadcrumbs .navbar-nav > li > a:focus {
   color: inherit;
   background: none;
 }
-body .navbar-breadcrumbs .navbar-nav > .active::after {
+body .navbar-breadcrumbs .navbar-nav > .active::before {
   border-bottom-color: #825d8e !important;
 }
 body .navbar-breadcrumbs .navbar-nav > .disabled,
@@ -253,7 +253,7 @@ body .navbar-breadcrumbs .navbar-nav .dropdown-menu > li > a:focus {
   color: #ffffff;
   background-color: #593066;
 }
-body .navbar-breadcrumbs .navbar-nav .dropdown-menu > .active > a::after {
+body .navbar-breadcrumbs .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: #825d8e !important;
 }
 body .navbar-breadcrumbs .navbar-nav .dropdown-menu > .disabled > a,
@@ -309,7 +309,7 @@ body .navbar-secondary .navbar-nav > li > a:focus {
   color: inherit;
   background: none;
 }
-body .navbar-secondary .navbar-nav > .active::after {
+body .navbar-secondary .navbar-nav > .active::before {
   border-bottom-color: #ffffff !important;
 }
 body .navbar-secondary .navbar-nav > .disabled,
@@ -350,7 +350,7 @@ body .navbar-secondary .navbar-nav .dropdown-menu > li > a:focus {
   color: #000000;
   background-color: #b6a1bd;
 }
-body .navbar-secondary .navbar-nav .dropdown-menu > .active > a::after {
+body .navbar-secondary .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: #ffffff !important;
 }
 body .navbar-secondary .navbar-nav .dropdown-menu > .disabled > a,
@@ -378,7 +378,7 @@ body .navbar-secondary .btn-link[disabled]:focus,
 fieldset[disabled] body .navbar-secondary .btn-link:focus {
   color: #000000;
 }
-body .navbar-secondary li.nav-breadcrumb + li:before {
+body .navbar-secondary li.nav-breadcrumb::after {
   color: #7b428e;
 }
 body .opaque-navigation .navbar-primary {

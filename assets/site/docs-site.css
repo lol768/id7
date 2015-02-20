@@ -76,7 +76,7 @@ a:focus {
   color: inherit;
   background: none;
 }
-.navbar-primary .navbar-nav > .active::after {
+.navbar-primary .navbar-nav > .active::before {
   border-bottom-color: #c4dbee !important;
 }
 .navbar-primary .navbar-nav > .disabled,
@@ -117,7 +117,7 @@ a:focus {
   color: #ffffff;
   background-color: #6194bf;
 }
-.navbar-primary .navbar-nav .dropdown-menu > .active > a::after {
+.navbar-primary .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: #c4dbee !important;
 }
 .navbar-primary .navbar-nav .dropdown-menu > .disabled > a,
@@ -182,7 +182,7 @@ fieldset[disabled] .navbar-primary .btn-link:focus {
   color: inherit;
   background: none;
 }
-.navbar-breadcrumbs .navbar-nav > .active::after {
+.navbar-breadcrumbs .navbar-nav > .active::before {
   border-bottom-color: #789cbb !important;
 }
 .navbar-breadcrumbs .navbar-nav > .disabled,
@@ -223,7 +223,7 @@ fieldset[disabled] .navbar-primary .btn-link:focus {
   color: #ffffff;
   background-color: #4e7699;
 }
-.navbar-breadcrumbs .navbar-nav .dropdown-menu > .active > a::after {
+.navbar-breadcrumbs .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: #789cbb !important;
 }
 .navbar-breadcrumbs .navbar-nav .dropdown-menu > .disabled > a,
@@ -279,7 +279,7 @@ fieldset[disabled] .navbar-breadcrumbs .btn-link:focus {
   color: inherit;
   background: none;
 }
-.navbar-secondary .navbar-nav > .active::after {
+.navbar-secondary .navbar-nav > .active::before {
   border-bottom-color: #ffffff !important;
 }
 .navbar-secondary .navbar-nav > .disabled,
@@ -320,7 +320,7 @@ fieldset[disabled] .navbar-breadcrumbs .btn-link:focus {
   color: #000000;
   background-color: #b1c5d6;
 }
-.navbar-secondary .navbar-nav .dropdown-menu > .active > a::after {
+.navbar-secondary .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: #ffffff !important;
 }
 .navbar-secondary .navbar-nav .dropdown-menu > .disabled > a,
@@ -348,7 +348,7 @@ fieldset[disabled] .navbar-secondary .btn-link:hover,
 fieldset[disabled] .navbar-secondary .btn-link:focus {
   color: #000000;
 }
-.navbar-secondary li.nav-breadcrumb + li:before {
+.navbar-secondary li.nav-breadcrumb::after {
   color: #6ca4d4;
 }
 .opaque-navigation .navbar-primary {
@@ -738,7 +738,7 @@ fieldset[disabled] .navbar-secondary .btn-link:focus {
 .id7-docs-sidebar .nav > li > a {
   display: block;
   padding: 4px 20px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: #999;
 }
@@ -769,7 +769,7 @@ fieldset[disabled] .navbar-secondary .btn-link:focus {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
 }
 .id7-docs-sidebar .nav .nav > li > a:hover,
