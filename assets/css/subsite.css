@@ -1,20 +1,20 @@
-#id7-main-content .row-spacer > [class*='col-'] {
+main .row-spacer > [class*='col-'] {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#id7-main-content .slideshow {
+main .slideshow {
   background: black;
   color: white;
   margin-bottom: 20px;
 }
-#id7-main-content .slideshow .carousel {
+main .slideshow .carousel {
   height: 400px;
 }
-#id7-main-content .slideshow .carousel .carousel-inner,
-#id7-main-content .slideshow .carousel .carousel-inner > .item {
+main .slideshow .carousel .carousel-inner,
+main .slideshow .carousel .carousel-inner > .item {
   height: 100%;
 }
-#id7-main-content .slideshow .carousel-inner > .item > .caption {
+main .slideshow .carousel-inner > .item > .caption {
   width: 290px;
   max-width: 100%;
   position: absolute;
@@ -26,22 +26,22 @@
   background-color: rgba(0, 0, 0, 0.8);
   overflow: auto;
 }
-#id7-main-content .slideshow .carousel-inner > .item > .caption h1,
-#id7-main-content .slideshow .carousel-inner > .item > .caption h2,
-#id7-main-content .slideshow .carousel-inner > .item > .caption h3,
-#id7-main-content .slideshow .carousel-inner > .item > .caption h4,
-#id7-main-content .slideshow .carousel-inner > .item > .caption h5,
-#id7-main-content .slideshow .carousel-inner > .item > .caption h6,
-#id7-main-content .slideshow .carousel-inner > .item > .caption .h1,
-#id7-main-content .slideshow .carousel-inner > .item > .caption .h2,
-#id7-main-content .slideshow .carousel-inner > .item > .caption .h3,
-#id7-main-content .slideshow .carousel-inner > .item > .caption .h4,
-#id7-main-content .slideshow .carousel-inner > .item > .caption .h5,
-#id7-main-content .slideshow .carousel-inner > .item > .caption .h6 {
+main .slideshow .carousel-inner > .item > .caption h1,
+main .slideshow .carousel-inner > .item > .caption h2,
+main .slideshow .carousel-inner > .item > .caption h3,
+main .slideshow .carousel-inner > .item > .caption h4,
+main .slideshow .carousel-inner > .item > .caption h5,
+main .slideshow .carousel-inner > .item > .caption h6,
+main .slideshow .carousel-inner > .item > .caption .h1,
+main .slideshow .carousel-inner > .item > .caption .h2,
+main .slideshow .carousel-inner > .item > .caption .h3,
+main .slideshow .carousel-inner > .item > .caption .h4,
+main .slideshow .carousel-inner > .item > .caption .h5,
+main .slideshow .carousel-inner > .item > .caption .h6 {
   color: inherit;
   border: 0;
 }
-#id7-main-content .slideshow .carousel-controls {
+main .slideshow .carousel-controls {
   height: 40px;
   line-height: 40px;
   position: absolute;
@@ -50,136 +50,136 @@
   background-color: #555555;
   background-color: rgba(0, 0, 0, 0.8);
 }
-#id7-main-content .slideshow .carousel-controls a {
+main .slideshow .carousel-controls a {
   color: #ffffff;
   text-decoration: none;
 }
-#id7-main-content .slideshow .carousel-controls a:hover,
-#id7-main-content .slideshow .carousel-controls a:focus {
+main .slideshow .carousel-controls a:hover,
+main .slideshow .carousel-controls a:focus {
   color: #ededed;
   text-decoration: underline;
 }
-#id7-main-content .boxstyle_.box1 {
+main .boxstyle_.box1 {
   border: 0;
   background: #cab3d2;
   color: #000000;
 }
-#id7-main-content .boxstyle_.box1 h1,
-#id7-main-content .boxstyle_.box1 h2,
-#id7-main-content .boxstyle_.box1 h3,
-#id7-main-content .boxstyle_.box1 h4,
-#id7-main-content .boxstyle_.box1 h5,
-#id7-main-content .boxstyle_.box1 h6,
-#id7-main-content .boxstyle_.box1 .h1,
-#id7-main-content .boxstyle_.box1 .h2,
-#id7-main-content .boxstyle_.box1 .h3,
-#id7-main-content .boxstyle_.box1 .h4,
-#id7-main-content .boxstyle_.box1 .h5,
-#id7-main-content .boxstyle_.box1 .h6 {
+main .boxstyle_.box1 h1,
+main .boxstyle_.box1 h2,
+main .boxstyle_.box1 h3,
+main .boxstyle_.box1 h4,
+main .boxstyle_.box1 h5,
+main .boxstyle_.box1 h6,
+main .boxstyle_.box1 .h1,
+main .boxstyle_.box1 .h2,
+main .boxstyle_.box1 .h3,
+main .boxstyle_.box1 .h4,
+main .boxstyle_.box1 .h5,
+main .boxstyle_.box1 .h6 {
   color: inherit;
 }
-#id7-main-content .boxstyle_.box2 {
+main .boxstyle_.box2 {
   border: 0;
   background: #f2ecf4;
   color: #000000;
 }
-#id7-main-content .boxstyle_.box2 h1,
-#id7-main-content .boxstyle_.box2 h2,
-#id7-main-content .boxstyle_.box2 h3,
-#id7-main-content .boxstyle_.box2 h4,
-#id7-main-content .boxstyle_.box2 h5,
-#id7-main-content .boxstyle_.box2 h6,
-#id7-main-content .boxstyle_.box2 .h1,
-#id7-main-content .boxstyle_.box2 .h2,
-#id7-main-content .boxstyle_.box2 .h3,
-#id7-main-content .boxstyle_.box2 .h4,
-#id7-main-content .boxstyle_.box2 .h5,
-#id7-main-content .boxstyle_.box2 .h6 {
+main .boxstyle_.box2 h1,
+main .boxstyle_.box2 h2,
+main .boxstyle_.box2 h3,
+main .boxstyle_.box2 h4,
+main .boxstyle_.box2 h5,
+main .boxstyle_.box2 h6,
+main .boxstyle_.box2 .h1,
+main .boxstyle_.box2 .h2,
+main .boxstyle_.box2 .h3,
+main .boxstyle_.box2 .h4,
+main .boxstyle_.box2 .h5,
+main .boxstyle_.box2 .h6 {
   color: inherit;
 }
-#id7-main-content .boxstyle_.box3 {
+main .boxstyle_.box3 {
   border: 0;
   background: #e6e6e6;
   color: #000000;
 }
-#id7-main-content .boxstyle_.box3 h1,
-#id7-main-content .boxstyle_.box3 h2,
-#id7-main-content .boxstyle_.box3 h3,
-#id7-main-content .boxstyle_.box3 h4,
-#id7-main-content .boxstyle_.box3 h5,
-#id7-main-content .boxstyle_.box3 h6,
-#id7-main-content .boxstyle_.box3 .h1,
-#id7-main-content .boxstyle_.box3 .h2,
-#id7-main-content .boxstyle_.box3 .h3,
-#id7-main-content .boxstyle_.box3 .h4,
-#id7-main-content .boxstyle_.box3 .h5,
-#id7-main-content .boxstyle_.box3 .h6 {
+main .boxstyle_.box3 h1,
+main .boxstyle_.box3 h2,
+main .boxstyle_.box3 h3,
+main .boxstyle_.box3 h4,
+main .boxstyle_.box3 h5,
+main .boxstyle_.box3 h6,
+main .boxstyle_.box3 .h1,
+main .boxstyle_.box3 .h2,
+main .boxstyle_.box3 .h3,
+main .boxstyle_.box3 .h4,
+main .boxstyle_.box3 .h5,
+main .boxstyle_.box3 .h6 {
   color: inherit;
 }
-#id7-main-content .boxstyle_.feature-image1 {
+main .boxstyle_.feature-image1 {
   border: 0;
   background: url(../site/site1/banner-image.jpg) top right no-repeat;
   color: #ffffff;
 }
-#id7-main-content .boxstyle_.feature-image1 h1,
-#id7-main-content .boxstyle_.feature-image1 h2,
-#id7-main-content .boxstyle_.feature-image1 h3,
-#id7-main-content .boxstyle_.feature-image1 h4,
-#id7-main-content .boxstyle_.feature-image1 h5,
-#id7-main-content .boxstyle_.feature-image1 h6,
-#id7-main-content .boxstyle_.feature-image1 .h1,
-#id7-main-content .boxstyle_.feature-image1 .h2,
-#id7-main-content .boxstyle_.feature-image1 .h3,
-#id7-main-content .boxstyle_.feature-image1 .h4,
-#id7-main-content .boxstyle_.feature-image1 .h5,
-#id7-main-content .boxstyle_.feature-image1 .h6 {
+main .boxstyle_.feature-image1 h1,
+main .boxstyle_.feature-image1 h2,
+main .boxstyle_.feature-image1 h3,
+main .boxstyle_.feature-image1 h4,
+main .boxstyle_.feature-image1 h5,
+main .boxstyle_.feature-image1 h6,
+main .boxstyle_.feature-image1 .h1,
+main .boxstyle_.feature-image1 .h2,
+main .boxstyle_.feature-image1 .h3,
+main .boxstyle_.feature-image1 .h4,
+main .boxstyle_.feature-image1 .h5,
+main .boxstyle_.feature-image1 .h6 {
   color: inherit;
 }
-#id7-main-content .boxstyle_.feature-image2 {
+main .boxstyle_.feature-image2 {
   border: 0;
   background: url(../site/site3/banner-image.jpg) top right no-repeat;
   color: #ffffff;
 }
-#id7-main-content .boxstyle_.feature-image2 h1,
-#id7-main-content .boxstyle_.feature-image2 h2,
-#id7-main-content .boxstyle_.feature-image2 h3,
-#id7-main-content .boxstyle_.feature-image2 h4,
-#id7-main-content .boxstyle_.feature-image2 h5,
-#id7-main-content .boxstyle_.feature-image2 h6,
-#id7-main-content .boxstyle_.feature-image2 .h1,
-#id7-main-content .boxstyle_.feature-image2 .h2,
-#id7-main-content .boxstyle_.feature-image2 .h3,
-#id7-main-content .boxstyle_.feature-image2 .h4,
-#id7-main-content .boxstyle_.feature-image2 .h5,
-#id7-main-content .boxstyle_.feature-image2 .h6 {
+main .boxstyle_.feature-image2 h1,
+main .boxstyle_.feature-image2 h2,
+main .boxstyle_.feature-image2 h3,
+main .boxstyle_.feature-image2 h4,
+main .boxstyle_.feature-image2 h5,
+main .boxstyle_.feature-image2 h6,
+main .boxstyle_.feature-image2 .h1,
+main .boxstyle_.feature-image2 .h2,
+main .boxstyle_.feature-image2 .h3,
+main .boxstyle_.feature-image2 .h4,
+main .boxstyle_.feature-image2 .h5,
+main .boxstyle_.feature-image2 .h6 {
   color: inherit;
 }
-#id7-main-content .feature-box {
+main .feature-box {
   position: relative;
 }
-#id7-main-content .feature-box .heading {
+main .feature-box .heading {
   display: inline-block;
   margin-left: -30px;
   padding: 10px 20px;
 }
-#id7-main-content .feature-box .heading h1,
-#id7-main-content .feature-box .heading h2,
-#id7-main-content .feature-box .heading h3,
-#id7-main-content .feature-box .heading h4,
-#id7-main-content .feature-box .heading h5,
-#id7-main-content .feature-box .heading h6,
-#id7-main-content .feature-box .heading .h1,
-#id7-main-content .feature-box .heading .h2,
-#id7-main-content .feature-box .heading .h3,
-#id7-main-content .feature-box .heading .h4,
-#id7-main-content .feature-box .heading .h5,
-#id7-main-content .feature-box .heading .h6 {
+main .feature-box .heading h1,
+main .feature-box .heading h2,
+main .feature-box .heading h3,
+main .feature-box .heading h4,
+main .feature-box .heading h5,
+main .feature-box .heading h6,
+main .feature-box .heading .h1,
+main .feature-box .heading .h2,
+main .feature-box .heading .h3,
+main .feature-box .heading .h4,
+main .feature-box .heading .h5,
+main .feature-box .heading .h6 {
   color: inherit;
   border: 0;
   margin: 0;
   padding: 0;
 }
-#id7-main-content .feature-box .caption {
+main .feature-box .caption {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -191,62 +191,62 @@
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=0);
 }
-#id7-main-content .feature-box .caption > :last-child {
+main .feature-box .caption > :last-child {
   margin-bottom: 0;
 }
-#id7-main-content .feature-image1 {
+main .feature-image1 {
   color: white;
   min-height: 200px;
   font-weight: bold;
 }
-#id7-main-content .feature-image1 .heading {
+main .feature-image1 .heading {
   background: #6b3251;
   color: #ffffff;
 }
-#id7-main-content .feature-image2 {
+main .feature-image2 {
   color: white;
   min-height: 200px;
   font-weight: bold;
 }
-#id7-main-content .feature-image2 .heading {
+main .feature-image2 .heading {
   background-color: #555555;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
-#id7-main-content .btn-block {
+main .btn-block {
   font-size: 160%;
   text-align: left;
   padding: 0;
   min-height: 60px;
   position: relative;
 }
-#id7-main-content .btn-block > span {
+main .btn-block > span {
   position: absolute;
   left: 20px;
   bottom: 20px;
 }
-#id7-main-content .btn-colour1 {
+main .btn-colour1 {
   background: #1f2121;
   color: #dbc6d7;
 }
-#id7-main-content .btn-colour1:hover,
-#id7-main-content .btn-colour1:active {
+main .btn-colour1:hover,
+main .btn-colour1:active {
   background: #060707;
   color: #efe5ed;
 }
-#id7-main-content .btn-colour2 {
+main .btn-colour2 {
   background: #6b3251;
   color: #dbc6d7;
 }
-#id7-main-content .btn-colour2:hover,
-#id7-main-content .btn-colour2:active {
+main .btn-colour2:hover,
+main .btn-colour2:active {
   background: #482237;
   color: #efe5ed;
 }
-#id7-main-content blockquote.no-margin {
+main blockquote.no-margin {
   margin: 0;
 }
-#id7-main-content .nav-flex {
+main .nav-flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
@@ -281,30 +281,30 @@
   flex-wrap: wrap;
   width: 100%;
 }
-#id7-main-content .nav-flex > li {
+main .nav-flex > li {
   float: none;
   margin: 0 !important;
 }
 @media (min-width: 768px) {
-  #id7-main-content .nav-flex > li {
+  main .nav-flex > li {
     width: 55px;
   }
 }
 @media (min-width: 992px) {
-  #id7-main-content .nav-flex > li {
+  main .nav-flex > li {
     width: 36px;
   }
 }
 @media (min-width: 1200px) {
-  #id7-main-content .nav-flex > li {
+  main .nav-flex > li {
     width: 43px;
   }
 }
-#id7-main-content .nav-flex > li > a {
+main .nav-flex > li > a {
   text-align: center;
   margin-bottom: 5px;
 }
-#id7-main-content .nav-flex > .dropdown .dropdown-menu {
+main .nav-flex > .dropdown .dropdown-menu {
   top: auto;
   left: auto;
 }
