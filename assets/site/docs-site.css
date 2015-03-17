@@ -76,10 +76,10 @@ a:focus {
   color: inherit;
   background: none;
 }
-.id7-navigation .navbar-primary .navbar-nav > li.active::before {
+.id7-navigation .navbar-primary .navbar-nav > li.active.hasChildren::before {
   border-bottom-color: #c4dbee;
 }
-.id7-navigation .navbar-primary .navbar-nav > li.active.childless::before {
+.id7-navigation .navbar-primary .navbar-nav > li.active::before {
   border-bottom-color: #ffffff;
 }
 .id7-navigation .navbar-primary .navbar-nav > .disabled,
@@ -185,10 +185,10 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
   color: inherit;
   background: none;
 }
-.navbar-breadcrumbs .navbar-nav > li.active::before {
+.navbar-breadcrumbs .navbar-nav > li.active.hasChildren::before {
   border-bottom-color: #789cbb;
 }
-.navbar-breadcrumbs .navbar-nav > li.active.childless::before {
+.navbar-breadcrumbs .navbar-nav > li.active::before {
   border-bottom-color: #ffffff;
 }
 .navbar-breadcrumbs .navbar-nav > .disabled,
@@ -285,10 +285,10 @@ fieldset[disabled] .navbar-breadcrumbs .btn-link:focus {
   color: inherit;
   background: none;
 }
-.navbar-secondary .navbar-nav > li.active::before {
+.navbar-secondary .navbar-nav > li.active.hasChildren::before {
   border-bottom-color: #ffffff;
 }
-.navbar-secondary .navbar-nav > li.active.childless::before {
+.navbar-secondary .navbar-nav > li.active::before {
   border-bottom-color: #ffffff;
 }
 .navbar-secondary .navbar-nav > .disabled,
