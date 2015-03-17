@@ -12,6 +12,7 @@
 }
 .jumbotron {
   margin: 0;
+  padding: 0;
   color: white;
   display: -webkit-box;
   display: -moz-box;
@@ -24,6 +25,16 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   min-height: 600px;
   height: 100vh;
   max-height: 900px;
@@ -37,7 +48,11 @@
   color: #ededed;
   text-decoration: underline;
 }
-.jumbotron > .container {
+.jumbotron .container-fluid {
+  width: 100%;
+}
+.jumbotron .container,
+.jumbotron .container-fluid {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
@@ -49,8 +64,24 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-.jumbotron > .container > .row {
+.jumbotron .container > .row,
+.jumbotron .container-fluid > .row {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
@@ -67,6 +98,37 @@
   -ms-flex: 1 1 auto;
   -o-flex: 1 1 auto;
   flex: 1 1 auto;
+}
+.jumbotron .container > .row > *,
+.jumbotron .container-fluid > .row > * {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.jumbotron .container > .row {
   -webkit-box-align: center;
   -moz-box-align: center;
   -ms-box-align: center;
@@ -78,13 +140,6 @@
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
-}
-.jumbotron > .container > .row > * {
-  -webkit-flex: 1 1 auto;
-  -moz-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  -o-flex: 1 1 auto;
-  flex: 1 1 auto;
 }
 .jumbotron h2 {
   font-size: 40px;
