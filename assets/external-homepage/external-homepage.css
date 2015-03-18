@@ -1,26 +1,3 @@
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6,
-body .h1,
-body .h2,
-body .h3,
-body .h4,
-body .h5,
-body .h6 {
-  color: #7b428e;
-}
-body a {
-  color: #7b428e;
-  text-decoration: none;
-}
-body a:hover,
-body a:focus {
-  color: #663776;
-  text-decoration: underline;
-}
 body .id7-navigation .navbar-primary {
   background-color: #7b428e;
 }
@@ -149,9 +126,11 @@ body .form-control:focus {
 body .id7-utility-bar {
   background: #87466b url('/assets/external-homepage/utility-bar.jpg') center top no-repeat;
 }
-.id7-utility-bar.affix,
-.id7-navigation.affix {
-  width: 100% !important;
+.id7-page-header {
+  position: fixed;
+  width: 100%;
+  background: white;
+  z-index: 1;
 }
 main > .id7-main-content {
   width: 100% !important;
@@ -190,7 +169,18 @@ main > .id7-main-content {
   background-color: white;
   background-image: url('/assets/external-homepage/logo.png');
   background-repeat: no-repeat;
-  background-size: 180px 100px;
+  background-size: 135px 75px;
+}
+.id7-masthead .id7-logo-row nav {
+  margin-left: 155px;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  margin-top: 31px;
+}
+@media (min-width: 768px) {
+  .id7-masthead .id7-search .id7-search-box-container {
+    margin-top: 18px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .id7-masthead {
@@ -199,21 +189,291 @@ main > .id7-main-content {
 }
 .jumbotron {
   margin: 0;
-  text-align: center;
+  padding: 0;
+  color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  min-height: 400px;
+  height: 90vh;
+  max-height: 800px;
+}
+.jumbotron a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.jumbotron a:hover,
+.jumbotron a:focus {
+  color: #ededed;
+  text-decoration: underline;
+}
+.jumbotron .container-fluid {
+  width: 100%;
+}
+.jumbotron .container,
+.jumbotron .container-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.jumbotron .container > .row,
+.jumbotron .container-fluid > .row,
+.jumbotron .container > .layout,
+.jumbotron .container-fluid > .layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.jumbotron .container > .row > *,
+.jumbotron .container-fluid > .row > *,
+.jumbotron .container > .layout > *,
+.jumbotron .container-fluid > .layout > * {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  -o-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.jumbotron .container > .row,
+.jumbotron .container-fluid > .row {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+.jumbotron .container > .layout > .column-1,
+.jumbotron .container-fluid > .layout > .column-1,
+.jumbotron .container > .layout > .column-2,
+.jumbotron .container-fluid > .layout > .column-2 {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  padding: 0;
+}
+.jumbotron .container > .layout > .column-1 > .column-1-content,
+.jumbotron .container-fluid > .layout > .column-1 > .column-1-content,
+.jumbotron .container > .layout > .column-2 > .column-1-content,
+.jumbotron .container-fluid > .layout > .column-2 > .column-1-content,
+.jumbotron .container > .layout > .column-1 > .column-2-content,
+.jumbotron .container-fluid > .layout > .column-1 > .column-2-content,
+.jumbotron .container > .layout > .column-2 > .column-2-content,
+.jumbotron .container-fluid > .layout > .column-2 > .column-2-content {
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .jumbotron .container > .layout > .column-1 > .column-1-content,
+  .jumbotron .container-fluid > .layout > .column-1 > .column-1-content,
+  .jumbotron .container > .layout > .column-2 > .column-1-content,
+  .jumbotron .container-fluid > .layout > .column-2 > .column-1-content,
+  .jumbotron .container > .layout > .column-1 > .column-2-content,
+  .jumbotron .container-fluid > .layout > .column-1 > .column-2-content,
+  .jumbotron .container > .layout > .column-2 > .column-2-content,
+  .jumbotron .container-fluid > .layout > .column-2 > .column-2-content {
+    width: 380px;
+  }
+}
+@media (min-width: 992px) {
+  .jumbotron .container > .layout > .column-1 > .column-1-content,
+  .jumbotron .container-fluid > .layout > .column-1 > .column-1-content,
+  .jumbotron .container > .layout > .column-2 > .column-1-content,
+  .jumbotron .container-fluid > .layout > .column-2 > .column-1-content,
+  .jumbotron .container > .layout > .column-1 > .column-2-content,
+  .jumbotron .container-fluid > .layout > .column-1 > .column-2-content,
+  .jumbotron .container > .layout > .column-2 > .column-2-content,
+  .jumbotron .container-fluid > .layout > .column-2 > .column-2-content {
+    width: 490px;
+  }
+}
+@media (min-width: 1200px) {
+  .jumbotron .container > .layout > .column-1 > .column-1-content,
+  .jumbotron .container-fluid > .layout > .column-1 > .column-1-content,
+  .jumbotron .container > .layout > .column-2 > .column-1-content,
+  .jumbotron .container-fluid > .layout > .column-2 > .column-1-content,
+  .jumbotron .container > .layout > .column-1 > .column-2-content,
+  .jumbotron .container-fluid > .layout > .column-1 > .column-2-content,
+  .jumbotron .container > .layout > .column-2 > .column-2-content,
+  .jumbotron .container-fluid > .layout > .column-2 > .column-2-content {
+    width: 590px;
+  }
+}
+.jumbotron .container > .layout > .column-1,
+.jumbotron .container-fluid > .layout > .column-1 {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-box-pack: end;
+  -o-box-pack: end;
+  box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.jumbotron .container > .layout > .column-2,
+.jumbotron .container-fluid > .layout > .column-2 {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
+  -o-box-pack: start;
+  box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.jumbotron h2 {
+  font-size: 40px;
+}
+.jumbotron p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 200;
+}
+.jumbotron.jumbotron-image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  min-height: 600px;
-  height: 90vh;
-  max-height: 900px;
-  background-image: url('http://lorempixel.com/1920/1200/?1');
+  position: relative;
 }
-.jumbotron:nth-child(2) {
-  background-image: url('http://lorempixel.com/1920/1200/?2');
+.jumbotron.jumbotron-image::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 40, 40, 0.5);
 }
-.jumbotron:nth-child(3) {
-  background-image: url('http://lorempixel.com/1920/1200/?3');
+.jumbotron.jumbotron-image .container {
+  margin: 124px auto;
 }
-.jumbotron:nth-child(4) {
-  background-image: url('http://lorempixel.com/1920/1200/?4');
+.carousel-nav {
+  position: fixed;
+  width: 250px;
+  height: 100px;
+  right: 0px;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 10;
+  text-align: right;
+  color: white;
+}
+.carousel-nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.carousel-nav a:hover,
+.carousel-nav a:focus {
+  color: #ededed;
+  text-decoration: underline;
+}
+.carousel-nav ul {
+  padding: 0;
+  padding-right: 20px;
+  list-style: none;
+  margin: 0;
 }
