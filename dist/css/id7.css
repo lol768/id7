@@ -7926,7 +7926,9 @@ body {
   text-decoration: underline;
 }
 .id7-masthead .id7-header-text h1 {
-  margin: 11px 0;
+  margin: 104px 0 8px 0;
+  font-size: 24px;
+  line-height: 24px;
 }
 @media (max-width: 767px) {
   .id7-masthead .id7-header-text h1 {
@@ -8387,6 +8389,9 @@ body {
   -webkit-transition: background-color .15s linear, color .15s linear;
        -o-transition: background-color .15s linear, color .15s linear;
           transition: background-color .15s linear, color .15s linear;
+}
+.id7-navigation .navbar-nav > li:hover a {
+  text-decoration: underline;
 }
 .id7-navigation .navbar-nav > li > a {
   padding: 0;
