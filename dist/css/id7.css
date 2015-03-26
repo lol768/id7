@@ -8378,6 +8378,9 @@ body {
 .id7-navigation .navbar-nav.navbar-right .dropdown-menu .dropdown-menu {
   display: none;
 }
+.id7-navigation .navbar-nav.navbar-right .dropdown.active::before {
+  display: none;
+}
 .id7-navigation .navbar-nav > li {
   position: relative;
   float: left;
@@ -8390,7 +8393,7 @@ body {
        -o-transition: background-color .15s linear, color .15s linear;
           transition: background-color .15s linear, color .15s linear;
 }
-.id7-navigation .navbar-nav > li:hover a {
+.id7-navigation .navbar-nav > li:hover + a {
   text-decoration: underline;
 }
 .id7-navigation .navbar-nav > li > a {
@@ -8686,7 +8689,9 @@ audio[height] {
     margin-left: 0 !important;
   }
 }
-body main a {
+body main a,
+body main a:link,
+body main a:visited {
   text-decoration: underline;
 }
 a {
