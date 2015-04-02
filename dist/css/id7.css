@@ -2456,17 +2456,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 760px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 980px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1180px;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -7524,17 +7524,17 @@ body {
 }
 @media (min-width: 768px) {
   .id7-fixed-width-container {
-    width: 760px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   .id7-fixed-width-container {
-    width: 980px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .id7-fixed-width-container {
-    width: 1180px;
+    width: 1170px;
   }
 }
 @media (min-width: 768px) {
@@ -7556,10 +7556,10 @@ body {
     left: 0;
     background-repeat: no-repeat;
     background-position: right top;
-    -webkit-transform: translate(-380px, 0);
-        -ms-transform: translate(-380px, 0);
-         -o-transform: translate(-380px, 0);
-            transform: translate(-380px, 0);
+    -webkit-transform: translate(-375px, 0);
+        -ms-transform: translate(-375px, 0);
+         -o-transform: translate(-375px, 0);
+            transform: translate(-375px, 0);
   }
   .bordered .id7-left-border {
     border-right: 1px solid #808080;
@@ -7568,10 +7568,10 @@ body {
     right: 0;
     background-repeat: no-repeat;
     background-position: left top;
-    -webkit-transform: translate(380px, 0);
-        -ms-transform: translate(380px, 0);
-         -o-transform: translate(380px, 0);
-            transform: translate(380px, 0);
+    -webkit-transform: translate(375px, 0);
+        -ms-transform: translate(375px, 0);
+         -o-transform: translate(375px, 0);
+            transform: translate(375px, 0);
   }
   .bordered .id7-right-border {
     border-left: 1px solid #808080;
@@ -7579,30 +7579,30 @@ body {
 }
 @media (min-width: 992px) {
   .id7-left-border {
-    -webkit-transform: translate(-490px, 0);
-        -ms-transform: translate(-490px, 0);
-         -o-transform: translate(-490px, 0);
-            transform: translate(-490px, 0);
+    -webkit-transform: translate(-485px, 0);
+        -ms-transform: translate(-485px, 0);
+         -o-transform: translate(-485px, 0);
+            transform: translate(-485px, 0);
   }
   .id7-right-border {
-    -webkit-transform: translate(490px, 0);
-        -ms-transform: translate(490px, 0);
-         -o-transform: translate(490px, 0);
-            transform: translate(490px, 0);
+    -webkit-transform: translate(485px, 0);
+        -ms-transform: translate(485px, 0);
+         -o-transform: translate(485px, 0);
+            transform: translate(485px, 0);
   }
 }
 @media (min-width: 1200px) {
   .id7-left-border {
-    -webkit-transform: translate(-590px, 0);
-        -ms-transform: translate(-590px, 0);
-         -o-transform: translate(-590px, 0);
-            transform: translate(-590px, 0);
+    -webkit-transform: translate(-585px, 0);
+        -ms-transform: translate(-585px, 0);
+         -o-transform: translate(-585px, 0);
+            transform: translate(-585px, 0);
   }
   .id7-right-border {
-    -webkit-transform: translate(590px, 0);
-        -ms-transform: translate(590px, 0);
-         -o-transform: translate(590px, 0);
-            transform: translate(590px, 0);
+    -webkit-transform: translate(585px, 0);
+        -ms-transform: translate(585px, 0);
+         -o-transform: translate(585px, 0);
+            transform: translate(585px, 0);
   }
 }
 @media (min-width: 1920px), (min-height: 1200px) {
@@ -7648,7 +7648,7 @@ body {
 }
 .id7-utility-masthead::after {
   position: absolute;
-  top: 36px;
+  top: 60px;
   left: 20px;
   z-index: -1;
   width: 105px;
@@ -7657,7 +7657,7 @@ body {
 }
 @media (min-width: 768px) {
   .id7-utility-masthead::after {
-    top: 54px;
+    top: 78px;
     width: 160px;
     height: 26px;
   }
@@ -7722,29 +7722,6 @@ body {
 .id7-utility-bar a:visited:active {
   color: #ededed;
   text-decoration: underline;
-}
-.id7-utility-bar.affix {
-  top: 0;
-  z-index: 10;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .id7-utility-bar.affix {
-    width: 760px;
-  }
-}
-@media (min-width: 992px) {
-  .id7-utility-bar.affix {
-    width: 980px;
-  }
-}
-@media (min-width: 1200px) {
-  .id7-utility-bar.affix {
-    width: 1180px;
-  }
-}
-.id7-utility-bar.affix + .id7-masthead {
-  margin-top: 24px;
 }
 .id7-utility-bar .caret {
   margin-left: 5px;
@@ -7820,6 +7797,11 @@ body {
     margin-left: 0;
   }
 }
+@media (min-width: 767px) {
+  .id7-masthead {
+    height: 136px;
+  }
+}
 .id7-masthead .id7-masthead-contents {
   margin-right: -20px;
   margin-left: -20px;
@@ -7865,8 +7847,8 @@ body {
 @media (min-width: 768px) {
   .id7-masthead {
     background-image: url("../images/masthead-logo-bleed-sm.png");
-    -webkit-background-size: 1180px 300px;
-            background-size: 1180px 300px;
+    -webkit-background-size: 1170px 300px;
+            background-size: 1170px 300px;
   }
   .id7-masthead .id7-logo-row {
     height: 80px;
@@ -7891,6 +7873,7 @@ body {
   height: 100%;
 }
 .id7-masthead .id7-header-text {
+  position: relative;
   padding: 0 20px;
 }
 .id7-masthead .id7-header-text h1,
@@ -7926,9 +7909,34 @@ body {
   text-decoration: underline;
 }
 .id7-masthead .id7-header-text h1 {
-  margin: 104px 0 8px 0;
+  margin: 12px 0 8px;
   font-size: 24px;
   line-height: 24px;
+}
+.id7-masthead .id7-header-text h1.affix {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 40px;
+  padding: 5px 0 0 20px;
+  margin: 0 0 0 -20px;
+  background-color: white;
+  border-bottom: solid 1px #eee;
+}
+@media (min-width: 768px) {
+  .id7-masthead .id7-header-text h1.affix {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .id7-masthead .id7-header-text h1.affix {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .id7-masthead .id7-header-text h1.affix {
+    width: 1170px;
+  }
 }
 @media (max-width: 767px) {
   .id7-masthead .id7-header-text h1 {
@@ -8099,6 +8107,11 @@ body {
 .id7-non-branded .id7-masthead {
   background: white !important;
 }
+@media (min-width: 767px) {
+  .id7-non-branded .id7-masthead {
+    height: auto;
+  }
+}
 .id7-non-branded .id7-logo-column,
 .id7-non-branded .id7-utility-masthead::after {
   display: none;
@@ -8117,18 +8130,18 @@ body {
 .id7-homepage-layout .id7-header-image-container .carousel > .carousel-inner > .item {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  -webkit-background-size: 760px 242px;
-          background-size: 760px 242px;
+  -webkit-background-size: 750px 240px;
+          background-size: 750px 240px;
 }
 @media (min-width: 768px) {
   .id7-homepage-layout .id7-header-image-container {
-    min-height: 242px;
+    min-height: 240px;
   }
   .id7-homepage-layout .id7-header-image-container,
   .id7-homepage-layout .id7-header-image-container .carousel > .carousel-inner > .item {
     background-position: center bottom;
-    -webkit-background-size: 760px 242px;
-            background-size: 760px 242px;
+    -webkit-background-size: 750px 240px;
+            background-size: 750px 240px;
   }
 }
 @media (min-width: 992px) {
@@ -8138,8 +8151,8 @@ body {
   .id7-homepage-layout .id7-header-image-container,
   .id7-homepage-layout .id7-header-image-container .carousel > .carousel-inner > .item {
     background-position: center bottom;
-    -webkit-background-size: 980px 311px;
-            background-size: 980px 311px;
+    -webkit-background-size: 970px 311px;
+            background-size: 970px 311px;
   }
 }
 @media (min-width: 1200px) {
@@ -8149,8 +8162,8 @@ body {
   .id7-homepage-layout .id7-header-image-container,
   .id7-homepage-layout .id7-header-image-container .carousel > .carousel-inner > .item {
     background-position: center bottom;
-    -webkit-background-size: 1180px 375px;
-            background-size: 1180px 375px;
+    -webkit-background-size: 1170px 375px;
+            background-size: 1170px 375px;
   }
 }
 .id7-header-image-container .strapline {
@@ -8322,23 +8335,24 @@ body {
 }
 .id7-navigation.affix {
   position: fixed;
-  top: 24px;
+  top: 40px;
   z-index: 10;
   width: 100%;
+  border-bottom: solid 1px #eee;
 }
 @media (min-width: 768px) {
   .id7-navigation.affix {
-    width: 760px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   .id7-navigation.affix {
-    width: 980px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   .id7-navigation.affix {
-    width: 1180px;
+    width: 1170px;
   }
 }
 .id7-navigation .dropdown-menu {
@@ -8536,17 +8550,17 @@ main > header {
 }
 @media (min-width: 768px) {
   main > header {
-    width: 760px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   main > header {
-    width: 980px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   main > header {
-    width: 1180px;
+    width: 1170px;
   }
 }
 main > header > .navbar-header,
@@ -8572,17 +8586,17 @@ main > .id7-main-content {
 }
 @media (min-width: 768px) {
   main > .id7-main-content {
-    width: 760px;
+    width: 750px;
   }
 }
 @media (min-width: 992px) {
   main > .id7-main-content {
-    width: 980px;
+    width: 970px;
   }
 }
 @media (min-width: 1200px) {
   main > .id7-main-content {
-    width: 1180px;
+    width: 1170px;
   }
 }
 main > .id7-main-content > .navbar-header,
@@ -9030,6 +9044,24 @@ a:hover img.targetBlank {
 img {
   -ms-interpolation-mode: bicubic;
 }
+/* Format glossary links SBTWO-7073 */
+a.glossaryDefinition:link,
+a.glossaryDefinition:visited {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted #000;
+}
+/* Format acronym tags SBTWO-7072 */
+abbr,
+acronym {
+  letter-spacing: .1em;
+}
+abbr[title],
+acronym[title],
+dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted black;
+}
 table[cellpadding="10"] td,
 table[cellpadding="10"] th {
   padding: 10px;
@@ -9074,38 +9106,38 @@ table[cellpadding="0"] td,
 table[cellpadding="0"] th {
   padding: 0;
 }
-main table:not(.table):not([role="presentation"]) {
+main table:not(.table):not([role="presentation"]):not([border="0"]) {
   width: 100%;
   max-width: 100%;
   margin-bottom: 22px;
 }
-main table:not(.table):not([role="presentation"]) > thead > tr > th,
-main table:not(.table):not([role="presentation"]) > tbody > tr > th,
-main table:not(.table):not([role="presentation"]) > tfoot > tr > th,
-main table:not(.table):not([role="presentation"]) > thead > tr > td,
-main table:not(.table):not([role="presentation"]) > tbody > tr > td,
-main table:not(.table):not([role="presentation"]) > tfoot > tr > td {
+main table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > th,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > tbody > tr > th,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > tfoot > tr > th,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > td,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > tbody > tr > td,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > tfoot > tr > td {
   padding: 8px;
   line-height: 1.6;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
-main table:not(.table):not([role="presentation"]) > thead > tr > th {
+main table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd;
 }
-main table:not(.table):not([role="presentation"]) > caption + thead > tr:first-child > th,
-main table:not(.table):not([role="presentation"]) > colgroup + thead > tr:first-child > th,
-main table:not(.table):not([role="presentation"]) > thead:first-child > tr:first-child > th,
-main table:not(.table):not([role="presentation"]) > caption + thead > tr:first-child > td,
-main table:not(.table):not([role="presentation"]) > colgroup + thead > tr:first-child > td,
-main table:not(.table):not([role="presentation"]) > thead:first-child > tr:first-child > td {
+main table:not(.table):not([role="presentation"]):not([border="0"]) > caption + thead > tr:first-child > th,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > colgroup + thead > tr:first-child > th,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > thead:first-child > tr:first-child > th,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > caption + thead > tr:first-child > td,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > colgroup + thead > tr:first-child > td,
+main table:not(.table):not([role="presentation"]):not([border="0"]) > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
-main table:not(.table):not([role="presentation"]) > tbody + tbody {
+main table:not(.table):not([role="presentation"]):not([border="0"]) > tbody + tbody {
   border-top: 2px solid #ddd;
 }
-main table:not(.table):not([role="presentation"]) .table {
+main table:not(.table):not([role="presentation"]):not([border="0"]) .table {
   background-color: transparent;
 }
 body {
@@ -9162,6 +9194,94 @@ body :not(iframe)::-webkit-scrollbar-thumb:horizontal {
 body :not(iframe)::-webkit-scrollbar-thumb:hover {
   background-color: #505050 !important;
 }
+.popup {
+  position: absolute;
+  z-index: 1000;
+  margin-top: -26px;
+  overflow: visible;
+  text-align: center;
+}
+.WPopupBox {
+  display: none;
+}
+.WPopupBox.visible {
+  display: block;
+}
+.WPopupGlass,
+.WPopupBox,
+.WPopupBoxContent {
+  position: absolute;
+  z-index: 1000;
+}
+.WPopupBox .c,
+.WPopupBox .tl,
+.WPopupBox .t,
+.WPopupBox .tr,
+.WPopupBox .r,
+.WPopupBox .br,
+.WPopupBox .b,
+.WPopupBox .bl,
+.WPopupBox .l,
+.WPopupBox .bArr,
+.WPopupBox .tArr,
+.WPopupBox .reflection {
+  position: absolute;
+}
+.WPopupBox .tr,
+.WPopupBox .r,
+.WPopupBox .br {
+  right: 0;
+}
+.WPopupBox .br,
+.WPopupBox .b,
+.WPopupBox .bl,
+.WPopupBox .bArr {
+  bottom: 0;
+}
+.popup #popupClosebutton:hover {
+  cursor: pointer;
+}
+.popup #popupContent {
+  background-color: #fffadc;
+}
+.popup a:hover {
+  text-decoration: underline;
+}
+.WPopupCloseButton img {
+  float: right;
+}
+#removeTemplateAjaxPopup,
+#removeTemplateTextSubAjaxPopup {
+  width: 300px;
+  padding: 5px;
+  margin-top: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 3px 12px rgba(20, 20, 20, .75);
+          box-shadow: 2px 3px 12px rgba(20, 20, 20, .75);
+}
+#removeTemplateAjaxPopup:before,
+#removeTemplateTextSubAjaxPopup:before {
+  position: absolute;
+  top: -32px;
+  right: 23px;
+  width: 0;
+  height: 0;
+  content: ' ';
+  border: 16px solid transparent;
+  border-bottom-color: white;
+}
+#removeTemplateTextSubAjaxPopup::before {
+  left: 32px;
+}
+#removeTemplateTextSubMessage {
+  margin: 10px 20px;
+}
+#removeTemplateTextSubForm {
+  margin: 0 20px;
+}
+/* SBTWO-7073 */
 footer .id7-site-footer,
 footer .id7-app-footer {
   position: relative;

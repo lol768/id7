@@ -3,7 +3,7 @@ html .id7-header-image-container {
   background-color: #eee;
 }
 html .id7-fixed-width-container,
-html .id7-utility-bar.affix {
+html .id7-utility-bar {
   background-color: #eee;
 }
 @media (min-width: 768px) {
