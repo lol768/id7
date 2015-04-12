@@ -1,5 +1,5 @@
 
-//var autoprefixer = require('autoprefixer-core');
+var autoprefixer = require('autoprefixer-core');
 var less = require('less');
 var fs = require('fs');
 
@@ -8,8 +8,8 @@ var fs = require('fs');
 //dest   = "bootstrap.css";
 
 source = "less/id7.less";
-sourcepaths = ['less'];
-dest   = "dist/id7.css";
+sourcepath = 'less';
+dest = "dist/id7.less";
 
 console.log('Loading ',source,'...');
 mainLess = fs.readFileSync(source);
@@ -23,19 +23,21 @@ function writeFile(filename, text) {
 }
 
 less.render(mainLess.toString(), {
-  paths: sourcepaths,
+  paths: [sourcepath],
   sourceMap: {
   }
 }, function(err, output) {
   if (err) {
     console.log("Error:", err);
   } else {
-    console.log("Compiled! CSS file size:", output.css.length);
     if (!err) {
-      writeFile(dest, output.css);
-      writeFile(dest+".map", output.map);
+      console.log("Compiled! CSS file size:", output.css.length);
+      fs.writeFileSync(dest, output.css);
+      if (output.map) {
+        console.log("Source map file size (before autoprefixer):", output.map.length);
+        fs.writeFileSync(dest+".map", output.map);
+      }
     }
-    console.log("TODO: post process with autoprefixer-core (including sourcemaps)");
   }
 });
 
