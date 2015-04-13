@@ -2475,7 +2475,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 11px 22px;
   margin: 0 0 22px;
-  font-size: 17.5px;
+  font-size: 16px;
   border-left: 5px solid #eee;
 }
 blockquote p:last-child,
@@ -8931,6 +8931,18 @@ h6:first-child,
 .bordered {
   border-bottom: 1px solid #ababab;
 }
+blockquote.quotes {
+  border-left: none;
+}
+blockquote.quotes::before {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -24px;
+  font-size: 4em;
+  line-height: 1em;
+  color: #828c95;
+  content: '\201C';
+}
 @media (max-width: 767px) {
   main {
     -webkit-hyphens: auto;
@@ -9231,6 +9243,10 @@ a:hover img.targetBlank {
 /* Tell IE to use Bicupic interpolation, makes resized images look better */
 img {
   -ms-interpolation-mode: bicubic;
+}
+.column-2-content p,
+.boxstyle_ p {
+  padding-right: 0;
 }
 table[cellpadding="10"] td,
 table[cellpadding="10"] th {
