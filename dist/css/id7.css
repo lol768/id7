@@ -7333,10 +7333,10 @@ button.close {
 .id7-masthead .id7-logo-row:after,
 .id7-header-image-container .strapline:before,
 .id7-header-image-container .strapline:after,
-main > header:before,
-main > header:after,
-main > .id7-main-content:before,
-main > .id7-main-content:after,
+.id7-main-content-area > header:before,
+.id7-main-content-area > header:after,
+.id7-main-content-area > .id7-main-content:before,
+.id7-main-content-area > .id7-main-content:after,
 footer .id7-site-footer:before,
 footer .id7-site-footer:after,
 footer .id7-app-footer:before,
@@ -7365,8 +7365,8 @@ footer .id7-app-footer:after {
 .id7-masthead .id7-masthead-contents:after,
 .id7-masthead .id7-logo-row:after,
 .id7-header-image-container .strapline:after,
-main > header:after,
-main > .id7-main-content:after,
+.id7-main-content-area > header:after,
+.id7-main-content-area > .id7-main-content:after,
 footer .id7-site-footer:after,
 footer .id7-app-footer:after {
   clear: both;
@@ -7623,29 +7623,25 @@ footer .id7-app-footer:after {
     content: "";
   }
 }
-main {
+.id7-main-content-area {
   font-size: 14px;
   font-weight: 300;
   font-weight: 400;
 }
-main section {
+.id7-main-content-area section {
   margin-bottom: 2rem;
 }
-main label {
+.id7-main-content-area label {
   font-size: 13px;
   color: #333;
 }
 @media (min-width: 480px) {
-  main {
+  .id7-main-content-area {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 480px) {
-  main p,
-  main ul,
-  main ol,
-  main dl,
-  main blockquote {
+  .id7-main-content-area .id7-main-content > .layout > .column-1 > .column-1-content > p {
     padding-right: 4rem;
   }
 }
@@ -7688,7 +7684,7 @@ body {
         -ms-flex-direction: column;
          -o-flex-direction: column;
   }
-  .id7-fixed-width-container main {
+  .id7-fixed-width-container .id7-main-content-area {
     display: -webkit-box;
     display:    -moz-box;
     display:     -ms-box;
@@ -7717,7 +7713,7 @@ body {
         -ms-flex-direction: column;
          -o-flex-direction: column;
   }
-  .id7-fixed-width-container main .id7-main-content {
+  .id7-fixed-width-container .id7-main-content-area .id7-main-content {
     -webkit-flex: 1 0 auto;
        -moz-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
@@ -7924,13 +7920,11 @@ body {
 .id7-utility-bar a:link:not(.btn),
 .id7-utility-bar a:visited:not(.btn) {
   color: white;
-  text-decoration: none;
 }
 .id7-utility-bar a:hover:not(.btn),
 .id7-utility-bar a:focus:not(.btn),
 .id7-utility-bar a:active:not(.btn) {
   color: #ccc;
-  text-decoration: underline;
 }
 .id7-utility-bar a:hover .new-window-link {
   color: #ccc;
@@ -7967,13 +7961,11 @@ body {
 .id7-utility-bar .popover.account-information .actions a:link:not(.btn),
 .id7-utility-bar .popover.account-information .actions a:visited:not(.btn) {
   color: #333;
-  text-decoration: none;
 }
 .id7-utility-bar .popover.account-information .actions a:hover:not(.btn),
 .id7-utility-bar .popover.account-information .actions a:focus:not(.btn),
 .id7-utility-bar .popover.account-information .actions a:active:not(.btn) {
   color: #000;
-  text-decoration: underline;
 }
 .id7-utility-bar .popover.account-information .actions a:hover .new-window-link {
   color: #000;
@@ -8098,13 +8090,11 @@ body {
 .id7-masthead .id7-header-text a:link:not(.btn),
 .id7-masthead .id7-header-text a:visited:not(.btn) {
   color: inherit;
-  text-decoration: none;
 }
 .id7-masthead .id7-header-text a:hover:not(.btn),
 .id7-masthead .id7-header-text a:focus:not(.btn),
 .id7-masthead .id7-header-text a:active:not(.btn) {
   color: inherit;
-  text-decoration: underline;
 }
 .id7-masthead .id7-header-text h1 {
   padding: 12px 0;
@@ -8227,13 +8217,11 @@ body {
 .id7-masthead .id7-logo-row nav a:link:not(.btn),
 .id7-masthead .id7-logo-row nav a:visited:not(.btn) {
   color: #333;
-  text-decoration: none;
 }
 .id7-masthead .id7-logo-row nav a:hover:not(.btn),
 .id7-masthead .id7-logo-row nav a:focus:not(.btn),
 .id7-masthead .id7-logo-row nav a:active:not(.btn) {
   color: #000;
-  text-decoration: underline;
 }
 .id7-masthead .id7-logo-row nav a:hover .new-window-link {
   color: #000;
@@ -8552,13 +8540,11 @@ body {
 .carousel a:link:not(.btn),
 .carousel a:visited:not(.btn) {
   color: white;
-  text-decoration: none;
 }
 .carousel a:hover:not(.btn),
 .carousel a:focus:not(.btn),
 .carousel a:active:not(.btn) {
   color: #ccc;
-  text-decoration: underline;
 }
 .carousel a:hover .new-window-link {
   color: #ccc;
@@ -8812,7 +8798,7 @@ body {
 .id7-navigation-marker {
   display: none;
 }
-main > header {
+.id7-main-content-area > header {
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
@@ -8820,41 +8806,41 @@ main > header {
   background: white;
 }
 @media (min-width: 768px) {
-  main > header {
+  .id7-main-content-area > header {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  main > header {
+  .id7-main-content-area > header {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  main > header {
+  .id7-main-content-area > header {
     width: 1170px;
   }
 }
-main > header > .navbar-header,
-main > header > .navbar-collapse {
+.id7-main-content-area > header > .navbar-header,
+.id7-main-content-area > header > .navbar-collapse {
   margin-right: -0;
   margin-left: -0;
 }
 @media (min-width: 768px) {
-  main > header > .navbar-header,
-  main > header > .navbar-collapse {
+  .id7-main-content-area > header > .navbar-header,
+  .id7-main-content-area > header > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
 }
 @media print {
-  main > header > img.visible-print-block {
+  .id7-main-content-area > header > img.visible-print-block {
     float: right;
   }
-  main > header > .id7-page-title {
+  .id7-main-content-area > header > .id7-page-title {
     padding-right: 162px;
   }
 }
-main > .id7-main-content {
+.id7-main-content-area > .id7-main-content {
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -8864,28 +8850,28 @@ main > .id7-main-content {
   background: white;
 }
 @media (min-width: 768px) {
-  main > .id7-main-content {
+  .id7-main-content-area > .id7-main-content {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  main > .id7-main-content {
+  .id7-main-content-area > .id7-main-content {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  main > .id7-main-content {
+  .id7-main-content-area > .id7-main-content {
     width: 1170px;
   }
 }
-main > .id7-main-content > .navbar-header,
-main > .id7-main-content > .navbar-collapse {
+.id7-main-content-area > .id7-main-content > .navbar-header,
+.id7-main-content-area > .id7-main-content > .navbar-collapse {
   margin-right: -0;
   margin-left: -0;
 }
 @media (min-width: 768px) {
-  main > .id7-main-content > .navbar-header,
-  main > .id7-main-content > .navbar-collapse {
+  .id7-main-content-area > .id7-main-content > .navbar-header,
+  .id7-main-content-area > .id7-main-content > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -8987,9 +8973,20 @@ audio[height] {
     margin-left: 0 !important;
   }
 }
-body main a:not(.btn),
-body main a:not(.btn):link,
-body main a:not(.btn):visited {
+main a:not(.btn),
+.id7-page-footer a:not(.btn),
+main a:link:not(.btn),
+.id7-page-footer a:link:not(.btn),
+main a:visited:not(.btn),
+.id7-page-footer a:visited:not(.btn) {
+  text-decoration: underline;
+}
+main a:hover:not(.btn),
+.id7-page-footer a:hover:not(.btn),
+main a:focus:not(.btn),
+.id7-page-footer a:focus:not(.btn),
+main a:active:not(.btn),
+.id7-page-footer a:active:not(.btn) {
   text-decoration: underline;
 }
 a {
@@ -9081,7 +9078,7 @@ blockquote.quotes::before {
   }
 }
 @media (max-width: 767px) {
-  main {
+  .id7-main-content-area {
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
             hyphens: auto;
@@ -9381,23 +9378,6 @@ a:hover img.targetBlank {
 img {
   -ms-interpolation-mode: bicubic;
 }
-.column-2-content p,
-.column-2-content ul,
-.column-2-content ol,
-.column-2-content dl,
-.column-2-content blockquote,
-.boxstyle_ p,
-.boxstyle_ ul,
-.boxstyle_ ol,
-.boxstyle_ dl,
-.boxstyle_ blockquote,
-.carousel p,
-.carousel ul,
-.carousel ol,
-.carousel dl,
-.carousel blockquote {
-  padding-right: 0;
-}
 table[cellpadding="10"] td,
 table[cellpadding="10"] th {
   padding: 10px;
@@ -9442,38 +9422,38 @@ table[cellpadding="0"] td,
 table[cellpadding="0"] th {
   padding: 0;
 }
-main table:not(.table):not([role="presentation"]):not([border="0"]) {
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) {
   width: 100%;
   max-width: 100%;
   margin-bottom: 22px;
 }
-main table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > th,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > tbody > tr > th,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > tfoot > tr > th,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > td,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > tbody > tr > td,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > tfoot > tr > td {
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > th,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > tbody > tr > th,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > tfoot > tr > th,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > td,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > tbody > tr > td,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > tfoot > tr > td {
   padding: 8px;
   line-height: 1.6;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
-main table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > th {
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd;
 }
-main table:not(.table):not([role="presentation"]):not([border="0"]) > caption + thead > tr:first-child > th,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > colgroup + thead > tr:first-child > th,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > thead:first-child > tr:first-child > th,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > caption + thead > tr:first-child > td,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > colgroup + thead > tr:first-child > td,
-main table:not(.table):not([role="presentation"]):not([border="0"]) > thead:first-child > tr:first-child > td {
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > caption + thead > tr:first-child > th,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > colgroup + thead > tr:first-child > th,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > thead:first-child > tr:first-child > th,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > caption + thead > tr:first-child > td,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > colgroup + thead > tr:first-child > td,
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > thead:first-child > tr:first-child > td {
   border-top: 0;
 }
-main table:not(.table):not([role="presentation"]):not([border="0"]) > tbody + tbody {
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) > tbody + tbody {
   border-top: 2px solid #ddd;
 }
-main table:not(.table):not([role="presentation"]):not([border="0"]) .table {
+.id7-main-content-area table:not(.table):not([role="presentation"]):not([border="0"]) .table {
   background-color: transparent;
 }
 body {
