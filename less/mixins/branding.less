@@ -184,7 +184,7 @@
   }
 }
 
-.apply-brand(@colour, @bright-colour: screen(@colour, lighten(black, 20%))) {
+.apply-brand(@colour) {
   // For older browsers where .id7-left-border and .id7-right-border don't display
   html.lt-ie9 {
     background: screen(@colour, lighten(black, 20%));
@@ -205,14 +205,14 @@
     background-color: @colour;
   }
 
-  //@secondary-colour: screen(@bright-colour, lighten(black, 40%));
-  @secondary-colour: screen(@colour, lighten(black, 60%));
+  @nav-colour: screen(@colour, lighten(black, 20%));
+  @secondary-colour: screen(@nav-colour, lighten(black, 60%));
 
   .id7-navigation .navbar-primary {
-    .apply-navbar-brand(@colour, @secondary-colour);
+    .apply-navbar-brand(@nav-colour, @secondary-colour);
   }
 
-  @breadcrumbs-colour: multiply(@colour, darken(white, 20%));
+  @breadcrumbs-colour: @colour;
   .navbar-primary .navbar-brand {
     background-color: @breadcrumbs-colour;
   }
@@ -233,18 +233,18 @@
 
     .navbar-nav {
       > li::after {
-        color: @colour;
+        color: @nav-colour;
       }
 
       > li.first {
-        background-color: @colour;
+        background-color: @nav-colour;
         color: white;
 
         &:hover::after {
           border-right-color: @breadcrumbs-colour;
         }
         &::after {
-          border-color: transparent transparent transparent @colour;
+          border-color: transparent transparent transparent @nav-colour;
         }
       }
     }
@@ -265,7 +265,7 @@
   }
 
   .opaque-navigation .navbar-primary {
-    background-color: @colour;
+    background-color: @nav-colour;
     .transition(none);
   }
 
