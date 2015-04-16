@@ -65,12 +65,12 @@
 }
 .id7-main-content-area .boxstyle_.box1 {
   border: 0;
-  background: #b9a4c4;
+  background: #cab3d2;
   color: black;
 }
 @media print {
   .id7-main-content-area .boxstyle_.box1 {
-    border: 1px solid #b9a4c4;
+    border: 1px solid #cab3d2;
   }
 }
 .id7-main-content-area .boxstyle_.box1 h1,
@@ -89,12 +89,12 @@
 }
 .id7-main-content-area .boxstyle_.box2 {
   border: 0;
-  background: #eee8f0;
+  background: #f2ecf4;
   color: black;
 }
 @media print {
   .id7-main-content-area .boxstyle_.box2 {
-    border: 1px solid #eee8f0;
+    border: 1px solid #f2ecf4;
   }
 }
 .id7-main-content-area .boxstyle_.box2 h1,
