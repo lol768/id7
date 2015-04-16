@@ -65,12 +65,12 @@
 }
 .id7-main-content-area .boxstyle_.box1 {
   border: 0;
-  background: #b9a4c4;
-  color: black;
+  background: #cab3d2;
+  color: #383838;
 }
 @media print {
   .id7-main-content-area .boxstyle_.box1 {
-    border: 1px solid #b9a4c4;
+    border: 1px solid #cab3d2;
   }
 }
 .id7-main-content-area .boxstyle_.box1 h1,
@@ -89,12 +89,12 @@
 }
 .id7-main-content-area .boxstyle_.box2 {
   border: 0;
-  background: #eee8f0;
-  color: black;
+  background: #f2ecf4;
+  color: #383838;
 }
 @media print {
   .id7-main-content-area .boxstyle_.box2 {
-    border: 1px solid #eee8f0;
+    border: 1px solid #f2ecf4;
   }
 }
 .id7-main-content-area .boxstyle_.box2 h1,
@@ -114,7 +114,7 @@
 .id7-main-content-area .boxstyle_.box3 {
   border: 0;
   background: #e6e6e6;
-  color: black;
+  color: #383838;
 }
 @media print {
   .id7-main-content-area .boxstyle_.box3 {

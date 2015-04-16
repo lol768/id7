@@ -13,7 +13,7 @@
   }
 }
 html.lt-ie9 {
-  background: #78addb;
+  background: #89b6dd;
 }
 h1,
 h2,
@@ -27,39 +27,39 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: #5698d2;
+  color: #6ca4d4;
 }
 a:not(.btn),
 a:link:not(.btn),
 a:visited:not(.btn) {
-  color: #5698d2;
+  color: #6ca4d4;
 }
 a:hover:not(.btn),
 a:focus:not(.btn),
 a:active:not(.btn) {
-  color: #296599;
+  color: #3172a9;
 }
 a:hover .new-window-link {
-  color: #296599;
+  color: #3172a9;
 }
 .brand-bg {
-  background: #5698d2;
+  background: #6ca4d4;
 }
 .brand-text {
-  color: #5698d2;
+  color: #6ca4d4;
 }
 .brand-border {
-  border-color: #5698d2;
+  border-color: #6ca4d4;
 }
 .id7-utility-masthead {
-  background-color: #5698d2;
-  background-color: rgba(86, 152, 210, 0.5);
+  background-color: #6ca4d4;
+  background-color: rgba(108, 164, 212, 0.5);
 }
 .id7-utility-masthead::after {
-  background-color: #5698d2;
+  background-color: #6ca4d4;
 }
 .id7-navigation .navbar-primary {
-  background-color: #78addb;
+  background-color: #6ca4d4;
 }
 .id7-navigation .navbar-primary .navbar-text {
   color: #ffffff;
@@ -70,7 +70,7 @@ a:hover .new-window-link {
 .id7-navigation .navbar-primary .navbar-nav > li:hover,
 .id7-navigation .navbar-primary .navbar-nav > li:focus {
   color: #ffffff;
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-nav > li > a,
 .id7-navigation .navbar-primary .navbar-nav > li > a:hover,
@@ -79,7 +79,7 @@ a:hover .new-window-link {
   background: none;
 }
 .id7-navigation .navbar-primary .navbar-nav > li.active.next-secondary::before {
-  border-bottom-color: #c9def1;
+  border-bottom-color: #c4dbee;
 }
 .id7-navigation .navbar-primary .navbar-nav > li.active.next-tertiary::before {
   border-bottom-color: #f8f8f8;
@@ -91,7 +91,7 @@ a:hover .new-window-link {
 .id7-navigation .navbar-primary .navbar-nav > .disabled:hover,
 .id7-navigation .navbar-primary .navbar-nav > .disabled:focus {
   color: #ffffff;
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-toggle {
   border: none;
@@ -106,16 +106,16 @@ a:hover .new-window-link {
 .id7-navigation .navbar-primary .navbar-nav > .open > a:hover,
 .id7-navigation .navbar-primary .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu {
-  background-color: #78addb;
+  background-color: #6ca4d4;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > .dropdown-header {
-  border-color: #6c9bc5;
+  border-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu .divider {
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > li > a {
   color: #ffffff;
@@ -123,19 +123,19 @@ a:hover .new-window-link {
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > li > a:hover,
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > li > a:focus {
   color: #ffffff;
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > .active > a {
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > .active > a::before {
-  border-bottom-color: #c9def1;
+  border-bottom-color: #c4dbee;
 }
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > .disabled > a,
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > .disabled > a:hover,
 .id7-navigation .navbar-primary .navbar-nav .dropdown-menu > .disabled > a:focus {
   color: #ffffff;
-  background-color: #6c9bc5;
+  background-color: #6194bf;
 }
 .id7-navigation .navbar-primary .navbar-link {
   color: #ffffff;
@@ -157,10 +157,10 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
   color: #ffffff;
 }
 .navbar-primary .navbar-brand {
-  background-color: #5698d2;
+  background-color: #5683aa;
 }
 .navbar-secondary {
-  background-color: #c9def1;
+  background-color: #c4dbee;
 }
 .navbar-secondary .navbar-text {
   color: #000000;
@@ -171,7 +171,7 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
 .navbar-secondary .navbar-nav > li:hover,
 .navbar-secondary .navbar-nav > li:focus {
   color: #000000;
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-nav > li > a,
 .navbar-secondary .navbar-nav > li > a:hover,
@@ -192,7 +192,7 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
 .navbar-secondary .navbar-nav > .disabled:hover,
 .navbar-secondary .navbar-nav > .disabled:focus {
   color: #000000;
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-toggle {
   border: none;
@@ -207,16 +207,16 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
 .navbar-secondary .navbar-nav > .open > a:hover,
 .navbar-secondary .navbar-nav > .open > a:focus {
   color: #000000;
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-nav .dropdown-menu {
-  background-color: #c9def1;
+  background-color: #c4dbee;
 }
 .navbar-secondary .navbar-nav .dropdown-menu > .dropdown-header {
-  border-color: #b5c8d9;
+  border-color: #b1c5d6;
 }
 .navbar-secondary .navbar-nav .dropdown-menu .divider {
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-nav .dropdown-menu > li > a {
   color: #000000;
@@ -224,10 +224,10 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
 .navbar-secondary .navbar-nav .dropdown-menu > li > a:hover,
 .navbar-secondary .navbar-nav .dropdown-menu > li > a:focus {
   color: #000000;
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-nav .dropdown-menu > .active > a {
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-nav .dropdown-menu > .active > a::before {
   border-bottom-color: white;
@@ -236,7 +236,7 @@ fieldset[disabled] .id7-navigation .navbar-primary .btn-link:focus {
 .navbar-secondary .navbar-nav .dropdown-menu > .disabled > a:hover,
 .navbar-secondary .navbar-nav .dropdown-menu > .disabled > a:focus {
   color: #000000;
-  background-color: #b5c8d9;
+  background-color: #b1c5d6;
 }
 .navbar-secondary .navbar-link {
   color: #000000;
@@ -258,17 +258,17 @@ fieldset[disabled] .navbar-secondary .btn-link:focus {
   color: #000000;
 }
 .navbar-secondary .navbar-nav > li::after {
-  color: #78addb;
+  color: #6ca4d4;
 }
 .navbar-secondary .navbar-nav > li.first {
-  background-color: #78addb;
+  background-color: #6ca4d4;
   color: white;
 }
 .navbar-secondary .navbar-nav > li.first:hover::after {
-  border-right-color: #5698d2;
+  border-right-color: #5683aa;
 }
 .navbar-secondary .navbar-nav > li.first::after {
-  border-color: transparent transparent transparent #78addb;
+  border-color: transparent transparent transparent #6ca4d4;
 }
 .navbar-tertiary {
   background-color: #f8f8f8;
@@ -369,15 +369,15 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   color: #000000;
 }
 .opaque-navigation .navbar-primary {
-  background-color: #78addb;
+  background-color: #6ca4d4;
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
 }
 .bordered .id7-left-border,
 .bordered .id7-right-border {
-  border-color: #5698d2;
-  border-color: rgba(86, 152, 210, 0.3);
+  border-color: #6ca4d4;
+  border-color: rgba(108, 164, 212, 0.3);
 }
 .id7-site-footer {
   background: #d3d3d3;
@@ -397,7 +397,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   color: #000000;
 }
 .id7-app-footer {
-  background: #5698d2;
+  background: #6ca4d4;
   color: #ffffff;
 }
 .id7-app-footer a:not(.btn),
@@ -414,43 +414,43 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   color: #cccccc;
 }
 .id7-masthead .id7-search .id7-search-box {
-  border-color: #5698d2;
+  border-color: #6ca4d4;
 }
 .id7-masthead .id7-search .fa {
-  color: #5698d2;
-  color: rgba(86, 152, 210, 0.5);
+  color: #6ca4d4;
+  color: rgba(108, 164, 212, 0.5);
   -webkit-transition: color 0.15s linear;
   -o-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 .id7-masthead .id7-search .twitter-typeahead:hover + .fa {
-  color: #5698d2;
+  color: #6ca4d4;
 }
 .id7-masthead .id7-search .twitter-typeahead .tt-suggestion.tt-cursor {
-  background: #5698d2;
+  background: #6ca4d4;
   color: #ffffff;
 }
 .form-control:focus {
-  border-color: #5698d2;
+  border-color: #6ca4d4;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(86, 152, 210, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(86, 152, 210, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(108, 164, 212, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(108, 164, 212, 0.6);
 }
 .carousel .carousel-indicators li::after {
-  color: #5698d2;
-  color: rgba(86, 152, 210, 0.3);
+  color: #6ca4d4;
+  color: rgba(108, 164, 212, 0.3);
 }
 .carousel .carousel-indicators li.active::after {
-  color: #5698d2;
+  color: #6ca4d4;
 }
 .boxstyle_.box1 {
   border: 0;
-  background: #ddeaf6;
-  color: black;
+  background: #e2edf6;
+  color: #383838;
 }
 @media print {
   .boxstyle_.box1 {
-    border: 1px solid #ddeaf6;
+    border: 1px solid #e2edf6;
   }
 }
 .boxstyle_.box1 h1,
@@ -470,7 +470,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
 .boxstyle_.box2 {
   border: 0;
   background: #eeeeee;
-  color: black;
+  color: #383838;
 }
 @media print {
   .boxstyle_.box2 {
@@ -493,7 +493,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
 }
 .boxstyle_.box3 {
   background: none;
-  border: 1px solid #5698d2;
+  border: 1px solid #6ca4d4;
   color: inherit;
 }
 .boxstyle_.box4 {
@@ -865,7 +865,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #511c6c;
+  border-top: 80px solid #7b428e;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -877,7 +877,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #511c6c;
+  border-top: 80px solid #7b428e;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -894,7 +894,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #511c6c;
+  border-top: 30px solid #7b428e;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -906,7 +906,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #511c6c;
+  border-top: 30px solid #7b428e;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -923,7 +923,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #62337b;
+  border-top: 30px solid #885599;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -935,7 +935,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #62337b;
+  border-top: 30px solid #885599;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -952,7 +952,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #744989;
+  border-top: 30px solid #9568a5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -964,7 +964,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #744989;
+  border-top: 30px solid #9568a5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -981,7 +981,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #856098;
+  border-top: 30px solid #a37bb0;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -993,7 +993,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #856098;
+  border-top: 30px solid #a37bb0;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1010,7 +1010,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9777a7;
+  border-top: 30px solid #b08ebb;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1022,7 +1022,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9777a7;
+  border-top: 30px solid #b08ebb;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1039,7 +1039,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #a88eb5;
+  border-top: 30px solid #bda1c7;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1051,7 +1051,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #a88eb5;
+  border-top: 30px solid #bda1c7;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1068,7 +1068,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b9a4c4;
+  border-top: 30px solid #cab3d2;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1080,7 +1080,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b9a4c4;
+  border-top: 30px solid #cab3d2;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1097,7 +1097,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cbbbd3;
+  border-top: 30px solid #d7c6dd;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1109,7 +1109,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cbbbd3;
+  border-top: 30px solid #d7c6dd;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1126,7 +1126,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #dcd2e2;
+  border-top: 30px solid #e5d9e8;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1138,7 +1138,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #dcd2e2;
+  border-top: 30px solid #e5d9e8;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1155,7 +1155,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #eee8f0;
+  border-top: 30px solid #f2ecf4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1167,7 +1167,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #eee8f0;
+  border-top: 30px solid #f2ecf4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1184,7 +1184,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f6f4f8;
+  border-top: 30px solid #f8f6f9;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1196,7 +1196,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f6f4f8;
+  border-top: 30px solid #f8f6f9;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1214,7 +1214,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #3f4246;
+  border-top: 80px solid #828c95;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1226,7 +1226,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #3f4246;
+  border-top: 80px solid #828c95;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1243,7 +1243,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #3f4246;
+  border-top: 30px solid #828c95;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1255,7 +1255,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #3f4246;
+  border-top: 30px solid #828c95;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1272,7 +1272,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #525559;
+  border-top: 30px solid #8f98a0;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1284,7 +1284,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #525559;
+  border-top: 30px solid #8f98a0;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1301,7 +1301,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #65686b;
+  border-top: 30px solid #9ba3aa;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1313,7 +1313,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #65686b;
+  border-top: 30px solid #9ba3aa;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1330,7 +1330,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #797b7e;
+  border-top: 30px solid #a8afb5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1342,7 +1342,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #797b7e;
+  border-top: 30px solid #a8afb5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1359,7 +1359,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #8c8e90;
+  border-top: 30px solid #b4babf;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1371,7 +1371,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #8c8e90;
+  border-top: 30px solid #b4babf;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1388,7 +1388,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9fa1a3;
+  border-top: 30px solid #c1c6ca;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1400,7 +1400,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9fa1a3;
+  border-top: 30px solid #c1c6ca;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1417,7 +1417,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b2b3b5;
+  border-top: 30px solid #cdd1d5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1429,7 +1429,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b2b3b5;
+  border-top: 30px solid #cdd1d5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1446,7 +1446,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c5c6c8;
+  border-top: 30px solid #dadddf;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1458,7 +1458,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c5c6c8;
+  border-top: 30px solid #dadddf;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1475,7 +1475,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d9d9da;
+  border-top: 30px solid #e6e8ea;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1487,7 +1487,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d9d9da;
+  border-top: 30px solid #e6e8ea;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1504,7 +1504,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ececed;
+  border-top: 30px solid #f3f4f4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1516,7 +1516,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ececed;
+  border-top: 30px solid #f3f4f4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1533,7 +1533,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f5f6f6;
+  border-top: 30px solid #f9f9fa;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1545,7 +1545,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f5f6f6;
+  border-top: 30px solid #f9f9fa;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1563,7 +1563,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #c8a019;
+  border-top: 80px solid #dcbe2d;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1575,7 +1575,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #c8a019;
+  border-top: 80px solid #dcbe2d;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1592,7 +1592,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c8a019;
+  border-top: 30px solid #dcbe2d;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1604,7 +1604,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c8a019;
+  border-top: 30px solid #dcbe2d;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1621,7 +1621,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ceaa30;
+  border-top: 30px solid #e0c542;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1633,7 +1633,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ceaa30;
+  border-top: 30px solid #e0c542;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1650,7 +1650,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d3b347;
+  border-top: 30px solid #e3cb57;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1662,7 +1662,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d3b347;
+  border-top: 30px solid #e3cb57;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1679,7 +1679,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d9bd5e;
+  border-top: 30px solid #e7d26c;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1691,7 +1691,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d9bd5e;
+  border-top: 30px solid #e7d26c;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1708,7 +1708,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #dec675;
+  border-top: 30px solid #ead881;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1720,7 +1720,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #dec675;
+  border-top: 30px solid #ead881;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1737,7 +1737,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e4d08c;
+  border-top: 30px solid #eedf96;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1749,7 +1749,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e4d08c;
+  border-top: 30px solid #eedf96;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1766,7 +1766,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e9d9a3;
+  border-top: 30px solid #f1e5ab;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1778,7 +1778,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e9d9a3;
+  border-top: 30px solid #f1e5ab;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1795,7 +1795,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #efe3ba;
+  border-top: 30px solid #f5ebc0;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1807,7 +1807,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #efe3ba;
+  border-top: 30px solid #f5ebc0;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1824,7 +1824,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f4ecd1;
+  border-top: 30px solid #f8f2d5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1836,7 +1836,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f4ecd1;
+  border-top: 30px solid #f8f2d5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1853,7 +1853,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #faf6e8;
+  border-top: 30px solid #fcf9ea;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1865,7 +1865,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #faf6e8;
+  border-top: 30px solid #fcf9ea;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1882,7 +1882,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fcfaf3;
+  border-top: 30px solid #fdfcf4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1894,7 +1894,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fcfaf3;
+  border-top: 30px solid #fdfcf4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1912,7 +1912,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #ffc233;
+  border-top: 80px solid #f5ca21;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1924,7 +1924,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #ffc233;
+  border-top: 80px solid #f5ca21;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1941,7 +1941,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffc233;
+  border-top: 30px solid #f5ca21;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1953,7 +1953,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffc233;
+  border-top: 30px solid #f5ca21;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1970,7 +1970,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffc847;
+  border-top: 30px solid #f6cf37;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1982,7 +1982,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffc847;
+  border-top: 30px solid #f6cf37;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -1999,7 +1999,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffce5c;
+  border-top: 30px solid #f7d54d;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2011,7 +2011,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffce5c;
+  border-top: 30px solid #f7d54d;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2028,7 +2028,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffd470;
+  border-top: 30px solid #f8da64;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2040,7 +2040,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffd470;
+  border-top: 30px solid #f8da64;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2057,7 +2057,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffda85;
+  border-top: 30px solid #f9df7a;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2069,7 +2069,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffda85;
+  border-top: 30px solid #f9df7a;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2086,7 +2086,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffe199;
+  border-top: 30px solid #fae590;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2098,7 +2098,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffe199;
+  border-top: 30px solid #fae590;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2115,7 +2115,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffe7ad;
+  border-top: 30px solid #fbeaa6;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2127,7 +2127,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffe7ad;
+  border-top: 30px solid #fbeaa6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2144,7 +2144,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffedc2;
+  border-top: 30px solid #fcefbc;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2156,7 +2156,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ffedc2;
+  border-top: 30px solid #fcefbc;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2173,7 +2173,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fff3d6;
+  border-top: 30px solid #fdf4d3;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2185,7 +2185,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fff3d6;
+  border-top: 30px solid #fdf4d3;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2202,7 +2202,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fff9eb;
+  border-top: 30px solid #fefae9;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2214,7 +2214,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fff9eb;
+  border-top: 30px solid #fefae9;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2231,7 +2231,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fffcf5;
+  border-top: 30px solid #fffcf4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2243,7 +2243,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fffcf5;
+  border-top: 30px solid #fffcf4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2261,7 +2261,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #f26322;
+  border-top: 80px solid #f1863c;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2273,7 +2273,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #f26322;
+  border-top: 80px solid #f1863c;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2290,7 +2290,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f26322;
+  border-top: 30px solid #f1863c;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2302,7 +2302,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f26322;
+  border-top: 30px solid #f1863c;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2319,7 +2319,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f37338;
+  border-top: 30px solid #f29250;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2331,7 +2331,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f37338;
+  border-top: 30px solid #f29250;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2348,7 +2348,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f5824e;
+  border-top: 30px solid #f49e63;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2360,7 +2360,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f5824e;
+  border-top: 30px solid #f49e63;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2377,7 +2377,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f69264;
+  border-top: 30px solid #f5aa77;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2389,7 +2389,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f69264;
+  border-top: 30px solid #f5aa77;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2406,7 +2406,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f7a17a;
+  border-top: 30px solid #f7b68a;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2418,7 +2418,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f7a17a;
+  border-top: 30px solid #f7b68a;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2435,7 +2435,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f9b191;
+  border-top: 30px solid #f8c39e;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2447,7 +2447,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f9b191;
+  border-top: 30px solid #f8c39e;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2464,7 +2464,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fac1a7;
+  border-top: 30px solid #f9cfb1;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2476,7 +2476,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fac1a7;
+  border-top: 30px solid #f9cfb1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2493,7 +2493,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fbd0bd;
+  border-top: 30px solid #fbdbc4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2505,7 +2505,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fbd0bd;
+  border-top: 30px solid #fbdbc4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2522,7 +2522,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fce0d3;
+  border-top: 30px solid #fce7d8;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2534,7 +2534,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fce0d3;
+  border-top: 30px solid #fce7d8;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2551,7 +2551,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #feefe9;
+  border-top: 30px solid #fef3ec;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2563,7 +2563,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #feefe9;
+  border-top: 30px solid #fef3ec;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2580,7 +2580,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fef7f4;
+  border-top: 30px solid #fef9f5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2592,7 +2592,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fef7f4;
+  border-top: 30px solid #fef9f5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2610,7 +2610,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #f47920;
+  border-top: 80px solid #f89d3c;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2622,7 +2622,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #f47920;
+  border-top: 80px solid #f89d3c;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2639,7 +2639,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f47920;
+  border-top: 30px solid #f89d3c;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2651,7 +2651,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f47920;
+  border-top: 30px solid #f89d3c;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2668,7 +2668,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f58636;
+  border-top: 30px solid #f9a750;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2680,7 +2680,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f58636;
+  border-top: 30px solid #f9a750;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2697,7 +2697,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f6944d;
+  border-top: 30px solid #f9b163;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2709,7 +2709,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f6944d;
+  border-top: 30px solid #f9b163;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2726,7 +2726,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f7a163;
+  border-top: 30px solid #faba77;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2738,7 +2738,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f7a163;
+  border-top: 30px solid #faba77;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2755,7 +2755,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f8af79;
+  border-top: 30px solid #fbc48a;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2767,7 +2767,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f8af79;
+  border-top: 30px solid #fbc48a;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2784,7 +2784,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fabc90;
+  border-top: 30px solid #fbce9e;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2796,7 +2796,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fabc90;
+  border-top: 30px solid #fbce9e;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2813,7 +2813,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fbc9a6;
+  border-top: 30px solid #fcd8b1;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2825,7 +2825,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fbc9a6;
+  border-top: 30px solid #fcd8b1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2842,7 +2842,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fcd7bc;
+  border-top: 30px solid #fde2c4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2854,7 +2854,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fcd7bc;
+  border-top: 30px solid #fde2c4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2871,7 +2871,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fde4d2;
+  border-top: 30px solid #feebd8;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2883,7 +2883,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fde4d2;
+  border-top: 30px solid #feebd8;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2900,7 +2900,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fef2e9;
+  border-top: 30px solid #fef5ec;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2912,7 +2912,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fef2e9;
+  border-top: 30px solid #fef5ec;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2929,7 +2929,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fef8f4;
+  border-top: 30px solid #fffaf5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2941,7 +2941,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fef8f4;
+  border-top: 30px solid #fffaf5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2959,7 +2959,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #b4153a;
+  border-top: 80px solid #bd3f4b;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2971,7 +2971,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #b4153a;
+  border-top: 80px solid #bd3f4b;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -2988,7 +2988,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b4153a;
+  border-top: 30px solid #bd3f4b;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3000,7 +3000,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b4153a;
+  border-top: 30px solid #bd3f4b;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3017,7 +3017,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #bc2c4e;
+  border-top: 30px solid #c4525d;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3029,7 +3029,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #bc2c4e;
+  border-top: 30px solid #c4525d;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3046,7 +3046,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c34461;
+  border-top: 30px solid #ca656f;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3058,7 +3058,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c34461;
+  border-top: 30px solid #ca656f;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3075,7 +3075,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cb5b75;
+  border-top: 30px solid #d17981;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3087,7 +3087,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cb5b75;
+  border-top: 30px solid #d17981;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3104,7 +3104,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d27389;
+  border-top: 30px solid #d78c93;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3116,7 +3116,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d27389;
+  border-top: 30px solid #d78c93;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3133,7 +3133,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #da8a9c;
+  border-top: 30px solid #de9fa5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3145,7 +3145,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #da8a9c;
+  border-top: 30px solid #de9fa5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3162,7 +3162,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e1a1b0;
+  border-top: 30px solid #e5b2b7;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3174,7 +3174,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e1a1b0;
+  border-top: 30px solid #e5b2b7;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3191,7 +3191,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e9b9c4;
+  border-top: 30px solid #ebc5c9;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3203,7 +3203,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e9b9c4;
+  border-top: 30px solid #ebc5c9;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3220,7 +3220,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f0d0d8;
+  border-top: 30px solid #f2d9db;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3232,7 +3232,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f0d0d8;
+  border-top: 30px solid #f2d9db;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3249,7 +3249,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f8e8eb;
+  border-top: 30px solid #f8eced;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3261,7 +3261,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f8e8eb;
+  border-top: 30px solid #f8eced;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3278,7 +3278,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fbf3f5;
+  border-top: 30px solid #fcf5f6;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3290,7 +3290,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fbf3f5;
+  border-top: 30px solid #fcf5f6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3657,7 +3657,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #9a9a08;
+  border-top: 80px solid #a5ab2a;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3669,7 +3669,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #9a9a08;
+  border-top: 80px solid #a5ab2a;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3686,7 +3686,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9a9a08;
+  border-top: 30px solid #a5ab2a;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3698,7 +3698,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9a9a08;
+  border-top: 30px solid #a5ab2a;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3715,7 +3715,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #a4a421;
+  border-top: 30px solid #aeb33f;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3727,7 +3727,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #a4a421;
+  border-top: 30px solid #aeb33f;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3744,7 +3744,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #aeae39;
+  border-top: 30px solid #b7bc55;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3756,7 +3756,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #aeae39;
+  border-top: 30px solid #b7bc55;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3773,7 +3773,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b8b852;
+  border-top: 30px solid #c0c46a;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3785,7 +3785,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b8b852;
+  border-top: 30px solid #c0c46a;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3802,7 +3802,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c2c26b;
+  border-top: 30px solid #c9cd7f;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3814,7 +3814,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #c2c26b;
+  border-top: 30px solid #c9cd7f;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3831,7 +3831,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cccc84;
+  border-top: 30px solid #d2d594;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3843,7 +3843,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cccc84;
+  border-top: 30px solid #d2d594;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3860,7 +3860,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d7d79c;
+  border-top: 30px solid #dbddaa;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3872,7 +3872,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d7d79c;
+  border-top: 30px solid #dbddaa;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3889,7 +3889,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e1e1b5;
+  border-top: 30px solid #e4e6bf;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3901,7 +3901,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e1e1b5;
+  border-top: 30px solid #e4e6bf;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3918,7 +3918,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ebebce;
+  border-top: 30px solid #edeed4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3930,7 +3930,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ebebce;
+  border-top: 30px solid #edeed4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3947,7 +3947,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f5f5e6;
+  border-top: 30px solid #f6f7ea;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3959,7 +3959,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f5f5e6;
+  border-top: 30px solid #f6f7ea;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -3976,7 +3976,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fafaf3;
+  border-top: 30px solid #fbfbf4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -3988,7 +3988,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #fafaf3;
+  border-top: 30px solid #fbfbf4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4006,7 +4006,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #7ecbb6;
+  border-top: 80px solid #59c1a5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4018,7 +4018,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #7ecbb6;
+  border-top: 80px solid #59c1a5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4035,7 +4035,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #7ecbb6;
+  border-top: 30px solid #59c1a5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4047,7 +4047,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #7ecbb6;
+  border-top: 30px solid #59c1a5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4064,7 +4064,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #8bd0bd;
+  border-top: 30px solid #6ac7ae;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4076,7 +4076,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #8bd0bd;
+  border-top: 30px solid #6ac7ae;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4093,7 +4093,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #98d5c5;
+  border-top: 30px solid #7acdb7;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4105,7 +4105,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #98d5c5;
+  border-top: 30px solid #7acdb7;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4122,7 +4122,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #a5dbcc;
+  border-top: 30px solid #8bd4c0;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4134,7 +4134,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #a5dbcc;
+  border-top: 30px solid #8bd4c0;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4151,7 +4151,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b2e0d3;
+  border-top: 30px solid #9bdac9;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4163,7 +4163,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b2e0d3;
+  border-top: 30px solid #9bdac9;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4180,7 +4180,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #bfe5db;
+  border-top: 30px solid #ace0d2;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4192,7 +4192,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #bfe5db;
+  border-top: 30px solid #ace0d2;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4209,7 +4209,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cbeae2;
+  border-top: 30px solid #bde6db;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4221,7 +4221,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cbeae2;
+  border-top: 30px solid #bde6db;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4238,7 +4238,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d8efe9;
+  border-top: 30px solid #cdece4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4250,7 +4250,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #d8efe9;
+  border-top: 30px solid #cdece4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4267,7 +4267,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e5f5f0;
+  border-top: 30px solid #def3ed;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4279,7 +4279,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e5f5f0;
+  border-top: 30px solid #def3ed;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4296,7 +4296,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f2faf8;
+  border-top: 30px solid #eef9f6;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4308,7 +4308,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f2faf8;
+  border-top: 30px solid #eef9f6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4325,7 +4325,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f9fcfb;
+  border-top: 30px solid #f7fcfb;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4337,7 +4337,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f9fcfb;
+  border-top: 30px solid #f7fcfb;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4355,7 +4355,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #5698d2;
+  border-top: 80px solid #6ca4d4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4367,7 +4367,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #5698d2;
+  border-top: 80px solid #6ca4d4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4384,7 +4384,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #5698d2;
+  border-top: 30px solid #6ca4d4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4396,7 +4396,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #5698d2;
+  border-top: 30px solid #6ca4d4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4413,7 +4413,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #67a2d7;
+  border-top: 30px solid #7badd8;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4425,7 +4425,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #67a2d7;
+  border-top: 30px solid #7badd8;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4442,7 +4442,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #78addb;
+  border-top: 30px solid #89b6dd;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4454,7 +4454,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #78addb;
+  border-top: 30px solid #89b6dd;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4471,7 +4471,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #89b7e0;
+  border-top: 30px solid #98bfe1;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4483,7 +4483,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #89b7e0;
+  border-top: 30px solid #98bfe1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4500,7 +4500,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9ac1e4;
+  border-top: 30px solid #a7c8e5;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4512,7 +4512,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #9ac1e4;
+  border-top: 30px solid #a7c8e5;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4529,7 +4529,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #abcbe9;
+  border-top: 30px solid #b5d2ea;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4541,7 +4541,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #abcbe9;
+  border-top: 30px solid #b5d2ea;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4558,7 +4558,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #bbd6ed;
+  border-top: 30px solid #c4dbee;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4570,7 +4570,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #bbd6ed;
+  border-top: 30px solid #c4dbee;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4587,7 +4587,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cce0f2;
+  border-top: 30px solid #d3e4f2;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4599,7 +4599,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #cce0f2;
+  border-top: 30px solid #d3e4f2;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4616,7 +4616,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ddeaf6;
+  border-top: 30px solid #e2edf6;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4628,7 +4628,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ddeaf6;
+  border-top: 30px solid #e2edf6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4645,7 +4645,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #eef5fb;
+  border-top: 30px solid #f0f6fb;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4657,7 +4657,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #eef5fb;
+  border-top: 30px solid #f0f6fb;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4674,7 +4674,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f7fafd;
+  border-top: 30px solid #f8fafd;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4686,7 +4686,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f7fafd;
+  border-top: 30px solid #f8fafd;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4704,7 +4704,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #00b2dd;
+  border-top: 80px solid #07bbdb;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4716,7 +4716,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 45.64px solid transparent;
   border-right: 45.64px solid transparent;
-  border-top: 80px solid #00b2dd;
+  border-top: 80px solid #07bbdb;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4733,7 +4733,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #00b2dd;
+  border-top: 30px solid #07bbdb;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4745,7 +4745,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #00b2dd;
+  border-top: 30px solid #07bbdb;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4762,7 +4762,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #19bae0;
+  border-top: 30px solid #20c2df;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4774,7 +4774,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #19bae0;
+  border-top: 30px solid #20c2df;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4791,7 +4791,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #33c1e4;
+  border-top: 30px solid #39c9e2;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4803,7 +4803,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #33c1e4;
+  border-top: 30px solid #39c9e2;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4820,7 +4820,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #4dc9e7;
+  border-top: 30px solid #51cfe6;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4832,7 +4832,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #4dc9e7;
+  border-top: 30px solid #51cfe6;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4849,7 +4849,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #66d1eb;
+  border-top: 30px solid #6ad6e9;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4861,7 +4861,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #66d1eb;
+  border-top: 30px solid #6ad6e9;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4878,7 +4878,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #80d9ee;
+  border-top: 30px solid #83dded;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4890,7 +4890,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #80d9ee;
+  border-top: 30px solid #83dded;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4907,7 +4907,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #99e0f1;
+  border-top: 30px solid #9ce4f1;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4919,7 +4919,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #99e0f1;
+  border-top: 30px solid #9ce4f1;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4936,7 +4936,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b3e8f5;
+  border-top: 30px solid #b5ebf4;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4948,7 +4948,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #b3e8f5;
+  border-top: 30px solid #b5ebf4;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4965,7 +4965,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ccf0f8;
+  border-top: 30px solid #cdf1f8;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -4977,7 +4977,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #ccf0f8;
+  border-top: 30px solid #cdf1f8;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -4994,7 +4994,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e6f7fc;
+  border-top: 30px solid #e6f8fb;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -5006,7 +5006,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #e6f7fc;
+  border-top: 30px solid #e6f8fb;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -5023,7 +5023,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f2fbfd;
+  border-top: 30px solid #f3fcfd;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -5035,7 +5035,7 @@ fieldset[disabled] .navbar-tertiary .btn-link:focus {
   height: 0;
   border-left: 17.115px solid transparent;
   border-right: 17.115px solid transparent;
-  border-top: 30px solid #f2fbfd;
+  border-top: 30px solid #f3fcfd;
   position: absolute;
   top: 0px;
   right: 0px;
