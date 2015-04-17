@@ -337,6 +337,11 @@ th {
        -o-animation: fa-spin 2s infinite linear;
           animation: fa-spin 2s infinite linear;
 }
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+       -o-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -4090,8 +4095,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #7b428e;
-  border-color: #6c3a7d;
+  background-color: #666;
+  border-color: #595959;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -4100,8 +4105,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #5d326b;
-  border-color: #482653;
+  background-color: #4d4d4d;
+  border-color: #3b3b3b;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -4126,11 +4131,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #7b428e;
-  border-color: #6c3a7d;
+  background-color: #666;
+  border-color: #595959;
 }
 .btn-primary .badge {
-  color: #7b428e;
+  color: #666;
   background-color: #fff;
 }
 .btn-success {
@@ -7323,8 +7328,8 @@ button.close {
 .modal-footer:after,
 .id7-fixed-width-container:before,
 .id7-fixed-width-container:after,
-.id7-utility-bar > nav:before,
-.id7-utility-bar > nav:after,
+.id7-utility-bar:before,
+.id7-utility-bar:after,
 .id7-masthead:before,
 .id7-masthead:after,
 .id7-masthead .id7-masthead-contents:before,
@@ -7360,7 +7365,7 @@ footer .id7-app-footer:after {
 .panel-body:after,
 .modal-footer:after,
 .id7-fixed-width-container:after,
-.id7-utility-bar > nav:after,
+.id7-utility-bar:after,
 .id7-masthead:after,
 .id7-masthead .id7-masthead-contents:after,
 .id7-masthead .id7-logo-row:after,
@@ -7868,51 +7873,50 @@ body {
   }
 }
 .id7-utility-bar {
+  position: relative;
   height: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 85%;
   line-height: 24px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
   white-space: nowrap;
 }
-.id7-utility-bar > nav {
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.id7-utility-bar > nav > .navbar-header,
-.id7-utility-bar > nav > .navbar-collapse {
+.id7-utility-bar > .navbar-header,
+.id7-utility-bar > .navbar-collapse {
   margin-right: -0;
   margin-left: -0;
 }
 @media (min-width: 768px) {
-  .id7-utility-bar > nav > .navbar-header,
-  .id7-utility-bar > nav > .navbar-collapse {
+  .id7-utility-bar > .navbar-header,
+  .id7-utility-bar > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
 }
-.id7-utility-bar ul {
+.id7-utility-bar > ul {
   float: right !important;
   padding-left: 0;
   margin: 0;
   list-style: none;
 }
-.id7-utility-bar ul > li {
+.id7-utility-bar > ul > li {
   display: inline-block;
   padding: 0;
 }
-.lt-ie9 .id7-utility-bar ul > li {
+.lt-ie9 .id7-utility-bar > ul > li {
   margin: 0 .4em;
 }
-.id7-utility-bar ul > li:not(:first-child)::before {
+.id7-utility-bar > ul > li:not(:first-child)::before {
   margin-right: .4em;
   margin-left: .2em;
   color: #eee;
   content: '|';
 }
 @media print {
-  .id7-utility-bar ul a[href]:after {
+  .id7-utility-bar > ul a[href]:after {
     content: "";
   }
 }
@@ -7936,7 +7940,24 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: transparent;
-  border: 0 none transparent;
+}
+.id7-utility-bar .dropdown-menu {
+  padding: 5px 0;
+  margin-top: 0;
+  font-size: inherit;
+}
+.id7-utility-bar .dropdown-menu > li > a {
+  padding: 1px 20px;
+}
+.id7-utility-bar .dropdown-menu > li > a,
+.id7-utility-bar .dropdown-menu > li > a:link,
+.id7-utility-bar .dropdown-menu > li > a:visited,
+.id7-utility-bar .dropdown-menu > li > a:hover {
+  color: #383838;
+  text-decoration: none;
+}
+.id7-utility-bar .dropdown-menu > li.divider {
+  margin: 5px 0;
 }
 .id7-utility-bar .popover.account-information {
   width: 320px;

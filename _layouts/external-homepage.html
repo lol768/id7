@@ -6,6 +6,8 @@
 <head>
   {% include header.html %}
 
+  <link href="{{ site.prefix }}assets/external-homepage/external-homepage.css" rel="stylesheet" type="text/css">
+
   <script src="{{ site.prefix }}dist/js/id7-bundle.js"></script>
   <script src="{{ site.prefix }}assets/external-homepage/jquery.panelSnap.js"></script>
   <script src="{{ site.prefix }}assets/external-homepage/more-links-popover.jquery.js"></script>
@@ -19,17 +21,15 @@
 
   <header class="id7-page-header">
       <div class="id7-utility-masthead">
-          <div class="id7-utility-bar">
-              <nav>
-                  <ul>
-                      <li><a href="#">Text only</a></li>
-                      <li><a href="#">Notify</a></li>
-                      <li>
-                          <a href="http://warwick.ac.uk/myaccount" data-toggle="id7:account-popover" data-logoutlink="http://logout.link.goes.here#">Mat Mannion<b class="caret"></b></a>
-                      </li>
-                  </ul>
-              </nav>
-          </div>
+          <nav class="id7-utility-bar">
+              <ul>
+                  <li><a href="#">Text only</a></li>
+                  <li><a href="#">Notify</a></li>
+                  <li>
+                      <a href="http://warwick.ac.uk/myaccount" data-toggle="id7:account-popover" data-logoutlink="http://logout.link.goes.here#">Mat Mannion<b class="caret"></b></a>
+                  </li>
+              </ul>
+          </nav>
 
           <div class="id7-masthead">
               <div class="id7-masthead-contents">
