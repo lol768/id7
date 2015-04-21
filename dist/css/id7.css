@@ -258,7 +258,6 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-/* We explicitly don't target .btn on these, but IE8 doesn't support :not, so we target html.lt-ie9 as well */
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -7875,23 +7874,27 @@ body {
   display: inline-block;
   padding: 0;
 }
-.lt-ie9 .id7-utility-bar > ul > li {
+html.no-generatedcontent .id7-utility-bar > ul > li {
   margin: 0 .4em;
 }
-.id7-utility-bar > ul > li:not(:first-child)::before {
+.id7-utility-bar > ul > li:before {
   margin-right: .4em;
   margin-left: .2em;
   color: #eee;
   content: '|';
+}
+.id7-utility-bar > ul > li:first-child:before {
+  display: none;
+  content: '';
 }
 @media print {
   .id7-utility-bar > ul a[href]:after {
     content: "";
   }
 }
-html.lt-ie9 .id7-utility-bar a,
-html.lt-ie9 .id7-utility-bar a:link,
-html.lt-ie9 .id7-utility-bar a:visited {
+html.no-not-selector .id7-utility-bar a,
+html.no-not-selector .id7-utility-bar a:link,
+html.no-not-selector .id7-utility-bar a:visited {
   color: white;
 }
 .id7-utility-bar a:not(.btn),
@@ -7899,9 +7902,9 @@ html.lt-ie9 .id7-utility-bar a:visited {
 .id7-utility-bar a:visited:not(.btn) {
   color: white;
 }
-html.lt-ie9 .id7-utility-bar a:hover,
-html.lt-ie9 .id7-utility-bar a:focus,
-html.lt-ie9 .id7-utility-bar a:active {
+html.no-not-selector .id7-utility-bar a:hover,
+html.no-not-selector .id7-utility-bar a:focus,
+html.no-not-selector .id7-utility-bar a:active {
   color: #ccc;
 }
 .id7-utility-bar a:hover:not(.btn),
@@ -7957,9 +7960,9 @@ html.lt-ie9 .id7-utility-bar a:active {
   background: #f7f7f7;
   border-top: 1px solid #ebebeb;
 }
-html.lt-ie9 .id7-utility-bar .popover.account-information .actions a,
-html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:link,
-html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:visited {
+html.no-not-selector .id7-utility-bar .popover.account-information .actions a,
+html.no-not-selector .id7-utility-bar .popover.account-information .actions a:link,
+html.no-not-selector .id7-utility-bar .popover.account-information .actions a:visited {
   color: #333;
 }
 .id7-utility-bar .popover.account-information .actions a:not(.btn),
@@ -7967,9 +7970,9 @@ html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:visited {
 .id7-utility-bar .popover.account-information .actions a:visited:not(.btn) {
   color: #333;
 }
-html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:hover,
-html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:focus,
-html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:active {
+html.no-not-selector .id7-utility-bar .popover.account-information .actions a:hover,
+html.no-not-selector .id7-utility-bar .popover.account-information .actions a:focus,
+html.no-not-selector .id7-utility-bar .popover.account-information .actions a:active {
   color: #000;
 }
 .id7-utility-bar .popover.account-information .actions a:hover:not(.btn),
@@ -7993,8 +7996,8 @@ html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:active {
   margin-right: auto;
   margin-left: auto;
   background-image: url("../images/masthead-logo-bleed-xs.png");
-  -webkit-background-size: 768px 300px;
-          background-size: 768px 300px;
+  -webkit-background-size: 1680px 300px;
+          background-size: 1680px 300px;
 }
 .id7-masthead > .navbar-header,
 .id7-masthead > .navbar-collapse {
@@ -8096,9 +8099,9 @@ html.lt-ie9 .id7-utility-bar .popover.account-information .actions a:active {
 .id7-masthead .id7-header-text .h6 {
   color: #383838;
 }
-html.lt-ie9 .id7-masthead .id7-header-text a,
-html.lt-ie9 .id7-masthead .id7-header-text a:link,
-html.lt-ie9 .id7-masthead .id7-header-text a:visited {
+html.no-not-selector .id7-masthead .id7-header-text a,
+html.no-not-selector .id7-masthead .id7-header-text a:link,
+html.no-not-selector .id7-masthead .id7-header-text a:visited {
   color: inherit;
 }
 .id7-masthead .id7-header-text a:not(.btn),
@@ -8106,9 +8109,9 @@ html.lt-ie9 .id7-masthead .id7-header-text a:visited {
 .id7-masthead .id7-header-text a:visited:not(.btn) {
   color: inherit;
 }
-html.lt-ie9 .id7-masthead .id7-header-text a:hover,
-html.lt-ie9 .id7-masthead .id7-header-text a:focus,
-html.lt-ie9 .id7-masthead .id7-header-text a:active {
+html.no-not-selector .id7-masthead .id7-header-text a:hover,
+html.no-not-selector .id7-masthead .id7-header-text a:focus,
+html.no-not-selector .id7-masthead .id7-header-text a:active {
   color: inherit;
 }
 .id7-masthead .id7-header-text a:hover:not(.btn),
@@ -8196,6 +8199,7 @@ html.lt-ie9 .id7-masthead .id7-header-text a:active {
   }
 }
 .id7-masthead .id7-logo-row nav {
+  display: none;
   margin-top: 57.66666667px;
   margin-left: 180px;
   font-size: 85%;
@@ -8205,9 +8209,9 @@ html.lt-ie9 .id7-masthead .id7-header-text a:active {
        -o-transition: opacity .15s linear;
           transition: opacity .15s linear;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .id7-masthead .id7-logo-row nav {
-    display: none !important;
+    display: block;
   }
 }
 .id7-masthead .id7-logo-row nav ul {
@@ -8219,23 +8223,27 @@ html.lt-ie9 .id7-masthead .id7-header-text a:active {
   display: inline-block;
   padding: 0;
 }
-.lt-ie9 .id7-masthead .id7-logo-row nav ul > li {
+html.no-generatedcontent .id7-masthead .id7-logo-row nav ul > li {
   margin: 0 .2em;
 }
-.id7-masthead .id7-logo-row nav ul > li:not(:first-child)::before {
+.id7-masthead .id7-logo-row nav ul > li:before {
   margin-right: .2em;
   margin-left: .1em;
   color: #777;
   content: '|';
+}
+.id7-masthead .id7-logo-row nav ul > li:first-child:before {
+  display: none;
+  content: '';
 }
 @media print {
   .id7-masthead .id7-logo-row nav ul a[href]:after {
     content: "";
   }
 }
-html.lt-ie9 .id7-masthead .id7-logo-row nav a,
-html.lt-ie9 .id7-masthead .id7-logo-row nav a:link,
-html.lt-ie9 .id7-masthead .id7-logo-row nav a:visited {
+html.no-not-selector .id7-masthead .id7-logo-row nav a,
+html.no-not-selector .id7-masthead .id7-logo-row nav a:link,
+html.no-not-selector .id7-masthead .id7-logo-row nav a:visited {
   color: #333;
 }
 .id7-masthead .id7-logo-row nav a:not(.btn),
@@ -8243,9 +8251,9 @@ html.lt-ie9 .id7-masthead .id7-logo-row nav a:visited {
 .id7-masthead .id7-logo-row nav a:visited:not(.btn) {
   color: #333;
 }
-html.lt-ie9 .id7-masthead .id7-logo-row nav a:hover,
-html.lt-ie9 .id7-masthead .id7-logo-row nav a:focus,
-html.lt-ie9 .id7-masthead .id7-logo-row nav a:active {
+html.no-not-selector .id7-masthead .id7-logo-row nav a:hover,
+html.no-not-selector .id7-masthead .id7-logo-row nav a:focus,
+html.no-not-selector .id7-masthead .id7-logo-row nav a:active {
   color: #000;
 }
 .id7-masthead .id7-logo-row nav a:hover:not(.btn),
@@ -8566,9 +8574,9 @@ html.lt-ie9 .id7-masthead .id7-logo-row nav a:active {
 .carousel .h6 {
   color: inherit;
 }
-html.lt-ie9 .carousel a,
-html.lt-ie9 .carousel a:link,
-html.lt-ie9 .carousel a:visited {
+html.no-not-selector .carousel a,
+html.no-not-selector .carousel a:link,
+html.no-not-selector .carousel a:visited {
   color: white;
 }
 .carousel a:not(.btn),
@@ -8576,9 +8584,9 @@ html.lt-ie9 .carousel a:visited {
 .carousel a:visited:not(.btn) {
   color: white;
 }
-html.lt-ie9 .carousel a:hover,
-html.lt-ie9 .carousel a:focus,
-html.lt-ie9 .carousel a:active {
+html.no-not-selector .carousel a:hover,
+html.no-not-selector .carousel a:focus,
+html.no-not-selector .carousel a:active {
   color: #ccc;
 }
 .carousel a:hover:not(.btn),
@@ -9013,12 +9021,12 @@ audio[height] {
     margin-left: 0 !important;
   }
 }
-html.lt-ie9 main a,
-html.lt-ie9 .id7-page-footer a,
-html.lt-ie9 main a:link,
-html.lt-ie9 .id7-page-footer a:link,
-html.lt-ie9 main a:visited,
-html.lt-ie9 .id7-page-footer a:visited {
+html.no-not-selector main a,
+html.no-not-selector .id7-page-footer a,
+html.no-not-selector main a:link,
+html.no-not-selector .id7-page-footer a:link,
+html.no-not-selector main a:visited,
+html.no-not-selector .id7-page-footer a:visited {
   text-decoration: underline;
 }
 main a:not(.btn),
@@ -9029,12 +9037,12 @@ main a:visited:not(.btn),
 .id7-page-footer a:visited:not(.btn) {
   text-decoration: underline;
 }
-html.lt-ie9 main a:hover,
-html.lt-ie9 .id7-page-footer a:hover,
-html.lt-ie9 main a:focus,
-html.lt-ie9 .id7-page-footer a:focus,
-html.lt-ie9 main a:active,
-html.lt-ie9 .id7-page-footer a:active {
+html.no-not-selector main a:hover,
+html.no-not-selector .id7-page-footer a:hover,
+html.no-not-selector main a:focus,
+html.no-not-selector .id7-page-footer a:focus,
+html.no-not-selector main a:active,
+html.no-not-selector .id7-page-footer a:active {
   text-decoration: underline;
 }
 main a:hover:not(.btn),
@@ -9655,14 +9663,18 @@ footer .id7-app-footer .id7-footer-utility ul > li {
   display: inline-block;
   padding: 0;
 }
-.lt-ie9 footer .id7-app-footer .id7-footer-utility ul > li {
+html.no-generatedcontent footer .id7-app-footer .id7-footer-utility ul > li {
   margin: 0 .2em;
 }
-footer .id7-app-footer .id7-footer-utility ul > li:not(:first-child)::before {
+footer .id7-app-footer .id7-footer-utility ul > li:before {
   margin-right: .2em;
   margin-left: .1em;
   color: #777;
   content: '|';
+}
+footer .id7-app-footer .id7-footer-utility ul > li:first-child:before {
+  display: none;
+  content: '';
 }
 @media print {
   footer .id7-app-footer .id7-footer-utility ul a[href]:after {

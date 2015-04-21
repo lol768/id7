@@ -1,3 +1,5 @@
+/*global _:false, Modernizr:false */
+
 (function ($) {
     'use strict';
 
@@ -51,8 +53,9 @@
             },
             defaultImageFocalPoint: 'center center',
             defaultImageScaling: 'cover',
-            gridStopPointTest: function () {
-                return window.matchMedia('(min-width: 768px)').matches;
+            showFullpageImageCarouselTest: function () {
+                // As per ID-94, if a browser can't do Flexbox (and therefore can't do panel layouts), serve the mobile hp
+                return Modernizr.mq('only all and (min-width: 768px)') && Modernizr.flexbox;
             }
         }
     };
@@ -86,7 +89,7 @@
                 var isOnLoad = (typeof this.lastIsDesktop === 'undefined');
 
                 // Which stop-point are we on?
-                var isDesktop = this.options.gridStopPointTest();
+                var isDesktop = this.options.showFullpageImageCarouselTest();
 
                 // Early exit if we're not transitioning
                 if (isDesktop === this.lastIsDesktop) return;
@@ -297,7 +300,7 @@
                 if (isOnLoad && !isDesktop && window.location.hash) this.hashChanged();
                 $(window).off('hashchange.id7.homepage');
 
-                if (!isDesktop) {
+                if (!Modernizr.mq('only all and (min-width: 768px)')) {
                     $(window).on('hashchange.id7.homepage', $.proxy(this.hashChanged, this));
                 }
             },
@@ -365,13 +368,17 @@
 
                 // Note: all this screen/brightening stuff not currently used.
 
-                $('#homepage-style-rules-panels').text(Config.PanelsCSSTemplate({
-                    colour: colour,
-                    //brighter_colour: rgbToHex(r_brighter, g_brighter, b_brighter),
-                    colour_r: r,
-                    colour_g: g,
-                    colour_b: b
-                }));
+                try {
+                    $('#homepage-style-rules-panels').text(Config.PanelsCSSTemplate({
+                        colour: colour,
+                        //brighter_colour: rgbToHex(r_brighter, g_brighter, b_brighter),
+                        colour_r: r,
+                        colour_g: g,
+                        colour_b: b
+                    }));
+                } catch (e) {
+                    // This fails on IE8. Just accept the default colours
+                }
             },
 
             onChangePanelComplete: function ($panel) {
