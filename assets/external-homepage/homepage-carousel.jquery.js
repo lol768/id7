@@ -42,7 +42,7 @@
         ].join('')),
         Defaults: {
             menu: '.carousel-nav',
-            panels: '.jumbotron-carousel > article',
+            panels: '.jumbotron-carousel > article:visible',
             animation: {
                 length: 300,
                 easing: 'swing'
@@ -83,6 +83,21 @@
                 $(window).on('load', $.proxy(function (e) {
                     this.onScreenResize(e, true);
                 }, this));
+
+                var $container = this.$container;
+
+                // When popovers are open, disable the panel snap
+                $(document.body)
+                    .on('shown.bs.popover', function () {
+                        if ($container.data('plugin_panelSnap')) {
+                            $container.panelSnap('disable');
+                        }
+                    })
+                    .on('hidden.bs.popover', function () {
+                        if ($container.data('plugin_panelSnap')) {
+                            $container.panelSnap('enable');
+                        }
+                    });
             },
 
             onScreenResize: function onResize() {
