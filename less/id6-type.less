@@ -1,0 +1,32 @@
+#main-content {
+	ul.nav {
+		margin-left: 0;
+		padding-left: 0;
+
+		> li {
+			margin-bottom: -1px;
+
+			&.active a {
+				background: white;
+			}
+		}
+	}
+
+	.list-unstyled {
+	  margin-left: 0;
+	  padding-left: 0;
+	  list-style: none;
+	}
+
+	// Inline turns list items into inline-block
+	.list-inline {
+	  .list-unstyled();
+	  margin-left: -5px;
+
+	  > li {
+	    display: inline-block;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	  }
+	}
+}
