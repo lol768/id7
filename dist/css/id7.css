@@ -9295,10 +9295,7 @@ body {
 .id7-wide-table-wrapper-container {
   margin-bottom: 22px;
 }
-.id7-wide-table-wrapper-container > .id7-wide-table-wrapper {
-  overflow-x: auto;
-}
-.id7-wide-table-wrapper-container > .id7-wide-table-wrapper > table {
+.id7-wide-table-wrapper-container > .table-responsive > table {
   margin-bottom: 0;
 }
 .id7-table-wrapper-popout {
