@@ -8,11 +8,11 @@
 <li><a href="#copyright-and-license">Copyright and license</a></li>
 </ul>
 <h2 id="quick-start">Quick start</h2>
-<p>Four quick start options are available:</p>
+<p>Three quick start options are available:</p>
 <ul>
-<li><a href="#">Download the latest release</a>.</li>
+<li><a href="https://github.com/UniversityofWarwick/id7/releases/tag/v1.0.0">Download the latest release</a>.</li>
 <li>Clone the repo: <code>git clone https://github.com/UniversityofWarwick/id7.git</code>.</li>
-<li>Install with <a href="http://bower.io">Bower</a>: <code>bower install https://github.com/UniversityofWarwick/id7.git</code>.</li>
+<li>Install with <a href="http://bower.io">Bower</a>: <code>bower install warwick-id7</code>.</li>
 </ul>
 <p>Read the <a href="getting-started/">Getting started page</a> for information on the framework contents, templates and examples, and more.</p>
 <h3 id="what-s-included">What&#39;s included</h3>
@@ -35,7 +35,7 @@
 │   ├── id7-bundle.min.js
 │   ├── id7-standalone.js
 │   └── id7-standalone.min.js
-└── images/
+├── images/
 │   ├── id6a-logotype.png
 │   ├── id6a-logotype@2x.png
 │   ├── logo.png
@@ -43,13 +43,15 @@
 │   ├── masthead-logo-bleed-sm@2x.png
 │   ├── masthead-logo-bleed-xs.png
 │   └── masthead-logo-bleed-xs@2x.png
-└── fonts/
-    ├── FontAwesome.otf
-    ├── fontawesome-webfont.eot
-    ├── fontawesome-webfont.svg
-    ├── fontawesome-webfont.ttf
-    ├── fontawesome-webfont.woff
-    └── fontawesome-webfont.woff2</code></pre>
+├── fonts/
+│   ├── FontAwesome.otf
+│   ├── fontawesome-webfont.eot
+│   ├── fontawesome-webfont.svg
+│   ├── fontawesome-webfont.ttf
+│   ├── fontawesome-webfont.woff
+│   └── fontawesome-webfont.woff2
+└── templates/
+    └── base.html</code></pre>
 <p>We provide compiled CSS and JS (<code>id7.*</code>), as well as compiled and minified CSS and JS (<code>id7.min.*</code>). CSS <a href="https://developers.google.com/chrome-developer-tools/docs/css-preprocessors">source maps</a> (<code>id7.*.map</code>) are available for use with certain browsers&#39; developer tools. The FontAwesome icon font is included, as is an optional ID7 theme.</p>
 <p>The <code>id7-bundle.js</code> file includes dependencies such as jQuery and Bootstrap. The <code>id7-standalone.js</code> file doesn&#39;t include these, so they will need to be included manually. The dependencies required are:</p>
 <ul>
@@ -58,13 +60,15 @@
 <li><a href="https://github.com/twitter/typeahead.js">typeahead.js</a> &gt;= 0.10.5</li>
 <li><a href="https://github.com/lodash/lodash">lodash</a> &gt;= 2.4.1</li>
 <li><a href="https://github.com/Modernizr/Modernizr">Modernizr</a> &gt;= 2.8.3</li>
+<li><a href="https://github.com/Modernizr/Modernizr">Modernizr</a> &gt;= 2.8.3</li>
+<li>jQuery doubleScroll &gt;= 0.4 (note that this has been patched in the ID7 build to support concatenation)</li>
 </ul>
 <p>Internet Explorer 8 (and earlier) support requires:</p>
 <ul>
 <li><a href="https://github.com/aFarkas/html5shiv">html5shiv</a> &gt;= 3.7.2</li>
 </ul>
 <h2 id="bugs-and-feature-requests">Bugs and feature requests</h2>
-<p>Have a bug or a feature request? Contact <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#119;&#101;&#98;&#x74;&#101;&#x61;&#x6d;&#64;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#107;&#x2e;&#x61;&#99;&#x2e;&#117;&#x6b;">&#119;&#101;&#98;&#x74;&#101;&#x61;&#x6d;&#64;&#x77;&#x61;&#x72;&#x77;&#x69;&#x63;&#107;&#x2e;&#x61;&#99;&#x2e;&#117;&#x6b;</a>.</p>
+<p>Have a bug or a feature request? Contact <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#119;&#x65;&#x62;&#116;&#x65;&#x61;&#x6d;&#x40;&#x77;&#97;&#x72;&#x77;&#x69;&#x63;&#107;&#46;&#x61;&#99;&#x2e;&#117;&#x6b;">&#119;&#x65;&#x62;&#116;&#x65;&#x61;&#x6d;&#x40;&#x77;&#97;&#x72;&#x77;&#x69;&#x63;&#107;&#46;&#x61;&#99;&#x2e;&#117;&#x6b;</a>.</p>
 <h2 id="documentation">Documentation</h2>
 <p>Documentation, included in this repo in the root directory, is built with <a href="http://jekyllrb.com">Jekyll</a> and publicly hosted on GitHub Pages at <a href="http://id7.warwick.ac.uk">http://id7.warwick.ac.uk</a>. The docs may also be run locally.</p>
 <h3 id="running-sample-site-locally">Running sample site locally</h3>
@@ -72,9 +76,18 @@
 <li>Install Ruby and <code>gem install bundler</code></li>
 <li>From the root <code>/id7</code> directory, run <code>bundle install</code> to install dependent gems.</li>
 <li>From the root <code>/id7</code> directory, run <code>grunt</code> to generate CSS/JS, which is used on the sample site.</li>
-<li>From the root <code>/id7</code> directory, run <code>bin/jekyll serve</code> in the command line. To develop core CSS/JS, run <code>grunt watch</code> from another terminal at the same time.</li>
+<li>From the root <code>/id7</code> directory, run <code>grunt serve</code> in the command line.</li>
 <li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, et voilà.</li>
 </ol>
 <p>Learn more about using Jekyll by reading its <a href="http://jekyllrb.com/docs/home/">documentation</a>.</p>
 <h2 id="copyright-and-license">Copyright and license</h2>
-<p>Code and documentation copyright 2015 University of Warwick.</p>
+<p>Bootstrap is licensed under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT license</a>.</p>
+<p>All rights, including copyright, in the code and documentation (including, but not limited to, the University logo, and
+all text, layout, graphics, video and audio material and artwork) are owned or controlled for these purposes by the
+University of Warwick unless otherwise stated.</p>
+<p>Content on web pages at Warwick is the responsibility of the page owner and does not necessarily represent the views of
+the University of Warwick.</p>
+<p>In accessing the university&#39;s web pages, you agree that you may only download the content for your own personal
+non-commercial use. The material on these web pages should not be used, copied, stored or transmitted outside the
+University without the prior written consent of the University or in accordance with the Copyright, Designs and Patents
+Act 1988.</p>
