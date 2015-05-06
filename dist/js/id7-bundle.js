@@ -11673,6 +11673,131 @@ window.Modernizr = (function( window, document, undefined ) {
 
 })(this, this.document);
 
+/*
+ * @name DoubleScroll
+ * @desc displays scroll bar on top and on the bottom of the div
+ * @requires jQuery
+ *
+ * @author Pawel Suwala - http://suwala.eu/
+ * @author Antoine Vianey - http://www.astek.fr/
+ * @version 0.4 (18-06-2014)
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ * 
+ * Usage:
+ * https://github.com/avianey/jqDoubleScroll
+ */
+
+jQuery.fn.doubleScroll = function(userOptions) {
+    // Default options
+    var options = {
+        contentElement: undefined, // Widest element, if not specified first child element will be used
+        scrollCss: {
+            'overflow-x': 'auto',
+            'overflow-y': 'hidden'
+        },
+        contentCss: {
+            'overflow-x': 'auto',
+            'overflow-y': 'hidden'
+        },
+        onlyIfScroll: true, // top scrollbar is not shown if the bottom one is not present
+        resetOnWindowResize: false, // recompute the top ScrollBar requirements when the window is resized
+        timeToWaitForResize: 30 // wait for the last update event (usefull when browser fire resize event constantly during ressing)
+    };
+    $.extend(true, options, userOptions);
+    // do not modify
+    // internal stuff
+    $.extend(options, {
+        topScrollBarMarkup: '<div class="doubleScroll-scroll-wrapper" style="height: 20px;"><div class="doubleScroll-scroll" style="height: 20px;"></div></div>',
+        topScrollBarWrapperSelector: '.doubleScroll-scroll-wrapper',
+        topScrollBarInnerSelector: '.doubleScroll-scroll'
+    });
+
+    var _showScrollBar = function($self, options) {
+
+        if (options.onlyIfScroll && $self.get(0).scrollWidth <= $self.width()) {
+            // content doesn't scroll
+            // remove any existing occurrence...
+            $self.prev(options.topScrollBarWrapperSelector).remove();
+            return;
+        }
+
+        // add div that will act as an upper scroll only if not already added to the DOM
+        var $topScrollBar = $self.prev(options.topScrollBarWrapperSelector);
+        if ($topScrollBar.length == 0) {
+
+            // creating the scrollbar
+            // added before in the DOM
+            $topScrollBar = $(options.topScrollBarMarkup);
+            $self.before($topScrollBar);
+
+            // apply the css
+            $topScrollBar.css(options.scrollCss);
+            $self.css(options.contentCss);
+
+            // bind upper scroll to bottom scroll
+            $topScrollBar.bind('scroll.doubleScroll', function() {
+                $self.scrollLeft($topScrollBar.scrollLeft());
+            });
+
+            // bind bottom scroll to upper scroll
+            var selfScrollHandler = function() {
+                $topScrollBar.scrollLeft($self.scrollLeft());
+            };
+            $self.bind('scroll.doubleScroll', selfScrollHandler);
+        }
+
+        // find the content element (should be the widest one)
+        var $contentElement;
+        if (options.contentElement !== undefined && $self.find(options.contentElement).length !== 0) {
+            $contentElement = $self.find(options.contentElement);
+        } else {
+            $contentElement = $self.find('>:first-child');
+        }
+
+        // set the width of the wrappers
+        $(options.topScrollBarInnerSelector, $topScrollBar).width($contentElement.outerWidth());
+        $topScrollBar.width($self.width());
+        $topScrollBar.scrollLeft($self.scrollLeft());
+
+    };
+
+    return this.each(function() {
+        var $self = $(this);
+        _showScrollBar($self, options);
+
+        // bind the resize handler
+        // do it once
+        if (options.resetOnWindowResize) {
+            var id;
+            var handler = function(e) {
+                _showScrollBar($self, options);
+            };
+            $(window).bind('resize.doubleScroll', function() {
+                // adding/removing/replacing the scrollbar might resize the window
+                // so the resizing flag will avoid the infinite loop here...
+                clearTimeout(id);
+                id = setTimeout(handler, options.timeToWaitForResize);
+            });
+        }
+    });
+};
+/*!
+ * headroom.js v0.7.0 - Give your page some headroom. Hide your header until you need it
+ * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/headroom.js
+ * License: MIT
+ */
+
+!function(a,b){"use strict";function c(a){this.callback=a,this.ticking=!1}function d(b){return b&&"undefined"!=typeof a&&(b===a||b.nodeType)}function e(a){if(arguments.length<=0)throw new Error("Missing arguments in extend function");var b,c,f=a||{};for(c=1;c<arguments.length;c++){var g=arguments[c]||{};for(b in g)f[b]="object"!=typeof f[b]||d(f[b])?f[b]||g[b]:e(f[b],g[b])}return f}function f(a){return a===Object(a)?a:{down:a,up:a}}function g(a,b){b=e(b,g.options),this.lastKnownScrollY=0,this.elem=a,this.debouncer=new c(this.update.bind(this)),this.tolerance=f(b.tolerance),this.classes=b.classes,this.offset=b.offset,this.scroller=b.scroller,this.initialised=!1,this.onPin=b.onPin,this.onUnpin=b.onUnpin,this.onTop=b.onTop,this.onNotTop=b.onNotTop}var h={bind:!!function(){}.bind,classList:"classList"in b.documentElement,rAF:!!(a.requestAnimationFrame||a.webkitRequestAnimationFrame||a.mozRequestAnimationFrame)};a.requestAnimationFrame=a.requestAnimationFrame||a.webkitRequestAnimationFrame||a.mozRequestAnimationFrame,c.prototype={constructor:c,update:function(){this.callback&&this.callback(),this.ticking=!1},requestTick:function(){this.ticking||(requestAnimationFrame(this.rafCallback||(this.rafCallback=this.update.bind(this))),this.ticking=!0)},handleEvent:function(){this.requestTick()}},g.prototype={constructor:g,init:function(){return g.cutsTheMustard?(this.elem.classList.add(this.classes.initial),setTimeout(this.attachEvent.bind(this),100),this):void 0},destroy:function(){var a=this.classes;this.initialised=!1,this.elem.classList.remove(a.unpinned,a.pinned,a.top,a.initial),this.scroller.removeEventListener("scroll",this.debouncer,!1)},attachEvent:function(){this.initialised||(this.lastKnownScrollY=this.getScrollY(),this.initialised=!0,this.scroller.addEventListener("scroll",this.debouncer,!1),this.debouncer.handleEvent())},unpin:function(){var a=this.elem.classList,b=this.classes;(a.contains(b.pinned)||!a.contains(b.unpinned))&&(a.add(b.unpinned),a.remove(b.pinned),this.onUnpin&&this.onUnpin.call(this))},pin:function(){var a=this.elem.classList,b=this.classes;a.contains(b.unpinned)&&(a.remove(b.unpinned),a.add(b.pinned),this.onPin&&this.onPin.call(this))},top:function(){var a=this.elem.classList,b=this.classes;a.contains(b.top)||(a.add(b.top),a.remove(b.notTop),this.onTop&&this.onTop.call(this))},notTop:function(){var a=this.elem.classList,b=this.classes;a.contains(b.notTop)||(a.add(b.notTop),a.remove(b.top),this.onNotTop&&this.onNotTop.call(this))},getScrollY:function(){return void 0!==this.scroller.pageYOffset?this.scroller.pageYOffset:void 0!==this.scroller.scrollTop?this.scroller.scrollTop:(b.documentElement||b.body.parentNode||b.body).scrollTop},getViewportHeight:function(){return a.innerHeight||b.documentElement.clientHeight||b.body.clientHeight},getDocumentHeight:function(){var a=b.body,c=b.documentElement;return Math.max(a.scrollHeight,c.scrollHeight,a.offsetHeight,c.offsetHeight,a.clientHeight,c.clientHeight)},getElementHeight:function(a){return Math.max(a.scrollHeight,a.offsetHeight,a.clientHeight)},getScrollerHeight:function(){return this.scroller===a||this.scroller===b.body?this.getDocumentHeight():this.getElementHeight(this.scroller)},isOutOfBounds:function(a){var b=0>a,c=a+this.getViewportHeight()>this.getScrollerHeight();return b||c},toleranceExceeded:function(a,b){return Math.abs(a-this.lastKnownScrollY)>=this.tolerance[b]},shouldUnpin:function(a,b){var c=a>this.lastKnownScrollY,d=a>=this.offset;return c&&d&&b},shouldPin:function(a,b){var c=a<this.lastKnownScrollY,d=a<=this.offset;return c&&b||d},update:function(){var a=this.getScrollY(),b=a>this.lastKnownScrollY?"down":"up",c=this.toleranceExceeded(a,b);this.isOutOfBounds(a)||(a<=this.offset?this.top():this.notTop(),this.shouldUnpin(a,c)?this.unpin():this.shouldPin(a,c)&&this.pin(),this.lastKnownScrollY=a)}},g.options={tolerance:{up:0,down:0},offset:0,scroller:a,classes:{pinned:"headroom--pinned",unpinned:"headroom--unpinned",top:"headroom--top",notTop:"headroom--not-top",initial:"headroom"}},g.cutsTheMustard="undefined"!=typeof h&&h.rAF&&h.bind&&h.classList,a.Headroom=g}(window,document);
+/*!
+ * headroom.js v0.7.0 - Give your page some headroom. Hide your header until you need it
+ * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/headroom.js
+ * License: MIT
+ */
+
+!function(a){a&&(a.fn.headroom=function(b){return this.each(function(){var c=a(this),d=c.data("headroom"),e="object"==typeof b&&b;e=a.extend(!0,{},Headroom.options,e),d||(d=new Headroom(this,e),d.init(),c.data("headroom",d)),"string"==typeof b&&d[b]()})},a("[data-headroom]").each(function(){var b=a(this);b.headroom(b.data())}))}(window.Zepto||window.jQuery);
 /*global _:false, console:false, JSON:false */
 
 (function ($) {
@@ -11929,11 +12054,18 @@ window.Modernizr = (function( window, document, undefined ) {
           this.markHeaderFixedPosition();
 
           var offsetTop = $('.id7-header-text').offset().top;
+          var headroomOffset = offsetTop;
+
+          if ($('.id7-main-content-area').length > 0) {
+            headroomOffset = $('.id7-main-content-area').offset().top;
+          }
 
           $h1.affix({
             offset: {
               top: offsetTop
             }
+          }).headroom({
+            offset: headroomOffset
           });
         }
       },
@@ -11949,10 +12081,18 @@ window.Modernizr = (function( window, document, undefined ) {
           offsetTop = $nav.offset().top;
         }
 
+        var headroomOffset = offsetTop;
+
+        if ($('.id7-main-content-area').length > 0) {
+          headroomOffset = $('.id7-main-content-area').offset().top;
+        }
+
         $nav.affix({
           offset: {
             top: offsetTop
           }
+        }).headroom({
+          offset: headroomOffset
         });
       },
 
@@ -12115,7 +12255,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     function attach(i, element) {
       var $container = $(element);
-      var nav = new Navigation($.extend(o, {
+      var nav = new Navigation($.extend({}, $container.data(), o, {
         container: $container
       }));
 
@@ -12173,7 +12313,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     function attach(i, element) {
       var $input = $(element);
-      var searchSuggest = new SearchSuggest($.extend(o, {
+      var searchSuggest = new SearchSuggest($.extend({}, $input.data(), o, {
         input: $input
       }));
 
@@ -12226,13 +12366,46 @@ window.Modernizr = (function( window, document, undefined ) {
 
 })(jQuery);
 
+/*global Modernizr:false */
+
 (function ($) {
   'use strict';
 
   var Config = {
+    Templates: {
+      PopoutLink: [
+        '<span class="id7-table-wrapper-popout">',
+        '(',
+        '<a href="#" data-toggle="id7:popout-table">',
+        'Pop-out table',
+        '</a>',
+        ')',
+        '</span>'
+      ].join(''),
+      Modal: [
+        '<div class="id7-wide-table-popout-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">',
+          '<div class="modal-dialog">',
+            '<div class="modal-content">',
+              '<div class="modal-header">' +
+                '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+                  '<span aria-hidden="true">&times;</span>' +
+                '</button>' +
+                '<span class="modal-title">&nbsp;</span>' +
+              '</div>' +
+              '<div class="modal-body">' +
+              '</div>',
+            '</div>',
+          '</div>',
+        '</div>'
+      ].join('')
+    },
     Defaults: {
-      wrapper: 'id7-wide-table-wrapper', // Set to false to disable
-      popout: false
+      container: 'id7-wide-table-wrapper-container',
+      wrapper: 'table-responsive', // Set to false to disable
+      popout: function () {
+        return Modernizr.mq('only all and (min-width: 768px)');
+      },
+      doublescroll: true
     }
   };
 
@@ -12244,31 +12417,83 @@ window.Modernizr = (function( window, document, undefined ) {
     function WideTables(o) {
       o = $.extend({}, Config.Defaults, o);
 
-      // Allow wrapper: true to use the default
-      if (o.wrapper && typeof o.wrapper !== 'string') {
-        o.wrapper = Config.Defaults.wrapper;
+      var self = this;
+
+      function handleTable(i, el) {
+        var $table = $(el);
+
+        // Allow the table's data attributes to override options
+        var options = $.extend({}, o, $table.data());
+
+        // Allow wrapper: true to use the default
+        if (options.wrapper && typeof options.wrapper !== 'string') {
+          options.wrapper = Config.Defaults.wrapper;
+        }
+
+        if (options.container && typeof options.container !== 'string') {
+          options.container = Config.Defaults.container;
+        }
+
+        if (options.wrapper) {
+          self.wrap($table, options.wrapper, options.container);
+
+          var $wrapper = $table.parent();
+          var $container = $wrapper.parent();
+
+          var popout = options.popout;
+          var doublescroll = options.doublescroll;
+
+          if (typeof options.popout == 'function') popout = options.popout();
+          if (typeof options.doublescroll == 'function') popout = options.doublescroll();
+
+          if (popout) self.popout($table, $wrapper, $container);
+          if (doublescroll) self.doubleScroll($table, $wrapper);
+        }
       }
 
-      this.options = o;
+      // SBTWO-5105 check tables after load, in case contents cause resize
+      function onLoad() {
+        self.findWideTables(o.container).each(handleTable);
+      }
 
-      this.findWideTables().each($.proxy(function (i, el) {
-        if (o.wrapper) this.wrap($(el));
-        if (o.popout) this.popout($(el));
-      }, this));
+      $(window).load(onLoad);
     }
 
     $.extend(WideTables.prototype, {
-      findWideTables: function findWideTables() {
-        return this.options.container.find('table').filter(function () {
+      findWideTables: function findWideTables($container) {
+        return $container.find('table').filter(function () {
           var $table = $(this);
           return Math.floor($table.width()) > $table.parent().width();
         });
       },
-      wrap: function wrap($table) {
-        $table.wrap($('<div />').addClass(this.options.wrapper));
+      wrap: function wrap($table, wrapperClass, containerClass) {
+        $table.wrap($('<div />').addClass(containerClass).append($('<div />').addClass(wrapperClass)));
+
+        return $table.parent();
       },
-      popout: function popout($table) {
+      popout: function popout($table, $wrapper, $container) {
+        // sb-no-wrapper-table-popout is legacy
+        if ($table.is(':visible') && !$table.hasClass('sb-no-wrapper-table-popout')) {
+          $container.prepend(Config.Templates.PopoutLink).append(Config.Templates.PopoutLink);
+
+          var $modal = $($.parseHTML(Config.Templates.Modal)).appendTo(document.body);
+
+          $container.on('click', '[data-toggle="id7:popout-table"]', function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            $modal.find('.modal-body').html($wrapper.html());
+            $modal.modal().modal('show');
+
+            return false;
+          });
+        }
+
         return $table; // Nothing to do, for now
+      },
+      doubleScroll: function doubleScroll($table, $wrapper) {
+        $wrapper.doubleScroll();
+        return $table;
       }
     });
 
@@ -12280,7 +12505,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     function attach(i, element) {
       var $container = $(element);
-      var wideTables = new WideTables($.extend(o, {
+      var wideTables = new WideTables($.extend({}, $container.data(), o, {
         container: $container
       }));
 
@@ -12339,4 +12564,27 @@ window.Modernizr = (function( window, document, undefined ) {
       return false;
     }
   });
+})();
+
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014 Twitter, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see http://creativecommons.org/licenses/by/3.0/.
+ */
+
+// See the Getting Started docs for more information:
+// http://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+  'use strict';
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style');
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    );
+    document.querySelector('head').appendChild(msViewportStyle);
+  }
 })();
