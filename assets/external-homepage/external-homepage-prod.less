@@ -3,7 +3,7 @@
 @logo-width: 150px;
 @logo-height: 80px;
 
-@nav-links-margin-top: 44px; // Align with bottom of logotype
+@nav-links-margin-top: 50px; // Align with bottom of logotype
 
 @carousel-nav-exclusion-zone: 250px;
 
@@ -49,6 +49,8 @@ body {
 
 // Fix the header
 .id7-page-header {
+  background-color: @id7-brand-default;
+
   position: fixed;
   width: 100%;
   .transition(background-color 0.15s linear);
@@ -165,10 +167,9 @@ only screen and (                min-resolution: 2dppx) {
 // Quick links Nav
 .id7-masthead .id7-logo-row nav {
   margin-left: @logo-width;
-  font-size: 16px;
-  font-variant: small-caps;
+  font-size: 11.5px;
   font-weight: 600;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
   a { color: white !important; } // Avoid flash of black
 
@@ -589,6 +590,12 @@ only screen and (                min-resolution: 2dppx) {
         }
       }
     }
+
+    @media (min-width: @screen-md-min) {
+      &.jumbotron-panel .caption.center {
+        padding: 0;
+      }
+    }
   }
 }
 
@@ -663,9 +670,19 @@ only screen and (                min-resolution: 2dppx) {
       display: inline;
     }
 
-    .telephone:after {
-      content: ' \2022 ';
-      display: inline;
+    .telephone {
+      margin-right: 0.8em;
+    }
+
+    .utility > li {
+      &:before {
+        content: none;
+      }
+
+      margin-left: 0.6em;
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -714,7 +731,7 @@ only screen and (                min-resolution: 2dppx) {
     margin: 0;
 
     > i {
-      font-size: 2em;
+      font-size: 1.75em;
     }
 
     ul {
