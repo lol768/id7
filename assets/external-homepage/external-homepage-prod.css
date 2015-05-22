@@ -130,8 +130,8 @@ body {
 .id7-masthead {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   .id7-utility-bar,
@@ -242,8 +242,8 @@ body {
   width: 150px;
   position: relative;
   min-height: 1px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   .id7-masthead .id7-logo-column {
@@ -259,8 +259,8 @@ body {
 .id7-masthead .id7-search-column {
   position: relative;
   min-height: 1px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: -150px;
 }
 @media (min-width: 768px) {
@@ -540,6 +540,7 @@ body {
 }
 @media (min-width: 768px) {
   html.flexbox .jumbotron-carousel .jumbotron {
+    height: 800px;
     height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -553,13 +554,16 @@ body {
   }
   html.flexbox .jumbotron-carousel .jumbotron .container-fluid {
     width: 100%;
-    height: 100%;
+    height: 800px;
+    height: 100vh;
   }
   html.flexbox .jumbotron-carousel .jumbotron .container-fluid > .row {
-    height: 100%;
+    height: 800px;
+    height: 100vh;
   }
   html.flexbox .jumbotron-carousel .jumbotron .container-fluid > .row > * {
-    height: 100%;
+    height: 800px;
+    height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -831,6 +835,46 @@ body {
     padding: 20px;
   }
 }
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  html.flexbox .jumbotron-carousel .jumbotron {
+    height: 1024px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  html.flexbox .jumbotron-carousel .jumbotron {
+    height: 768px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  html.flexbox .jumbotron-carousel .jumbotron .container-fluid {
+    height: 1024px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  html.flexbox .jumbotron-carousel .jumbotron .container-fluid {
+    height: 768px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  html.flexbox .jumbotron-carousel .jumbotron .container-fluid > .row {
+    height: 1024px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  html.flexbox .jumbotron-carousel .jumbotron .container-fluid > .row {
+    height: 768px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  html.flexbox .jumbotron-carousel .jumbotron .container-fluid > .row > * {
+    height: 1024px;
+  }
+}
+@media (min-width: 768px) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  html.flexbox .jumbotron-carousel .jumbotron .container-fluid > .row > * {
+    height: 768px;
+  }
+}
 @media (min-width: 768px) and (min-width: 768px) {
   html.flexbox .jumbotron-carousel .jumbotron.jumbotron-panel .container > .layout > .column-1 > .column-1-content,
   html.flexbox .jumbotron-carousel .jumbotron.jumbotron-panel .container-fluid > .layout > .column-1 > .column-1-content,
@@ -900,8 +944,8 @@ body {
   html.no-flexbox .jumbotron-carousel .jumbotron.jumbotron-panel .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
@@ -1024,8 +1068,8 @@ body {
 .more-links-sitemap > li {
   position: relative;
   min-height: 1px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
