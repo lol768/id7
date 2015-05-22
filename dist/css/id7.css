@@ -7933,10 +7933,19 @@ a.list-group-item {
 .dropdown-menu li {
   margin-bottom: 0;
 }
+.btn-toolbar > .btn-group:first-child {
+  margin-left: 0;
+}
 @media print {
   a[href^="mailto:"]:after,
   a[href^="tel:"]:after {
     content: "";
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9 !important;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) > td {
+    background-color: transparent !important;
   }
 }
 html.no-touch .modal-open {
