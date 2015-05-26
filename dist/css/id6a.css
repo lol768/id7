@@ -44,11 +44,12 @@
           text-decoration-color: #050505;
 }
 #warwick-logo-link {
-  background-image: url("../images/id6a-logotype.png");
+  background: url("../images/id6a-logotype.png") 0 0 no-repeat;
+  background: none, url("../images/logotype-colour.svg") 0 0 no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #warwick-logo-link {
-    background-image: url("../images/id6a-logotype@2x.png");
+    background-image: url("../images/logotype-colour.svg");
   }
 }
 #search-container ul.index-section li.active {
