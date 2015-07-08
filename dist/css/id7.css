@@ -8048,6 +8048,22 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .id7-left-border {
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .bordered .id7-left-border {
+    border-right: 1px solid #808080;
+  }
+  .id7-right-border {
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .bordered .id7-right-border {
+    border-left: 1px solid #808080;
+  }
+}
+@media (min-width: 768px) {
   .id7-left-border,
   .id7-right-border {
     position: fixed;
@@ -8058,27 +8074,17 @@ body {
   }
   .id7-left-border {
     left: 0;
-    background-repeat: no-repeat;
-    background-position: right top;
     -webkit-transform: translate(-375px, 0);
         -ms-transform: translate(-375px, 0);
          -o-transform: translate(-375px, 0);
             transform: translate(-375px, 0);
   }
-  .bordered .id7-left-border {
-    border-right: 1px solid #808080;
-  }
   .id7-right-border {
     right: 0;
-    background-repeat: no-repeat;
-    background-position: left top;
     -webkit-transform: translate(375px, 0);
         -ms-transform: translate(375px, 0);
          -o-transform: translate(375px, 0);
             transform: translate(375px, 0);
-  }
-  .bordered .id7-right-border {
-    border-left: 1px solid #808080;
   }
 }
 @media (min-width: 992px) {
@@ -8109,28 +8115,75 @@ body {
             transform: translate(585px, 0);
   }
 }
-@media (min-height: 1201px) {
+.id7-left-border,
+.id7-right-border {
+  jerry: 1920px;
+  kerry: 1200px;
+}
+@media (min-width: 1921px), (min-height: 1201px) {
   .id7-left-border,
   .id7-right-border {
-    -webkit-background-size: 375px 100%;
-            background-size: 375px 100%;
+    -webkit-background-size: 455px 1456px;
+            background-size: 455px 1456px;
   }
 }
-@media (min-width: 1921px) {
+@media (min-width: 2081px), (min-height: 1301px) {
   .id7-left-border,
   .id7-right-border {
-    -webkit-background-size: 750px 100%;
-            background-size: 750px 100%;
+    -webkit-background-size: 535px 1712px;
+            background-size: 535px 1712px;
   }
 }
-@media (min-width: 2671px) {
+@media (min-width: 2241px), (min-height: 1401px) {
   .id7-left-border,
   .id7-right-border {
-    -webkit-background-size: 1500px 100%;
-            background-size: 1500px 100%;
+    -webkit-background-size: 615px 1968px;
+            background-size: 615px 1968px;
   }
 }
-@media (min-width: 4171px) {
+@media (min-width: 2401px), (min-height: 1501px) {
+  .id7-left-border,
+  .id7-right-border {
+    -webkit-background-size: 695px 2224px;
+            background-size: 695px 2224px;
+  }
+}
+@media (min-width: 2561px), (min-height: 1601px) {
+  .id7-left-border,
+  .id7-right-border {
+    -webkit-background-size: 775px 2480px;
+            background-size: 775px 2480px;
+  }
+}
+@media (min-width: 2721px), (min-height: 1701px) {
+  .id7-left-border,
+  .id7-right-border {
+    -webkit-background-size: 855px 2736px;
+            background-size: 855px 2736px;
+  }
+}
+@media (min-width: 2881px), (min-height: 1801px) {
+  .id7-left-border,
+  .id7-right-border {
+    -webkit-background-size: 935px 2992px;
+            background-size: 935px 2992px;
+  }
+}
+@media (min-width: 3041px), (min-height: 1901px) {
+  .id7-left-border,
+  .id7-right-border {
+    -webkit-background-size: 1015px 3248px;
+            background-size: 1015px 3248px;
+  }
+}
+@media (min-width: 3201px), (min-height: 2001px) {
+  .id7-left-border,
+  .id7-right-border {
+    -webkit-background-size: 1095px 3504px;
+            background-size: 1095px 3504px;
+  }
+}
+@media (min-width: 3361px), (min-height: 2101px) {
   .id7-left-border,
   .id7-right-border {
     -webkit-background-size: cover;
@@ -10130,6 +10183,36 @@ footer .id7-app-footer .id7-footer-utility ul > li:first-child:before {
     -webkit-flex: auto;
         -ms-flex: auto;
             flex: auto;
+  }
+}
+.pull-xs-left {
+  float: left;
+}
+.pull-xs-right {
+  float: right;
+}
+@media (min-width: 768px) {
+  .pull-sm-left {
+    float: left;
+  }
+  .pull-sm-right {
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .pull-md-left {
+    float: left;
+  }
+  .pull-md-right {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .pull-lg-left {
+    float: left;
+  }
+  .pull-lg-right {
+    float: right;
   }
 }
 .flush-left {
