@@ -3,6 +3,104 @@
  */
 
 
+/*global _:false, Modernizr:false */
+
+(function ($) {
+  'use strict';
+  var Config = {
+    Defaults: {
+      screenSizes: [
+        {
+          name: 'lg', test: function () {
+          return Modernizr.mq('only all and (min-width: 1200px)');
+        }, container: 1170
+        },
+        {
+          name: 'md', test: function () {
+          return Modernizr.mq('only all and (min-width: 992px)');
+        }, container: 970
+        },
+        {
+          name: 'sm', test: function () {
+          return Modernizr.mq('only all and (min-width: 768px)');
+        }, container: 750
+        },
+        {
+          name: 'xs', test: function () {
+          return true;
+        }
+        }
+      ],
+      eventName: 'id7:reflow'
+    }
+  };
+
+  var ReflowEvent = (function () {
+    function ReflowEvent(o) {
+      o = $.extend({}, Config.Defaults, o);
+      this.options = o;
+
+      this.onScreenResize(); // First time run on init
+      this.wireEventHandlers();
+    }
+
+    $.extend(ReflowEvent.prototype, {
+      _screenConfig: function screenConfig() {
+        return _.find(this.options.screenSizes, function (screenConfig) {
+          return screenConfig.test();
+        });
+      },
+
+      onScreenResize: function onResize(e, force) {
+        // Which stop-point are we on?
+        var screenConfig = this._screenConfig();
+
+        // Early exit if the width is the same. xs is variable width so can't be clever :(
+        if (!force && screenConfig.name !== 'xs' && screenConfig.name === this.lastScreenConfig) return;
+
+        this.options.container.trigger(this.options.eventName, [screenConfig]);
+
+        this.lastScreenConfig = screenConfig.name;
+      },
+
+      reflow: function reflow() {
+        this.onScreenResize({}, true);
+      },
+
+      wireEventHandlers: function wireEventHandlers() {
+        $(window).on('resize.id7.reflow.onScreenResize', $.proxy(this.onScreenResize, this));
+
+        // ID-30 on load (i.e. after fonts have loaded) run this, forcing a resize
+        if (document.readyState == 'complete') {
+          this.reflow();
+        } else {
+          $(window).on('load', $.proxy(this.reflow, this));
+        }
+      }
+    });
+
+    return ReflowEvent;
+  })();
+
+  $.fn.reflow = function (option) {
+    function attach(i, element) {
+      var $el = $(element);
+      var data = $el.data('id7.reflow');
+      var options = $.extend({}, $el.data(), { container: $el }, typeof option == 'object' && option);
+
+      if (!data) $el.data('id7.reflow', (data = new ReflowEvent(options)));
+
+      if (option === 'reflow' || option === 'force' || option === true) data.reflow();
+    }
+
+    return this.each(attach);
+  };
+
+  $(function () {
+    $(window).reflow();
+  });
+})(jQuery);
+
 /*global _:false, console:false, JSON:false */
 
 (function ($) {
@@ -223,7 +321,8 @@
 
       this.options = o;
 
-      this.onScreenResize();
+      if (this.options.fixedHeader) this.markHeaderFixedPosition();
+      if (this.options.fixedNav) this.markFixedPosition();
 
       if (o.trimLinkTitles) this.trimLinkTitles();
 
@@ -304,26 +403,6 @@
         }).headroom({
           offset: headroomOffset
         });
-      },
-
-      _screenConfig: function screenConfig() {
-        return _.find(Config.ScreenSizes, function (screenConfig) {
-          return screenConfig.test();
-        });
-      },
-
-      onScreenResize: function onResize(e, force) {
-        // Which stop-point are we on?
-        var screenConfig = this._screenConfig();
-
-        // Early exit if the width is the same. xs is variable width so can't be clever :(
-        if (!force && screenConfig.name !== 'xs' && screenConfig.name === this.lastScreenConfig) return;
-
-        if (this.options.fitToWidth) this.fitToWidth(screenConfig);
-        if (this.options.fixedHeader) this.markHeaderFixedPosition();
-        if (this.options.fixedNav) this.markFixedPosition();
-
-        this.lastScreenConfig = screenConfig.name;
       },
 
       fitToWidth: function fitToWidth(screenConfig) {
@@ -423,16 +502,11 @@
           }, this));
         }
 
-        $(window).on('resize.id7.navigation.onScreenResize', $.proxy(this.onScreenResize, this));
-
-        // ID-30 on load (i.e. after fonts have loaded) run this, forcing a resize
-        if (document.readyState == 'complete') {
-          this.onScreenResize({}, true);
-        } else {
-          $(window).on('load', $.proxy(function (e) {
-            this.onScreenResize(e, true);
-          }, this));
-        }
+        $(window).on('id7:reflow', $.proxy(function (e, screenConfig) {
+          if (this.options.fitToWidth) this.fitToWidth(screenConfig);
+          if (this.options.fixedHeader) this.markHeaderFixedPosition();
+          if (this.options.fixedNav) this.markFixedPosition();
+        }, this));
 
         this.$container.on('click', '.nav > li', function (e) {
           var $targetLink = $(e.target).closest('a');
@@ -500,8 +574,10 @@
       }, {
         name: o.name,
         source: o.source,
-        displayKey: o.displayKey,
-        templates: o.templates
+        display: o.display,
+        templates: o.templates,
+        async: true,
+        limit: 1000
       }).on('keydown', function ($e) {
         var keyCode = $e.which || $e.keyCode;
         switch (keyCode) {
@@ -554,17 +630,19 @@
 
       $(el).searchSuggest({
         name: 'go',
-        source: function (query, cb) {
-          $.getJSON('//sitebuilder.warwick.ac.uk/sitebuilder2/api/go/redirects.json?maxResults=' + maxResults + '&prefix=' + encodeURIComponent(query) + '&callback=?', cb);
+        source: function (query, sync, async) {
+          $.getJSON('//sitebuilder.warwick.ac.uk/sitebuilder2/api/go/redirects.json?maxResults=' + maxResults + '&prefix=' + encodeURIComponent(query) + '&callback=?', async);
         },
-        displayKey: 'path',
+        display: 'path',
         minLength: minLength,
         hint: false,
         templates: {
           suggestion: _.template([
-            '<p class="go-path"><%= path %></p>',
-            '<p class="go-description"><% if (typeof description !== "undefined") { print(description); } %></p>'
-          ].join(''))
+              '<div>',
+              '<p class="go-path"><%= path %></p>',
+              '<p class="go-description"><% if (typeof description !== "undefined") { print(description); } %></p>',
+              '</div>'
+            ].join(''))
         }
       });
 
@@ -573,7 +651,7 @@
         $(el).data('original-query', query);
       });
 
-      $(el).on('typeahead:selected', function (evt, redirect) {
+      $(el).on('typeahead:select', function (evt, redirect) {
         window.location =
           'http://go.warwick.ac.uk/' + redirect.path +
           '?goSearchReferer=' + encodeURIComponent(window.location) +
