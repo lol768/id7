@@ -3,7 +3,7 @@
 @logo-width: 150px;
 @logo-height: 80px;
 
-@nav-links-margin-top: 50px; // Align with bottom of logotype
+@nav-links-margin-top: 35px; // Align with bottom of logotype
 
 @carousel-nav-exclusion-zone: 250px;
 
@@ -20,14 +20,8 @@
 body {
   position: relative;
 
-  // On smallscreen and non-flexbox, don't allow the body to go underneath the fixed header
+  // Don't allow the body to go underneath the fixed header
   margin-top: @fixed-header-size;
-
-  @media screen and (min-width: @grid-float-breakpoint) {
-    html.flexbox & {
-      margin-top: 0;
-    }
-  }
 }
 
 /***** START HOMEPAGE MASTHEAD *****/
@@ -141,38 +135,42 @@ body {
 // Quick links Nav
 .id7-masthead .id7-logo-row nav {
   margin-left: @logo-width;
-  font-size: 11.5px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 20px;
+
   letter-spacing: 1px;
   a { color: white !important; } // Avoid flash of black
 
   margin-top: @nav-links-margin-top;
 
+  ul:before {
+    display: inline-block;
+    content: 'Share:';
+    vertical-align: top;
+    margin-right: 0.3em;
+  }
+
   // Remove the bar separator, and increase separation
-  ul > li {
-    &:not(:first-child)::before {
-      content: '';
-      margin: 0 0.2em;
+  ul {
+    width: 165px;
+    margin: 0 auto;
 
-      @media (min-width: @screen-md-min) {
-        margin: 0 0.6em;
+    > li {
+      vertical-align: bottom;
+
+      &:not(:first-child)::before {
+        content: '';
+        margin: 0 0.1em;
+
+        @media (min-width: @screen-md-min) {
+          margin: 0 0.3em;
+        }
+      }
+
+      i.fa {
+        font-size: 30px;
+        vertical-align: bottom;
       }
     }
-  }
-
-  .more-links-trigger {
-    display: none;
-
-    @media screen and (min-width: @grid-float-breakpoint) {
-      html.flexbox & {
-        display: inline-block;
-      }
-    }
-  }
-
-  i.fa {
-    font-size: 14px;
   }
 }
 
@@ -359,7 +357,7 @@ body {
 // Flexbox-y Jumbotrons on desktop
 .set-jumbotron-height(@height: 100vh, @fallback: 800px) {
   height: @fallback;
-  height: @height;
+  height: calc(@height ~" - " @fixed-header-size);
 
   // Source: https://gist.github.com/pburtchaell/e702f441ba9b3f76f587
   // VH and VW units can cause issues on iOS 7 devices: http://caniuse.com/#feat=viewport-units
@@ -367,12 +365,12 @@ body {
 
   // iPad with portrait orientation.
   @media (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-    height: (1024px * (@height / 100vh));
+    height: ((1024px - @fixed-header-size) * (@height / 100vh));
   }
 
   // iPad with landscape orientation.
   @media (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
-    height: (768px * (@height / 100vh));
+    height: ((768px - @fixed-header-size) * (@height / 100vh));
   }
 }
 
@@ -459,10 +457,6 @@ body {
       }
     }
 
-    &.jumbotron-image > .container {
-      margin-top: @fixed-header-size;
-    }
-
     &.jumbotron-panel {
       .container, .container-fluid {
         .container-fluid {
@@ -498,7 +492,6 @@ body {
             > .column-1-content, > .column-2-content {
               position: relative;
               z-index: 2;
-              margin-top: @fixed-header-size;
 
               @media (min-width: @screen-sm-min) {
                 width: (@container-sm / 2);
@@ -526,10 +519,6 @@ body {
             justify-content: flex-start;
           }
         }
-      }
-
-      > .container-fluid > .row > * {
-        padding-top: @fixed-header-size;
       }
     }
 
@@ -636,209 +625,6 @@ body {
 
 /***** END JUMBOTRON CAROUSEL *****/
 
-/***** START MORE LINKS FOOTER *****/
-
-.popover.megamenu-links {
-  @media (max-width: @screen-xs-max) {
-    display: none !important;
-  }
-
-  text-shadow: none;
-
-  max-width: 100%;
-  width: @container-md;
-  min-width: @container-sm;
-
-  @media (min-width: @screen-md-min) {
-    min-width: @container-md;
-  }
-
-  .megamenu-links-address {
-    .name:after {
-      content: ', ';
-      display: inline;
-    }
-
-    .address, .telephone, .fax {
-      display: inline;
-    }
-
-    .telephone {
-      margin-right: 0.8em;
-    }
-
-    .utility > li {
-      &:before {
-        content: none;
-      }
-
-      margin-left: 0.6em;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
-#more-links {
-  padding: @grid-gutter-width 0;
-  background: @gray;
-  color: white;
-  font-size: 16px;
-  .link-colour(white, #e0e4f8);
-
-  @media screen and (min-width: @grid-float-breakpoint) {
-    html.flexbox & {
-      display: none;
-    }
-  }
-
-  .megamenu-links-address {
-    text-align: left;
-
-    .telephone {
-      .link-decoration(none, @hover: none);
-    }
-
-    .utility, .social-media {
-      margin-top: @grid-gutter-width;
-    }
-  }
-}
-
-.more-links-sitemap {
-  .clearfix();
-
-  // Unstyle lists
-  &, ul {
-    .list-unstyled();
-  }
-
-  > li {
-    .make-sm-column(3);
-
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0;
-
-    > i, > a > i {
-      font-size: 1.75em;
-      margin-right: 0.2em;
-    }
-
-    ul {
-      font-weight: normal;
-      text-align: left;
-      font-size: @font-size-base;
-
-      li { margin: 0; }
-    }
-
-    padding: @grid-gutter-width 0;
-  }
-
-  // When inside the footer
-  #more-links & {
-    .clearfix();
-
-    @media (max-width: @screen-xs-max) {
-      > li {
-        border-top: 1px solid @gray-light;
-      }
-
-      &:first-child > li:first-child {
-        padding-top: 0;
-        border-top: none;
-      }
-
-      &:first-child {
-        margin-bottom: 0;
-      }
-
-      + ul > li:last-child {
-        padding-bottom: 0;
-      }
-    }
-
-    > li > i, > li > a > i {
-      color: @gray-lighter;
-      vertical-align: middle;
-      margin-right: 4px;
-    }
-
-    > li {
-      font-size: 18px;
-
-      ul {
-        font-size: 16px;
-      }
-
-      &:nth-child(5) {
-        clear: left;
-      }
-    }
-  }
-
-  // When inside the popover
-  .megamenu-links & {
-    .link-colour(#333, #2c66e8);
-    margin-left:  -@grid-gutter-width;
-    margin-right: -@grid-gutter-width;
-
-    a {
-      text-decoration: underline;
-    }
-
-    > li {
-      padding: (@grid-gutter-width / 2) @grid-gutter-width;
-
-      + li {
-        border-left: 1px solid @gray-lighter;
-
-        &:nth-child(5) {
-          border-left: 0;
-        }
-      }
-
-      > i, > a > i {
-        color: @gray-light;
-        font-size: inherit;
-      }
-    }
-
-    &:first-child {
-      margin-bottom: 0;
-    }
-
-    // Flexbox it in browsers that support it to get equal-height columns
-    display: flex;
-    > li {
-      flex: 0 0 auto;
-    }
-
-  }
-}
-
-.megamenu-links-address {
-  text-align: center;
-  .link-colour(#333, #2c66e8);
-
-  .utility {
-    .horizontal-utility-links();
-  }
-
-  .social-media {
-    .list-inline();
-    margin-top: (@line-height-computed / 2);
-    margin-bottom: 0;
-
-    .link-colour(@gray-light, #2c66e8);
-  }
-}
-
-/***** END MORE LINKS FOOTER *****/
-
 /***** END MAIN CONTENT AREA *****/
 
 /***** HACKS AND MISC *****/
@@ -883,4 +669,14 @@ body > a.sr-only-focusable { // "Skip to main content" link
   &, &:link, &:visited, &:hover, &:focus, &:active {
     color: white;
   }
+}
+
+#snow-canvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
 }

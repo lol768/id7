@@ -40,6 +40,7 @@
         Defaults: {
             menu: '.carousel-nav',
             panels: '.jumbotron-carousel > article:visible',
+            offset: 0,
             animation: {
                 length: 300,
                 easing: 'swing'
@@ -208,6 +209,7 @@
                 } else if (isDesktop) {
                     // First time init
                     $container.panelSnap({
+                        offset: options.offset,
                         panelSelector: options.panels,
                         slideSpeed: options.animation.length,
                         easing: options.animation.easing,
@@ -219,11 +221,11 @@
                 }
 
                 // Scroll to right panel on page load
-                if (isDesktop && isOnLoad && window.location.hash.length > 0 && $container.find(options.panels + window.location.hash).length) {
+                /*if (isDesktop && isOnLoad && window.location.hash.length > 0 && $container.find(options.panels + window.location.hash).length) {
                     setTimeout(function() {
-                        $('html, body').scrollTop($(window.location.hash).offset().top);
+                        $('html, body').scrollTop($(window.location.hash).offset().top - options.offset);
                     }, 100);
-                }
+                }*/
             },
 
             initMenu: function initMenu(isOnLoad, isDesktop) {
@@ -236,7 +238,10 @@
                 $menu.find('a[href^="#"]').off('click.id7.homepage');
 
                 if (isDesktop) {
-                    $container.scrollspy({ target: options.menu }); // Idempotent, safe to call multiple times
+                    $container.scrollspy({
+                        target: options.menu,
+                        offset: options.offset
+                    }); // Idempotent, safe to call multiple times
 
                     // Smooth scroll
                     $menu.find('a[href^="#"]').on('click.id7.homepage', function (e) {
@@ -249,10 +254,10 @@
 
                         // animate
                         $('html, body').animate({
-                            scrollTop: $(hash).offset().top
+                            scrollTop: $(hash).offset().top - options.offset
                         }, options.animation.length, function () {
                             if (!$('.megamenu-links.popover').is(':visible')) {
-                                window.location.hash = hash;
+                                //window.location.hash = hash;
                             }
                         });
                     });
@@ -382,12 +387,12 @@
 
             initHashChangeListener: function initHashChangeListener (isOnLoad, isDesktop) {
                 // Handle in-page bookmarks.
-                if (isOnLoad && !isDesktop && window.location.hash) this.hashChanged();
-                $(window).off('hashchange.id7.homepage');
-
-                if (!Modernizr.mq('only all and (min-width: 768px)')) {
-                    $(window).on('hashchange.id7.homepage', $.proxy(this.hashChanged, this));
-                }
+                //if (isOnLoad && !isDesktop && window.location.hash) this.hashChanged();
+                //$(window).off('hashchange.id7.homepage');
+                //
+                //if (!Modernizr.mq('only all and (min-width: 768px)')) {
+                //    $(window).on('hashchange.id7.homepage', $.proxy(this.hashChanged, this));
+                //}
             },
 
             hashChanged: function onHashChange() {
@@ -477,7 +482,7 @@
                 // (default click behaviour)
                 // Only if the more links popover is not open
                 if (!$('.megamenu-links.popover').is(':visible')) {
-                    window.location.hash = $panel.attr('id');
+                    //window.location.hash = $panel.attr('id');
                 }
             }
         });
@@ -501,6 +506,8 @@
     };
 
     $(function() {
-        $('body').homepageCarousel();
+        $('body').homepageCarousel({
+            offset: $('.id7-page-header').outerHeight() || 0
+        });
     });
 })(jQuery);

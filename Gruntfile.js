@@ -112,7 +112,8 @@ module.exports = function (grunt) {
         src: [
           'docs/assets/external-homepage/jquery.panelSnap.js',
           'docs/assets/external-homepage/homepage-carousel.jquery.js',
-          'docs/assets/external-homepage/more-links-popover.jquery.js'
+          'docs/assets/external-homepage/share-links.js',
+          'docs/assets/external-homepage/snow.js'
         ],
         dest: 'dist/external-homepage/js/hp.js'
       }
