@@ -1,12 +1,14 @@
 #!/bin/bash
 
-./svg-to-png.sh src/masthead-logo-bleed-sm.svg 1170 300 masthead-logo-bleed-sm.png
-./svg-to-png.sh src/masthead-logo-bleed-xs.svg 1680 300 masthead-logo-bleed-xs.png
+#./svg-to-png.sh src/masthead-logo-bleed-sm.svg 1170 300 masthead-logo-bleed-sm.png
+#./svg-to-png.sh src/masthead-logo-bleed-xs.svg 1680 300 masthead-logo-bleed-xs.png
 
-./svg-to-png.sh src/masthead-logo-bleed-wide-xs.svg 1680 300 masthead-logo-bleed-wide-xs.png
-./svg-to-png.sh src/masthead-logo-bleed-wide-sm.svg 992 80 masthead-logo-bleed-wide-sm.png
-./svg-to-png.sh src/masthead-logo-bleed-wide-md.svg 1200 80 masthead-logo-bleed-wide-md.png
-./svg-to-png.sh src/masthead-logo-bleed-wide-lg.svg 3000 80 masthead-logo-bleed-wide-lg.png
+./svg-to-png.sh masthead-logo-bleed-sm.svg 1170 300 masthead-logo-bleed-sm.png false
+./svg-to-png.sh masthead-logo-bleed-xs.svg 1680 300 masthead-logo-bleed-xs.png false
+SCALE=2 ./svg-to-png.sh masthead-logo-bleed-sm.svg 1170 300 masthead-logo-bleed-sm.png false
+SCALE=2 ./svg-to-png.sh masthead-logo-bleed-xs.svg 1680 300 masthead-logo-bleed-xs.png false
+SCALE=3 ./svg-to-png.sh masthead-logo-bleed-sm.svg 1170 300 masthead-logo-bleed-sm.png false
+SCALE=3 ./svg-to-png.sh masthead-logo-bleed-xs.svg 1680 300 masthead-logo-bleed-xs.png false
 
 ./svg-to-png.sh logotype-colour.svg 136 26 id6a-logotype.png false
 
