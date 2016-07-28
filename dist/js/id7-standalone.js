@@ -165,6 +165,7 @@
           .on('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
+            $trigger.popover('toggle');
             return false;
           })
           .popover({
@@ -174,14 +175,17 @@
             html: true,
             placement: 'bottom',
             title: 'Account information',
-            trigger: 'click'
-          })
-          .html(this.options.name + '<span class="caret"></span>');
+            trigger: 'manual'
+          });
+
+        if (this.options.name) {
+          $trigger.html(this.options.name + '<span class="caret"></span>');
+        }
 
         // Click away to dismiss
         $('html').on('click.popoverDismiss', function (e) {
-          // if clicking anywhere other than the popover itself
-          if ($(e.target).closest('.popover').length === 0 && $(e.target).closest('.use-popover').length === 0) {
+          var $target = $(e.target);
+          if ($target.closest('.popover').length === 0 && $target.closest('.use-popover').length === 0 && $target.closest($trigger).length === 0) {
             $trigger.popover('hide');
           }
         });
@@ -803,7 +807,11 @@
       findWideTables: function findWideTables($container) {
         return $container.find('table').filter(function () {
           var $table = $(this);
-          return !$table.data('id7.wide-tables.wrapped') && Math.floor($table.width()) > $table.parent().width();
+          var originalMaxWidth = $table.css('max-width');
+          $table.css('max-width', 'none');
+          var tooWide = !$table.data('id7.wide-tables.wrapped') && Math.floor($table.width()) > $table.parent().width();
+          $table.css('max-width', originalMaxWidth);
+          return tooWide;
         });
       },
       wrap: function wrap($table, wrapperClass, containerClass) {
