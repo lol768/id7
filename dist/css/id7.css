@@ -8766,14 +8766,14 @@ body {
   top: 60px;
   left: 20px;
   z-index: -1;
-  width: 105px;
+  width: 125px;
   height: 18px;
   content: "";
 }
 @media (min-width: 768px) {
   .id7-utility-masthead::after {
     top: 78px;
-    width: 160px;
+    width: 200px;
     height: 26px;
   }
 }
@@ -8945,7 +8945,7 @@ html.no-generatedcontent .id7-utility-bar > ul > li {
 .id7-masthead .id7-logo-column {
   position: relative;
   float: left;
-  width: 125px;
+  width: 145px;
   min-height: 1px;
   padding-right: 10px;
   padding-left: 10px;
@@ -8969,7 +8969,7 @@ html.no-generatedcontent .id7-utility-bar > ul > li {
   padding-right: 10px;
   padding-left: 10px;
   padding-left: 0;
-  margin-left: -125px;
+  margin-left: -145px;
 }
 @media (min-width: 768px) {
   .id7-masthead .id7-search-column {
@@ -9037,7 +9037,7 @@ html.safari .id7-masthead {
   }
   .id7-masthead .id7-logo-row > .id7-logo {
     float: left;
-    width: 180px;
+    width: 220px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -9233,7 +9233,7 @@ html.safari .id7-masthead {
 .id7-masthead .id7-logo-row nav {
   display: none;
   margin-top: 57.66666667px;
-  margin-left: 180px;
+  margin-left: 220px;
   font-size: 85%;
   filter: alpha(opacity=0);
   opacity: 0;
