@@ -5,6 +5,7 @@
 <li><a href="#quick-start">Quick start</a></li>
 <li><a href="#bugs-and-feature-requests">Bugs and feature requests</a></li>
 <li><a href="#documentation">Documentation</a></li>
+<li><a href="#breaking-changes">Breaking changes</a></li>
 <li><a href="#copyright-and-license">Copyright and license</a></li>
 </ul>
 <h2 id="quick-start">Quick start</h2>
@@ -27,7 +28,6 @@
 │   └── id7-default-theme.min.css
 ├── js/
 │   ├── vendor/
-│   │   └── html5shiv-3.7.2.min.js
 │   ├── id7-bundle.js
 │   ├── id7-bundle.min.js
 │   ├── id7-bundle.min.js.map
@@ -52,30 +52,39 @@
 <p>We provide compiled CSS and JS (<code>id7.*</code>), as well as compiled and minified CSS and JS (<code>id7.min.*</code>). <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">CSS</a> and <a href="https://developer.chrome.com/devtools/docs/javascript-debugging#source-maps">JS</a> source maps (<code>id7.*.map</code>) are available for use with certain browsers&#39; developer tools. The FontAwesome icon font is included, as is an optional ID7 theme.</p>
 <p>The <code>id7-bundle.js</code> file includes dependencies such as jQuery and Bootstrap. The <code>id7-standalone.js</code> file doesn&#39;t include these, so they will need to be included manually. The dependencies required are:</p>
 <ul>
-<li><a href="https://github.com/jquery/jquery">jQuery</a> &gt;= 1.11.3</li>
-<li><a href="https://github.com/twbs/bootstrap">Bootstrap</a> &gt;= 3.3.5</li>
+<li><a href="https://github.com/jquery/jquery">jQuery</a> &gt;= 1.12.4</li>
+<li><a href="https://github.com/twbs/bootstrap">Bootstrap</a> &gt;= 3.3.7</li>
 <li><a href="https://github.com/twitter/typeahead.js">typeahead.js</a> &gt;= 0.11.1</li>
-<li><a href="https://github.com/lodash/lodash">lodash</a> &gt;= 3.10.0</li>
-<li><a href="https://github.com/Modernizr/Modernizr">Modernizr</a> &gt;= 2.8.3</li>
-<li>jQuery doubleScroll &gt;= 0.4 (note that this has been patched in the ID7 build to support concatenation)</li>
+<li><a href="https://github.com/lodash/lodash">lodash</a> &gt;= 4.17.2</li>
+<li><a href="https://modernizr.com/download?-flexbox-generatedcontent-mediaqueries-rgba-smil-svg-svgfilters-touchevents-addtest-mq-setclasses-shiv-dontmin">Modernizr</a> &gt;= 3.3.1 (the minimum necessary tests are specified with this link)</li>
+<li>jQuery doubleScroll &gt;= 0.5</li>
 </ul>
 <p>Internet Explorer 8 (and earlier) support requires:</p>
 <ul>
-<li><a href="https://github.com/aFarkas/html5shiv">html5shiv</a> &gt;= 3.7.2</li>
+<li><a href="https://github.com/aFarkas/html5shiv">html5shiv</a> &gt;= 3.7.3 (can be included in Modernizr builds)</li>
 </ul>
 <h2 id="bugs-and-feature-requests">Bugs and feature requests</h2>
-<p>Have a bug or a feature request? Contact <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#119;&#x65;&#98;&#116;&#x65;&#97;&#109;&#x40;&#x77;&#x61;&#x72;&#x77;&#x69;&#99;&#x6b;&#46;&#x61;&#99;&#x2e;&#x75;&#x6b;">&#119;&#x65;&#98;&#116;&#x65;&#97;&#109;&#x40;&#x77;&#x61;&#x72;&#x77;&#x69;&#99;&#x6b;&#46;&#x61;&#99;&#x2e;&#x75;&#x6b;</a>.</p>
+<p>Have a bug or a feature request? Contact <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#58;&#119;&#101;&#98;&#x74;&#101;&#97;&#x6d;&#64;&#119;&#97;&#x72;&#119;&#x69;&#99;&#107;&#x2e;&#97;&#99;&#46;&#x75;&#x6b;">&#119;&#101;&#98;&#x74;&#101;&#97;&#x6d;&#64;&#119;&#97;&#x72;&#119;&#x69;&#99;&#107;&#x2e;&#97;&#99;&#46;&#x75;&#x6b;</a>.</p>
 <h2 id="documentation">Documentation</h2>
 <p>Documentation, included in this repo in the root directory, is built with <a href="http://jekyllrb.com">Jekyll</a> and publicly hosted on GitHub Pages at <a href="http://id7.warwick.ac.uk">http://id7.warwick.ac.uk</a>. The docs may also be run locally.</p>
 <h3 id="running-sample-site-locally">Running sample site locally</h3>
 <ol>
-<li>Install Ruby and <code>gem install bundler</code></li>
-<li>From the root <code>/id7</code> directory, run <code>bundle install</code> to install dependent gems.</li>
-<li>From the root <code>/id7</code> directory, run <code>grunt</code> to generate CSS/JS, which is used on the sample site.</li>
-<li>From the root <code>/id7</code> directory, run <code>grunt serve</code> in the command line.</li>
+<li>Install Ruby and run <code>gem install bundler</code>.</li>
+<li>Install node.js.</li>
+<li>In the root <code>/id7</code> directory:<ol>
+<li>Run <code>bundle install</code> to install dependent gems.</li>
+<li>Run <code>npm install -g grunt-cli &amp;&amp; npm install -d</code> to install grunt and other node.js dependencies.</li>
+<li>Run <code>grunt</code> to generate CSS/JS, which is used on the sample site.</li>
+<li>Run <code>grunt serve</code> in the command line.</li>
+</ol>
+</li>
 <li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, et voilà.</li>
 </ol>
 <p>Learn more about using Jekyll by reading its <a href="http://jekyllrb.com/docs/home/">documentation</a>.</p>
+<h2 id="breaking-changes">Breaking changes</h2>
+<ul>
+<li><strong>1.2.0</strong> - Now uses a custom Modernizr build (see <em>What&#39;s included</em> above) with a minimal range of tests. If your application relies on other tests or shims which were included in previous versions, they will likely fail.</li>
+</ul>
 <h2 id="copyright-and-license">Copyright and license</h2>
 <p>Bootstrap is licensed under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT license</a>.</p>
 <p>All rights, including copyright, in the code and documentation (including, but not limited to, the University logo, and
