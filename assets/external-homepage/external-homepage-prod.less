@@ -64,7 +64,7 @@ body {
 // Change the masthead imagery
 // Remove the image from the masthead itself, as we put it on the utility-masthead
 .id7-masthead {
-  background: none !important; // Important to fix IE8 media tag precedence
+  background: none !important;
 }
 
 .id7-utility-masthead {
@@ -180,7 +180,7 @@ body {
 
 /***** START MAIN CONTENT AREA *****/
 .id7-main-content-area > .id7-main-content {
-  width: 100% !important; // Important fixes bug in IE8 where media query takes precedence
+  width: 100%;
   padding: 0;
 }
 
@@ -231,8 +231,8 @@ body {
         }
       }
 
-      i.fa:before { content: @fa-var-circle-o; }
-      &.active i.fa:before { content: @fa-var-dot-circle-o; }
+      i.fa:before { content: @fa-var-circle; }
+      &.active i.fa:before { content: @fa-var-dot-circle; }
       &.active .title { font-weight: bold; }
     }
   }
@@ -439,6 +439,27 @@ body {
 
       > * {
         position: relative;
+      }
+
+      > .iframe-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        pointer-events: none;
+
+        > iframe {
+          flex: 0 0 auto;
+          max-width: none;
+        }
       }
 
       // Block level link
@@ -842,7 +863,7 @@ body {
 /***** END MAIN CONTENT AREA *****/
 
 /***** HACKS AND MISC *****/
-html.no-js, html.no-style-update {
+html.no-js {
   .id7-masthead .id7-search {
     .fa, .twitter-typeahead:hover + .fa {
       color: @id7-brand-default;

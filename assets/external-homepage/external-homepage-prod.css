@@ -1,125 +1,23 @@
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.btn-group-lg > .btn {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.3333333;
-  border-radius: 0px;
-}
-.btn-group-sm > .btn {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 0px;
-}
-.btn-group-xs > .btn {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 0px;
-}
-.dl-horizontal dd:before,
-.dl-horizontal dd:after,
-.container:before,
-.container:after,
-.container-fluid:before,
-.container-fluid:after,
-.row:before,
-.row:after,
-.form-horizontal .form-group:before,
-.form-horizontal .form-group:after,
-.btn-toolbar:before,
-.btn-toolbar:after,
-.btn-group-vertical > .btn-group:before,
-.btn-group-vertical > .btn-group:after,
-.nav:before,
-.nav:after,
-.navbar:before,
-.navbar:after,
-.navbar-header:before,
-.navbar-header:after,
-.navbar-collapse:before,
-.navbar-collapse:after,
-.pager:before,
-.pager:after,
-.panel-body:before,
-.panel-body:after,
-.modal-header:before,
-.modal-header:after,
-.modal-footer:before,
-.modal-footer:after,
-.id7-fixed-width-container:before,
-.id7-fixed-width-container:after,
-.id7-utility-bar:before,
-.id7-utility-bar:after,
-.id7-masthead:before,
-.id7-masthead:after,
-.id7-masthead .id7-masthead-contents:before,
-.id7-masthead .id7-masthead-contents:after,
-.id7-masthead .id7-logo-row:before,
-.id7-masthead .id7-logo-row:after,
-.id7-main-content-area > header:before,
-.id7-main-content-area > header:after,
-.id7-main-content-area > .id7-main-content:before,
-.id7-main-content-area > .id7-main-content:after,
-.id7-paging:before,
-.id7-paging:after,
-footer .id7-site-footer:before,
-footer .id7-site-footer:after,
-footer .id7-app-footer:before,
-footer .id7-app-footer:after,
-.id7-utility-bar:before,
+@media screen and (max-width: 767px) {
+}@media (min-width: 768px) {
+}@media (min-width: 768px) {
+}@media (max-width: 0px) {
+}@media (min-width: 768px) {
+}@media (min-width: 768px) {
+}@media (max-width: 0px) {
+}@media (max-width: 0px) {
+}.id7-utility-bar:before,
 .id7-utility-bar:after,
 .id7-masthead:before,
 .id7-masthead:after {
-  content: " ";
-  display: table;
+  content: " ";display: table;
 }
-.dl-horizontal dd:after,
-.container:after,
-.container-fluid:after,
-.row:after,
-.form-horizontal .form-group:after,
-.btn-toolbar:after,
-.btn-group-vertical > .btn-group:after,
-.nav:after,
-.navbar:after,
-.navbar-header:after,
-.navbar-collapse:after,
-.pager:after,
-.panel-body:after,
-.modal-header:after,
-.modal-footer:after,
-.id7-fixed-width-container:after,
-.id7-utility-bar:after,
-.id7-masthead:after,
-.id7-masthead .id7-masthead-contents:after,
-.id7-masthead .id7-logo-row:after,
-.id7-main-content-area > header:after,
-.id7-main-content-area > .id7-main-content:after,
-.id7-paging:after,
-footer .id7-site-footer:after,
-footer .id7-app-footer:after,
 .id7-utility-bar:after,
 .id7-masthead:after {
   clear: both;
 }
-.btn-group-lg > .btn {
-  border-radius: 6px;
-}
-.btn-group-sm > .btn {
-  border-radius: 3px;
-}
-.btn-group-xs > .btn {
-  border-radius: 3px;
-}
-body {
+@media (min-width: 768px) {
+}body {
   position: relative;
   margin-top: 104px;
 }
@@ -159,7 +57,6 @@ body {
   position: fixed;
   width: 100%;
   -webkit-transition: background-color 0.15s linear;
-  -o-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
   z-index: 30;
   top: 0;
@@ -176,12 +73,10 @@ body {
   background-image: url("/dist/images/masthead-logo-bleed-wide-xs.svg");
   background-position: 0 24px;
   background-repeat: no-repeat;
-  -webkit-background-size: 1680px 300px;
-          background-size: 1680px 300px;
+  background-size: 1680px 300px;
 }
-html.no-svg .id7-utility-masthead,
 html.no-svgfilters .id7-utility-masthead,
-html.no-smil .id7-utility-masthead,
+html.ie-or-edge .id7-utility-masthead,
 html.safari .id7-utility-masthead {
   background-image: url("/dist/images/masthead-logo-bleed-wide-xs.png");
 }
@@ -200,12 +95,10 @@ html.safari .id7-utility-masthead {
     background-image: url("/dist/images/masthead-logo-bleed-wide-sm.svg");
     background-position: center 24px;
     background-repeat: no-repeat;
-    -webkit-background-size: 992px 80px;
-            background-size: 992px 80px;
+    background-size: 992px 80px;
   }
-  html.no-svg .id7-utility-masthead,
   html.no-svgfilters .id7-utility-masthead,
-  html.no-smil .id7-utility-masthead,
+  html.ie-or-edge .id7-utility-masthead,
   html.safari .id7-utility-masthead {
     background-image: url("/dist/images/masthead-logo-bleed-wide-sm.png");
   }
@@ -225,12 +118,10 @@ html.safari .id7-utility-masthead {
     background-image: url("/dist/images/masthead-logo-bleed-wide-md.svg");
     background-position: center 24px;
     background-repeat: no-repeat;
-    -webkit-background-size: 1200px 80px;
-            background-size: 1200px 80px;
+    background-size: 1200px 80px;
   }
-  html.no-svg .id7-utility-masthead,
   html.no-svgfilters .id7-utility-masthead,
-  html.no-smil .id7-utility-masthead,
+  html.ie-or-edge .id7-utility-masthead,
   html.safari .id7-utility-masthead {
     background-image: url("/dist/images/masthead-logo-bleed-wide-md.png");
   }
@@ -250,12 +141,10 @@ html.safari .id7-utility-masthead {
     background-image: url("/dist/images/masthead-logo-bleed-wide-lg.svg");
     background-position: center 24px;
     background-repeat: no-repeat;
-    -webkit-background-size: 3000px 80px;
-            background-size: 3000px 80px;
+    background-size: 3000px 80px;
   }
-  html.no-svg .id7-utility-masthead,
   html.no-svgfilters .id7-utility-masthead,
-  html.no-smil .id7-utility-masthead,
+  html.ie-or-edge .id7-utility-masthead,
   html.safari .id7-utility-masthead {
     background-image: url("/dist/images/masthead-logo-bleed-wide-lg.png");
   }
@@ -362,7 +251,7 @@ html.safari .id7-utility-masthead {
 /***** END HOMEPAGE MASTHEAD *****/
 /***** START MAIN CONTENT AREA *****/
 .id7-main-content-area > .id7-main-content {
-  width: 100% !important;
+  width: 100%;
   padding: 0;
 }
 /***** START CAROUSEL NAV *****/
@@ -403,22 +292,21 @@ html.safari .id7-utility-masthead {
 .carousel-nav a:active {
   color: #e0e4f8;
 }
-.carousel-nav a:hover .new-window-link {
+.carousel-nav a:hover .new-window-link,
+.carousel-nav a:hover .insecure-link {
   color: #e0e4f8;
 }
 .carousel-nav a,
 .carousel-nav a:link,
 .carousel-nav a:visited {
   -webkit-text-decoration-color: #ffffff;
-  -moz-text-decoration-color: #ffffff;
-       text-decoration-color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 .carousel-nav a:hover,
 .carousel-nav a:focus,
 .carousel-nav a:active {
   -webkit-text-decoration-color: #e0e4f8;
-  -moz-text-decoration-color: #e0e4f8;
-       text-decoration-color: #e0e4f8;
+  text-decoration-color: #e0e4f8;
 }
 .carousel-nav ul.nav {
   padding: 0 20px 0 0;
@@ -441,7 +329,7 @@ html.safari .id7-utility-masthead {
   background: none;
 }
 .carousel-nav ul.nav > li i.fa:before {
-  content: "\f10c";
+  content: "\f111";
 }
 .carousel-nav ul.nav > li.active i.fa:before {
   content: "\f192";
@@ -451,7 +339,54 @@ html.safari .id7-utility-masthead {
 }
 /***** END CAROUSEL NAV *****/
 /***** START JUMBOTRON CAROUSEL *****/
-.jumbotron-carousel .jumbotron .col-xs-1, .jumbotron-carousel .jumbotron .col-sm-1, .jumbotron-carousel .jumbotron .col-md-1, .jumbotron-carousel .jumbotron .col-lg-1, .jumbotron-carousel .jumbotron .col-xs-2, .jumbotron-carousel .jumbotron .col-sm-2, .jumbotron-carousel .jumbotron .col-md-2, .jumbotron-carousel .jumbotron .col-lg-2, .jumbotron-carousel .jumbotron .col-xs-3, .jumbotron-carousel .jumbotron .col-sm-3, .jumbotron-carousel .jumbotron .col-md-3, .jumbotron-carousel .jumbotron .col-lg-3, .jumbotron-carousel .jumbotron .col-xs-4, .jumbotron-carousel .jumbotron .col-sm-4, .jumbotron-carousel .jumbotron .col-md-4, .jumbotron-carousel .jumbotron .col-lg-4, .jumbotron-carousel .jumbotron .col-xs-5, .jumbotron-carousel .jumbotron .col-sm-5, .jumbotron-carousel .jumbotron .col-md-5, .jumbotron-carousel .jumbotron .col-lg-5, .jumbotron-carousel .jumbotron .col-xs-6, .jumbotron-carousel .jumbotron .col-sm-6, .jumbotron-carousel .jumbotron .col-md-6, .jumbotron-carousel .jumbotron .col-lg-6, .jumbotron-carousel .jumbotron .col-xs-7, .jumbotron-carousel .jumbotron .col-sm-7, .jumbotron-carousel .jumbotron .col-md-7, .jumbotron-carousel .jumbotron .col-lg-7, .jumbotron-carousel .jumbotron .col-xs-8, .jumbotron-carousel .jumbotron .col-sm-8, .jumbotron-carousel .jumbotron .col-md-8, .jumbotron-carousel .jumbotron .col-lg-8, .jumbotron-carousel .jumbotron .col-xs-9, .jumbotron-carousel .jumbotron .col-sm-9, .jumbotron-carousel .jumbotron .col-md-9, .jumbotron-carousel .jumbotron .col-lg-9, .jumbotron-carousel .jumbotron .col-xs-10, .jumbotron-carousel .jumbotron .col-sm-10, .jumbotron-carousel .jumbotron .col-md-10, .jumbotron-carousel .jumbotron .col-lg-10, .jumbotron-carousel .jumbotron .col-xs-11, .jumbotron-carousel .jumbotron .col-sm-11, .jumbotron-carousel .jumbotron .col-md-11, .jumbotron-carousel .jumbotron .col-lg-11, .jumbotron-carousel .jumbotron .col-xs-12, .jumbotron-carousel .jumbotron .col-sm-12, .jumbotron-carousel .jumbotron .col-md-12, .jumbotron-carousel .jumbotron .col-lg-12:empty {
+.jumbotron-carousel .jumbotron .col-xs-1:empty,
+.jumbotron-carousel .jumbotron .col-sm-1:empty,
+.jumbotron-carousel .jumbotron .col-md-1:empty,
+.jumbotron-carousel .jumbotron .col-lg-1:empty,
+.jumbotron-carousel .jumbotron .col-xs-2:empty,
+.jumbotron-carousel .jumbotron .col-sm-2:empty,
+.jumbotron-carousel .jumbotron .col-md-2:empty,
+.jumbotron-carousel .jumbotron .col-lg-2:empty,
+.jumbotron-carousel .jumbotron .col-xs-3:empty,
+.jumbotron-carousel .jumbotron .col-sm-3:empty,
+.jumbotron-carousel .jumbotron .col-md-3:empty,
+.jumbotron-carousel .jumbotron .col-lg-3:empty,
+.jumbotron-carousel .jumbotron .col-xs-4:empty,
+.jumbotron-carousel .jumbotron .col-sm-4:empty,
+.jumbotron-carousel .jumbotron .col-md-4:empty,
+.jumbotron-carousel .jumbotron .col-lg-4:empty,
+.jumbotron-carousel .jumbotron .col-xs-5:empty,
+.jumbotron-carousel .jumbotron .col-sm-5:empty,
+.jumbotron-carousel .jumbotron .col-md-5:empty,
+.jumbotron-carousel .jumbotron .col-lg-5:empty,
+.jumbotron-carousel .jumbotron .col-xs-6:empty,
+.jumbotron-carousel .jumbotron .col-sm-6:empty,
+.jumbotron-carousel .jumbotron .col-md-6:empty,
+.jumbotron-carousel .jumbotron .col-lg-6:empty,
+.jumbotron-carousel .jumbotron .col-xs-7:empty,
+.jumbotron-carousel .jumbotron .col-sm-7:empty,
+.jumbotron-carousel .jumbotron .col-md-7:empty,
+.jumbotron-carousel .jumbotron .col-lg-7:empty,
+.jumbotron-carousel .jumbotron .col-xs-8:empty,
+.jumbotron-carousel .jumbotron .col-sm-8:empty,
+.jumbotron-carousel .jumbotron .col-md-8:empty,
+.jumbotron-carousel .jumbotron .col-lg-8:empty,
+.jumbotron-carousel .jumbotron .col-xs-9:empty,
+.jumbotron-carousel .jumbotron .col-sm-9:empty,
+.jumbotron-carousel .jumbotron .col-md-9:empty,
+.jumbotron-carousel .jumbotron .col-lg-9:empty,
+.jumbotron-carousel .jumbotron .col-xs-10:empty,
+.jumbotron-carousel .jumbotron .col-sm-10:empty,
+.jumbotron-carousel .jumbotron .col-md-10:empty,
+.jumbotron-carousel .jumbotron .col-lg-10:empty,
+.jumbotron-carousel .jumbotron .col-xs-11:empty,
+.jumbotron-carousel .jumbotron .col-sm-11:empty,
+.jumbotron-carousel .jumbotron .col-md-11:empty,
+.jumbotron-carousel .jumbotron .col-lg-11:empty,
+.jumbotron-carousel .jumbotron .col-xs-12:empty,
+.jumbotron-carousel .jumbotron .col-sm-12:empty,
+.jumbotron-carousel .jumbotron .col-md-12:empty,
+.jumbotron-carousel .jumbotron .col-lg-12:empty {
   min-height: 0;
 }
 .jumbotron-carousel a,
@@ -480,22 +415,21 @@ html.safari .id7-utility-masthead {
 .jumbotron-carousel .jumbotron a:active {
   color: #e0e4f8;
 }
-.jumbotron-carousel .jumbotron a:hover .new-window-link {
+.jumbotron-carousel .jumbotron a:hover .new-window-link,
+.jumbotron-carousel .jumbotron a:hover .insecure-link {
   color: #e0e4f8;
 }
 .jumbotron-carousel .jumbotron a,
 .jumbotron-carousel .jumbotron a:link,
 .jumbotron-carousel .jumbotron a:visited {
   -webkit-text-decoration-color: #ffffff;
-  -moz-text-decoration-color: #ffffff;
-       text-decoration-color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 .jumbotron-carousel .jumbotron a:hover,
 .jumbotron-carousel .jumbotron a:focus,
 .jumbotron-carousel .jumbotron a:active {
   -webkit-text-decoration-color: #e0e4f8;
-  -moz-text-decoration-color: #e0e4f8;
-       text-decoration-color: #e0e4f8;
+  text-decoration-color: #e0e4f8;
 }
 .jumbotron-carousel .jumbotron h1,
 .jumbotron-carousel .jumbotron h2,
@@ -573,8 +507,7 @@ html.safari .id7-utility-masthead {
   width: 264px;
   height: 136px;
   border: 4px solid white;
-  -webkit-box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
   margin-top: 20px;
 }
 .jumbotron-carousel .jumbotron .caption.caption-icon-square .caption-icon {
@@ -670,8 +603,7 @@ html.safari .id7-utility-masthead {
   html.flexbox .jumbotron-carousel .jumbotron .jumbotron-image {
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: cover;
-            background-size: cover;
+    background-size: cover;
     position: relative;
   }
   html.flexbox .jumbotron-carousel .jumbotron.jumbotron-image.overlay::before,
@@ -689,6 +621,43 @@ html.safari .id7-utility-masthead {
   html.flexbox .jumbotron-carousel .jumbotron .jumbotron-image > * {
     position: relative;
   }
+  html.flexbox .jumbotron-carousel .jumbotron.jumbotron-image > .iframe-container,
+  html.flexbox .jumbotron-carousel .jumbotron .jumbotron-image > .iframe-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  html.flexbox .jumbotron-carousel .jumbotron.jumbotron-image > .iframe-container > iframe,
+  html.flexbox .jumbotron-carousel .jumbotron .jumbotron-image > .iframe-container > iframe {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    max-width: none;
+  }
   html.flexbox .jumbotron-carousel .jumbotron.jumbotron-image > a,
   html.flexbox .jumbotron-carousel .jumbotron .jumbotron-image > a {
     position: absolute;
@@ -697,7 +666,6 @@ html.safari .id7-utility-masthead {
     top: 0;
     left: 0;
     -webkit-transition: background 0.15s linear;
-    -o-transition: background 0.15s linear;
     transition: background 0.15s linear;
     background-color: rgba(255, 255, 255, 0);
   }
@@ -984,7 +952,54 @@ html.safari .id7-utility-masthead {
   }
 }
 @media (min-width: 768px) {
-  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-1, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-1, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-1, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-1, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-2, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-2, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-2, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-2, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-3, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-3, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-3, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-3, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-4, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-4, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-4, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-4, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-5, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-5, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-5, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-5, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-6, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-6, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-6, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-6, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-7, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-7, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-7, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-7, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-8, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-8, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-8, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-8, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-9, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-9, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-9, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-9, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-10, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-10, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-10, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-10, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-11, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-11, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-11, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-11, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-12, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-12, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-12, html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-12 {
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-1,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-1,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-1,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-1,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-2,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-2,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-2,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-2,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-3,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-3,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-3,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-3,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-4,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-4,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-4,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-4,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-5,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-5,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-5,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-5,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-6,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-6,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-6,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-6,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-7,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-7,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-7,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-7,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-8,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-8,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-8,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-8,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-9,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-9,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-9,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-9,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-10,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-10,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-10,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-10,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-11,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-11,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-11,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-11,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-xs-12,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-sm-12,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-md-12,
+  html.no-flexbox .jumbotron-carousel .jumbotron-panel .col-lg-12 {
     position: static;
     min-height: 0px;
     float: none;
@@ -1067,22 +1082,21 @@ html.safari .id7-utility-masthead {
 #more-links a:active {
   color: #e0e4f8;
 }
-#more-links a:hover .new-window-link {
+#more-links a:hover .new-window-link,
+#more-links a:hover .insecure-link {
   color: #e0e4f8;
 }
 #more-links a,
 #more-links a:link,
 #more-links a:visited {
   -webkit-text-decoration-color: #ffffff;
-  -moz-text-decoration-color: #ffffff;
-       text-decoration-color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 #more-links a:hover,
 #more-links a:focus,
 #more-links a:active {
   -webkit-text-decoration-color: #e0e4f8;
-  -moz-text-decoration-color: #e0e4f8;
-       text-decoration-color: #e0e4f8;
+  text-decoration-color: #e0e4f8;
 }
 @media screen and (min-width: 768px) {
   html.flexbox #more-links {
@@ -1214,29 +1228,28 @@ html.safari .id7-utility-masthead {
 .megamenu-links .more-links-sitemap a,
 .megamenu-links .more-links-sitemap a:link,
 .megamenu-links .more-links-sitemap a:visited {
-  color: #333333;
+  color: #333;
 }
 .megamenu-links .more-links-sitemap a:hover,
 .megamenu-links .more-links-sitemap a:focus,
 .megamenu-links .more-links-sitemap a:active {
   color: #2c66e8;
 }
-.megamenu-links .more-links-sitemap a:hover .new-window-link {
+.megamenu-links .more-links-sitemap a:hover .new-window-link,
+.megamenu-links .more-links-sitemap a:hover .insecure-link {
   color: #2c66e8;
 }
 .megamenu-links .more-links-sitemap a,
 .megamenu-links .more-links-sitemap a:link,
 .megamenu-links .more-links-sitemap a:visited {
-  -webkit-text-decoration-color: #666666;
-  -moz-text-decoration-color: #666666;
-       text-decoration-color: #666666;
+  -webkit-text-decoration-color: #707070;
+  text-decoration-color: #707070;
 }
 .megamenu-links .more-links-sitemap a:hover,
 .megamenu-links .more-links-sitemap a:focus,
 .megamenu-links .more-links-sitemap a:active {
   -webkit-text-decoration-color: #2c66e8;
-  -moz-text-decoration-color: #2c66e8;
-       text-decoration-color: #2c66e8;
+  text-decoration-color: #2c66e8;
 }
 .megamenu-links .more-links-sitemap a {
   text-decoration: underline;
@@ -1270,29 +1283,28 @@ html.safari .id7-utility-masthead {
 .megamenu-links-address a,
 .megamenu-links-address a:link,
 .megamenu-links-address a:visited {
-  color: #333333;
+  color: #333;
 }
 .megamenu-links-address a:hover,
 .megamenu-links-address a:focus,
 .megamenu-links-address a:active {
   color: #2c66e8;
 }
-.megamenu-links-address a:hover .new-window-link {
+.megamenu-links-address a:hover .new-window-link,
+.megamenu-links-address a:hover .insecure-link {
   color: #2c66e8;
 }
 .megamenu-links-address a,
 .megamenu-links-address a:link,
 .megamenu-links-address a:visited {
-  -webkit-text-decoration-color: #666666;
-  -moz-text-decoration-color: #666666;
-       text-decoration-color: #666666;
+  -webkit-text-decoration-color: #707070;
+  text-decoration-color: #707070;
 }
 .megamenu-links-address a:hover,
 .megamenu-links-address a:focus,
 .megamenu-links-address a:active {
   -webkit-text-decoration-color: #2c66e8;
-  -moz-text-decoration-color: #2c66e8;
-       text-decoration-color: #2c66e8;
+  text-decoration-color: #2c66e8;
 }
 .megamenu-links-address .utility {
   padding-left: 0;
@@ -1303,9 +1315,6 @@ html.safari .id7-utility-masthead {
   display: inline-block;
   padding: 0;
   margin: 0;
-}
-html.no-generatedcontent .megamenu-links-address .utility > li {
-  margin: 0 0.2em;
 }
 .megamenu-links-address .utility > li:before {
   content: '|';
@@ -1344,50 +1353,41 @@ html.no-generatedcontent .megamenu-links-address .utility > li {
 .megamenu-links-address .social-media a:active {
   color: #2c66e8;
 }
-.megamenu-links-address .social-media a:hover .new-window-link {
+.megamenu-links-address .social-media a:hover .new-window-link,
+.megamenu-links-address .social-media a:hover .insecure-link {
   color: #2c66e8;
 }
 .megamenu-links-address .social-media a,
 .megamenu-links-address .social-media a:link,
 .megamenu-links-address .social-media a:visited {
-  -webkit-text-decoration-color: #aaaaaa;
-  -moz-text-decoration-color: #aaaaaa;
-       text-decoration-color: #aaaaaa;
+  -webkit-text-decoration-color: #a0a0a0;
+  text-decoration-color: #a0a0a0;
 }
 .megamenu-links-address .social-media a:hover,
 .megamenu-links-address .social-media a:focus,
 .megamenu-links-address .social-media a:active {
   -webkit-text-decoration-color: #2c66e8;
-  -moz-text-decoration-color: #2c66e8;
-       text-decoration-color: #2c66e8;
+  text-decoration-color: #2c66e8;
 }
 /***** END MORE LINKS FOOTER *****/
 /***** END MAIN CONTENT AREA *****/
 /***** HACKS AND MISC *****/
 html.no-js .id7-masthead .id7-search .fa,
-html.no-style-update .id7-masthead .id7-search .fa,
-html.no-js .id7-masthead .id7-search .twitter-typeahead:hover + .fa,
-html.no-style-update .id7-masthead .id7-search .twitter-typeahead:hover + .fa {
+html.no-js .id7-masthead .id7-search .twitter-typeahead:hover + .fa {
   color: #5b3069;
 }
 html.no-js .id7-masthead .id7-search .twitter-typeahead .tt-suggestion:hover,
-html.no-style-update .id7-masthead .id7-search .twitter-typeahead .tt-suggestion:hover,
 html.no-js .id7-masthead .id7-search .twitter-typeahead .tt-suggestion:focus,
-html.no-style-update .id7-masthead .id7-search .twitter-typeahead .tt-suggestion:focus,
-html.no-js .id7-masthead .id7-search .twitter-typeahead .tt-suggestion.tt-cursor,
-html.no-style-update .id7-masthead .id7-search .twitter-typeahead .tt-suggestion.tt-cursor {
+html.no-js .id7-masthead .id7-search .twitter-typeahead .tt-suggestion.tt-cursor {
   background: #5b3069;
 }
-html.no-js .form-control:focus,
-html.no-style-update .form-control:focus {
+html.no-js .form-control:focus {
   border-color: #5b3069;
 }
-html.no-js .id7-page-header,
-html.no-style-update .id7-page-header {
+html.no-js .id7-page-header {
   background: #5b3069;
 }
-html.no-js .id7-masthead .id7-logo-row nav a,
-html.no-style-update .id7-masthead .id7-logo-row nav a {
+html.no-js .id7-masthead .id7-logo-row nav a {
   color: #5b3069 !important;
 }
 body > a.sr-only-focusable {

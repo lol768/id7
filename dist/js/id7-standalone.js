@@ -1,9 +1,7 @@
 /*!
  * University of Warwick ID7
  */
-
-
-/*global _:false, Modernizr:false */
+/* globals _:false, Modernizr:false */
 
 (function ($) {
   'use strict';
@@ -11,24 +9,16 @@
     Defaults: {
       screenSizes: [
         {
-          name: 'lg', test: function () {
-          return Modernizr.mq('only all and (min-width: 1200px)');
-        }, container: 1170
+          name: 'lg', test: function () { return Modernizr.mq('only all and (min-width: 1200px)'); }, container: 1170
         },
         {
-          name: 'md', test: function () {
-          return Modernizr.mq('only all and (min-width: 992px)');
-        }, container: 970
+          name: 'md', test: function () { return Modernizr.mq('only all and (min-width: 992px)'); }, container: 970
         },
         {
-          name: 'sm', test: function () {
-          return Modernizr.mq('only all and (min-width: 768px)');
-        }, container: 750
+          name: 'sm', test: function () { return Modernizr.mq('only all and (min-width: 768px)'); }, container: 750
         },
         {
-          name: 'xs', test: function () {
-          return true;
-        }
+          name: 'xs', test: function () { return true; }
         }
       ],
       eventName: 'id7:reflow'
@@ -71,7 +61,7 @@
         $(window).on('resize.id7.reflow.onScreenResize', $.proxy(this.onScreenResize, this));
 
         // ID-30 on load (i.e. after fonts have loaded) run this, forcing a resize
-        if (document.readyState == 'complete') {
+        if (document.readyState === 'complete') {
           this.reflow();
         } else {
           $(window).on('load', $.proxy(this.reflow, this));
@@ -117,14 +107,19 @@
 
   var Config = {
     Templates: {
-      Popover: function (o) { return '<div class="account-info"><iframe src="' + escapeHtml(o.iframelink) + '" scrolling="auto" frameborder="0" allowtransparency="true" seamless sandbox="allow-same-origin allow-scripts allow-top-navigation allow-forms allow-popups"></iframe></div><div class="actions"><div class="btn-group btn-group-justified"><div class="btn-group sign-out"><a href="' + escapeHtml(o.logoutlink) + '" class="btn btn-default">Sign out</a></div></div></div>'; },
+      Popover: function (o) { return '<div class="account-info"><iframe src="' + escapeHtml(o.useMwIframe ? o.iframelink + '?embedded' : o.legacyIframeLink) + '" scrolling="auto" frameborder="0" allowtransparency="true" seamless sandbox="allow-same-origin allow-scripts allow-top-navigation allow-forms allow-popups"></iframe></div><div class="actions"><div class="btn-group btn-group-justified"><div class="btn-group sign-out"><a href="' + escapeHtml(o.logoutlink) + '" class="btn btn-default">Sign out</a></div></div></div>'; },
       Action: function (o) { return '<div class="btn-group"><a href="' + escapeHtml(o.href) + '" title="' + escapeHtml(o.tooltip) + '" class="btn btn-default ' + escapeHtml(o.classes) + '">' + escapeHtml(o.title) + '</a></div>'; }
     },
     Defaults: {
       container: false,
-      iframelink: 'https://my-dev.warwick.ac.uk/?embedded',
+      iframelink: 'https://my.warwick.ac.uk/',
+      notificationsApi: 'https://my.warwick.ac.uk/api/id7/notifications/unreads',
+      legacyIframeLink: 'https://websignon.warwick.ac.uk/origin/account/popover',
+      showNotificationsBadge: true,
+      useMwIframe: true,
+      maxNumberNotifications: 99,
       template: [
-        '<div class="popover account-information">',
+        '<div class="popover my-warwick hybrid-overlay">',
         '<div class="arrow"></div>',
         '<div class="popover-inner">',
         '<div class="popover-content"><p></p></div>',
@@ -134,6 +129,19 @@
     },
     MessagePrefix: 'message.id7.account-popover.'
   };
+
+  var fetchNotificationData = (function (endpoint, callback, errorHandler) {
+    // avoid fetch for compatibility
+    $.ajax({
+      url: endpoint,
+      success: callback,
+      error: errorHandler,
+      dataType: 'json',
+      xhrFields: {
+        withCredentials: true
+      }
+    });
+  });
 
   /**
    * Display a popover with account information
@@ -152,28 +160,68 @@
     }
 
     $.extend(AccountPopover.prototype, {
+      createPopover: function ($trigger) {
+        var opts = {
+          container: this.options.container,
+          content: Config.Templates.Popover(this.options),
+          template: this.options.template,
+          html: true,
+          placement: 'bottom',
+          title: 'Account information',
+          trigger: 'manual'
+        };
+        $trigger.popover(opts);
+      },
+      isBlacklistedDevice: function isBlacklistedDevice() {
+        var userAgent = navigator.userAgent;
+        var iPadInUse = userAgent.indexOf('iPad') !== -1;
+        // ref https://stackoverflow.com/questions/45171905/
+        return iPadInUse;
+      },
+      isMwFeatureAvailable: function isMwFeatureAvailable() {
+        return !this.isBlacklistedDevice();
+      },
       wireEventHandlers: function wireEventHandlers() {
         var $trigger = this.$trigger;
-
-        $trigger
-          .on('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            $trigger.popover('toggle');
-            return false;
-          })
-          .popover({
-            container: this.options.container,
-            content: Config.Templates.Popover(this.options),
-            template: this.options.template,
-            html: true,
-            placement: 'bottom',
-            title: 'Account information',
-            trigger: 'manual'
-          });
+        var that = this;
+        var iframeLink = this.options.iframelink;
 
         if (this.options.name) {
-          $trigger.html(this.options.name + '<span class="caret"></span>');
+          var badgeHtml = '<span class="fa-stack id7-notifications-badge">  <i class="fa fa-circle fa-stack-2x"></i>  <strong class="fa-stack-1x fa fa-spinner fa-spin brand-text counter-value"></strong> </span>';
+          if (!this.isMwFeatureAvailable() || !this.options.showNotificationsBadge) {
+            badgeHtml = '';
+          }
+          $trigger.html(this.options.name + badgeHtml + '<span class="caret"></span>');
+        }
+
+        var $badge = $trigger.find('.id7-notifications-badge');
+        $trigger.on('click', function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          $trigger.popover('toggle');
+          $badge.find('.counter-value:not(.fa-exclamation-triangle):not(.fa-spinner)').text('0');
+          that.options.iframelink = iframeLink;
+          $trigger.data('bs.popover').options.content = Config.Templates.Popover(that.options);
+          $badge.removeClass('animating');
+          $trigger.blur();
+          return false;
+        });
+        this.createPopover($trigger);
+
+        if (this.options.showNotificationsBadge && this.isMwFeatureAvailable()) {
+          fetchNotificationData(this.options.notificationsApi, function (data) {
+            var unreads = Math.min(data.unreads, 99);
+            $badge.find('.counter-value').removeClass('fa-spinner').removeClass('fa-spin').addClass('slideInDown').text(unreads);
+            if (unreads > 0) {
+              $badge.fadeIn().addClass('animating');
+              that.options.iframelink = iframeLink + 'alerts';
+              $trigger.data('bs.popover').options.content = Config.Templates.Popover(that.options);
+            }
+          }, function () {
+            $badge.find('.counter-value').removeClass('fa-spinner')
+              .removeClass('fa-spin').addClass('fa-exclamation-triangle');
+            $badge.attr('title', 'There was a problem communicating with the MyWarwick notifications service');
+          });
         }
 
         // Click away to dismiss
@@ -183,6 +231,38 @@
             $trigger.popover('hide');
           }
         });
+
+        // Smaller screens get the old popover
+        var onReflow = $.proxy(function (e, screenConfig) {
+          this.options.useMwIframe = screenConfig.name !== 'xs'
+            && $(window).height() >= 580 && this.isMwFeatureAvailable();
+
+          $trigger.find('.id7-notifications-badge').toggle(this.options.useMwIframe);
+
+          if ($trigger.data('bs.popover') !== undefined) {
+            $trigger.data('bs.popover').options.content = Config.Templates.Popover(this.options);
+
+            var toAdd = this.options.useMwIframe && this.isMwFeatureAvailable() ? 'my-warwick' : 'account-information';
+            var $bsPopover = $trigger.data('bs.popover');
+            $bsPopover.tip().removeClass('account-information', 'my-warwick').addClass(toAdd);
+
+            // trigger a reposition if the popover is open
+            // Note that this ends up reloading the iFrame, so remove the loaded class
+            if ($bsPopover.tip().hasClass('in')) {
+              $trigger.popover('show');
+              $trigger.next('.popover').removeClass('loading');
+            }
+          }
+        }, this);
+
+        $(window).on('id7:reflow', onReflow);
+
+        // If the document is already loaded this won't be fired as expected, so fire it manually
+        if (document.readyState === 'complete' && typeof $(window).data('id7.reflow') !== 'undefined') {
+          // Call reflow immediately
+          var screenConfig = $(window).data('id7.reflow')._screenConfig();
+          onReflow({}, screenConfig);
+        }
       },
       onMessage: function onMessage(messageType, data) {
         var $popover = this.$trigger.next('.popover');
@@ -199,6 +279,13 @@
           case 'resizeIframe':
             $popover.find('.account-info iframe').height(data.height);
             break;
+          case 'layoutDidMount':
+            $popover.addClass('loaded');
+            this.updateColourTheme(data.colourTheme);
+            break;
+          case 'colourThemeChange':
+            this.updateColourTheme(data.colourTheme);
+            break;
           case 'signedOut':
             var loginlink = this.options.loginlink;
             $popover.find('.actions > .btn-group > .sign-out').replaceWith(Config.Templates.Action({ href: loginlink, classes: 'sign-in', title: 'Sign in', tooltip: '' }));
@@ -206,6 +293,11 @@
           default:
             console.error('Unexpected message type: ' + messageType);
         }
+      },
+      updateColourTheme: function updateColourTheme(colourTheme) {
+        this.$trigger.next('.popover').removeClass(function (i, className) {
+          return $.grep(className.split(' '), function (singleClass) { return singleClass.indexOf('theme-') === 0; }).join(' ');
+        }).addClass('theme-' + colourTheme);
       }
     });
 
@@ -244,7 +336,7 @@
             var $trigger = $(this);
             var accountPopover = $trigger.data('id7.account-popover');
 
-            if (accountPopover.options.iframelink.indexOf(origin) !== 0) {
+            if (accountPopover.options.iframelink.indexOf(origin) !== 0 && accountPopover.options.legacyIframeLink.indexOf(origin) !== 0) {
               console.error('Ignored message of type ' + messageType + ' because origin ' + origin + ' didn\'t match iframe link ' + accountPopover.options.iframelink);
             } else {
               accountPopover.onMessage(messageType, data);
@@ -264,31 +356,23 @@
   var Config = {
     ScreenSizes: [
       {
-        name: 'lg', test: function () {
-        return Modernizr.mq('only all and (min-width: 1200px)');
-      }, container: 1170
+        name: 'lg', test: function () { return Modernizr.mq('only all and (min-width: 1200px)'); }, container: 1170
       },
       {
-        name: 'md', test: function () {
-        return Modernizr.mq('only all and (min-width: 992px)');
-      }, container: 970
+        name: 'md', test: function () { return Modernizr.mq('only all and (min-width: 992px)'); }, container: 970
       },
       {
-        name: 'sm', test: function () {
-        return Modernizr.mq('only all and (min-width: 768px)');
-      }, container: 750
+        name: 'sm', test: function () { return Modernizr.mq('only all and (min-width: 768px)'); }, container: 750
       },
       {
-        name: 'xs', test: function () {
-        return true;
-      }
+        name: 'xs', test: function () { return true; }
       }
     ],
     Templates: {
       moreContainer: [
         '<ul class="nav navbar-nav navbar-right">',
         '<li class="dropdown">',
-        '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i></a>',
+        '<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fas fa-caret-down"></i></a>',
         '<ul class="dropdown-menu" role="menu"></ul>',
         '</li>',
         '</ul>'
@@ -304,6 +388,10 @@
         maxLength: 60,
         append: '&hellip;'
       }
+    },
+    HeadroomEvents: {
+      onPin : function () { $(this.elem).trigger('id7:headroom:onPin'); },
+      onUnpin : function () { $(this.elem).trigger('id7:headroom:onUnpin'); }
     }
   };
 
@@ -367,13 +455,13 @@
             headroomOffset = $('.id7-main-content-area').offset().top;
           }
 
+          var headroomConfig = $.extend(Config.HeadroomEvents, { offset: headroomOffset });
+
           $h1.affix({
             offset: {
               top: offsetTop
             }
-          }).headroom({
-            offset: headroomOffset
-          });
+          }).headroom(headroomConfig);
         }
       },
 
@@ -394,13 +482,13 @@
           headroomOffset = $('.id7-main-content-area').offset().top;
         }
 
+        var headroomConfig = $.extend(Config.HeadroomEvents, { offset: headroomOffset });
+
         $nav.affix({
           offset: {
             top: offsetTop
           }
-        }).headroom({
-          offset: headroomOffset
-        });
+        }).headroom(headroomConfig);
       },
 
       fitToWidth: function fitToWidth(screenConfig) {
@@ -471,7 +559,7 @@
         this.$container.find('.navbar').each(function () {
           var $navbar = $(this);
 
-          if (screenConfig.name == 'xs') {
+          if (screenConfig.name === 'xs') {
             // Require a click (tap) to open dropdowns
             $navbar.find('.dropdown-toggle')
               .attr('data-toggle', 'dropdown')
@@ -530,7 +618,7 @@
       },
 
       wireEventHandlers: function wireEventHandlers() {
-        if (document.readyState == 'complete') {
+        if (document.readyState === 'complete') {
           if (this.options.fixedNav) this.affixNav();
           if (this.options.fixedHeader) this.affixHeader();
           this.updateWrappedState();
@@ -542,13 +630,22 @@
           }, this));
         }
 
-        $(window).on('id7:reflow', $.proxy(function (e, screenConfig) {
+        var onReflow = $.proxy(function (e, screenConfig) {
           if (this.options.fitToWidth) this.fitToWidth(screenConfig);
           if (this.options.fixedHeader) this.markHeaderFixedPosition();
           if (this.options.fixedNav) this.markFixedPosition();
           this.updateWrappedState();
           this.updateDropdownBehaviour(screenConfig);
-        }, this));
+        }, this);
+
+        $(window).on('id7:reflow', onReflow);
+
+        // If the document is already loaded this won't be fired as expected, so fire it manually
+        if (document.readyState === 'complete' && typeof $(window).data('id7.reflow') !== 'undefined') {
+          // Call reflow immediately
+          var screenConfig = $(window).data('id7.reflow')._screenConfig();
+          onReflow({}, screenConfig);
+        }
 
         this.$container.on('click', '.nav > li', function (e) {
           var $targetLink = $(e.target).closest('a');
@@ -604,8 +701,12 @@
     }
 
     // Change hash for page-reload
-    $('.nav-tabs a').on('shown.bs.tab', function (e) {
-      window.location.hash = e.target.hash;
+    $('.nav-tabs a').on('shown.bs.tab.id7Navigation', function (e) {
+      if ('replaceState' in window.history) {
+        window.history.replaceState({}, null, e.target.hash);
+      } else {
+        window.location.hash = e.target.hash;
+      }
     });
   });
 })(jQuery);
@@ -818,6 +919,8 @@
     $.extend(WideTables.prototype, {
       findWideTables: function findWideTables($container) {
         return $container.find('table').filter(function () {
+          return $(this).parents('.no-wide-tables').length === 0;
+        }).filter(function () {
           var $table = $(this);
           var originalMaxWidth = $table.css('max-width');
           $table.css('max-width', 'none');
@@ -887,23 +990,33 @@
 
 /*global Modernizr:false */
 
+// ID-199
+//
+// :'(
+
 (function () {
   'use strict';
-  // querySelector
-  Modernizr.addTest('not-selector', function () {
-    var doc = window.document;
-    if (!('querySelectorAll' in doc)) {
-      return false;
-    }
 
-    try {
-      doc.querySelectorAll(':not(html)');
-      return true;
-    } catch (e) {
-      return false;
-    }
+  Modernizr.addTest('safari', function () {
+    var ua = window.navigator.userAgent;
+
+    return ua.indexOf('Safari/') >= 0 && ua.indexOf('Chrome/') == -1;
   });
 })();
+
+
+/*global Modernizr:false */
+
+(function () {
+  'use strict';
+
+  Modernizr.addTest('ie-or-edge', function () {
+    var ua = window.navigator.userAgent;
+
+    return /MSIE 10/i.test(ua) || /MSIE 9/i.test(ua) || /rv:11.0/i.test(ua) || /Edge\/\d./i.test(ua);
+  });
+})();
+
 
 /*!
  * IE10 viewport hack for Surface/desktop Windows 8 bug
