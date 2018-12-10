@@ -5,8 +5,8 @@
                 {% unless page.nonbranded %}
                     <div class="id7-logo-row">
                         <div class="id7-logo">
-                            <a href="http://warwick.ac.uk" title="Warwick homepage">
-                                <img src="{{ site.prefix }}dist/images/logo.png" alt="Warwick">
+                            <a href="https://warwick.ac.uk" title="Warwick homepage">
+                                <img src="/dist/images/logo.png" alt="Warwick">
                             </a>
                         </div>
                         <nav class="id7-site-links">
@@ -25,7 +25,7 @@
             <div class="id7-search-column">
                 <div class="id7-search">
                     <form action="//search.warwick.ac.uk/website" role="search">
-                        <input type="hidden" name="source" value="http://www2.warwick.ac.uk/">
+                        <input type="hidden" name="source" value="https://warwick.ac.uk/">
                         <div class="form-group">
                             <label class="sr-only" for="id7-search-box">Search</label>
                             <div class="id7-search-box-container">
@@ -42,10 +42,10 @@
         <div class="id7-header-text clearfix">
             <h1>
                 {% if page.slug contains 'subsite' %}
-                <span class="id7-parent-site-link"><a href="{{ site.prefix }}">ID7 Reference Site</a></span>
-                <span class="id7-current-site-link"><a href="{{ site.prefix }}{{ page.slug }}">Centre for Educational Development, Appraisal and Research</a></span>
+                <span class="id7-parent-site-link"><a href="/">ID7 Reference Site</a></span>
+                <span class="id7-current-site-link"><a href="/{{ page.slug }}">Centre for Educational Development, Appraisal and Research</a></span>
                 {% else %}
-                <span class="id7-current-site-link"><a href="{{ site.prefix }}">ID7 Reference Site</a></span>
+                <span class="id7-current-site-link"><a href="/">ID7 Reference Site</a></span>
                 {% endif %}
             </h1>
         </div>

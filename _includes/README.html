@@ -6,15 +6,15 @@
 <li><a href="#bugs-and-feature-requests">Bugs and feature requests</a></li>
 <li><a href="#documentation">Documentation</a></li>
 <li><a href="#breaking-changes">Breaking changes</a></li>
+<li><a href="#upgrading-from-1x-to-2x">Upgrading from 1.x to 2.x</a></li>
 <li><a href="#copyright-and-license">Copyright and license</a></li>
 </ul>
 <h2 id="quick-start">Quick start</h2>
 <p>Three quick start options are available:</p>
 <ul>
+<li>Install with <a href="https://www.npmjs.com">npm</a>: <code>npm i UniversityofWarwick/id7#v2.1.0</code></li>
 <li><a href="https://github.com/UniversityofWarwick/id7/releases/latest">Download the latest release</a>.</li>
 <li>Clone the repo: <code>git clone https://github.com/UniversityofWarwick/id7.git</code>.</li>
-<li>Install with <a href="https://www.npmjs.com">npm</a>: <code>npm install UniversityofWarwick/id7#v1.6.0 --save</code></li>
-<li>Install with <a href="http://bower.io">Bower</a>: <code>bower install warwick-id7</code>.</li>
 </ul>
 <p>Read the <a href="getting-started/">Getting started page</a> for information on the framework contents, templates and examples, and more.</p>
 <h3 id="what-s-included">What&#39;s included</h3>
@@ -22,44 +22,39 @@
 <pre><code>id7/
 ├── css/
 │   ├── id7.css
-│   ├── id7.css.map
-│   ├── id7.min.css
-│   ├── id7-default-theme.css
-│   ├── id7-default-theme.css.map
-│   └── id7-default-theme.min.css
+│   └── id7-default-theme.css
 ├── js/
-│   ├── vendor/
 │   ├── id7-bundle.js
-│   ├── id7-bundle.min.js
-│   ├── id7-bundle.min.js.map
-│   ├── id7-standalone.js
-│   ├── id7-standalone.min.js
-│   ├── id7-standalone.min.js.map
+│   └── id7-bundle.js.map
 ├── images/
 │   ├── logo.png
 │   ├── masthead-logo-bleed-sm.svg
 │   ├── masthead-logo-bleed-sm.png
 │   ├── masthead-logo-bleed-xs.svg
-│   └── masthead-logo-bleed-xs.png
+│   ├── masthead-logo-bleed-xs.png
+│   └── (and others)
 ├── fonts/
-│   ├── (font files)
+│   └── (font files)
 └── templates/
-    └── base.html
-</code></pre><p>We provide compiled CSS and JS (<code>id7.*</code>), as well as compiled and minified CSS and JS (<code>id7.min.*</code>). <a href="https://developer.chrome.com/devtools/docs/css-preprocessors">CSS</a> and <a href="https://developer.chrome.com/devtools/docs/javascript-debugging#source-maps">JS</a> source maps (<code>id7.*.map</code>) are available for use with certain browsers&#39; developer tools. The FontAwesome icon font is included, as is an optional ID7 theme.</p>
-<p>The <code>id7-bundle.js</code> file includes dependencies such as jQuery and Bootstrap. The <code>id7-standalone.js</code> file doesn&#39;t include these, so they will need to be included manually. The dependencies required are:</p>
+    └── base.html</code></pre><p>As of v2.0.0, we only provide compiled and minified CSS and JS. See <a href="#upgrading-from-1x-to-2x">upgrading from 1.x to 2.x</a> for more information.</p>
+<p><a href="https://developer.chrome.com/devtools/docs/javascript-debugging#source-maps">JS</a> source maps (<code>id7*.map</code>) are available for use with certain browsers&#39; developer tools. The FontAwesome 5 free icon font is included, as is an optional ID7 theme.</p>
+<p>The <code>id7-bundle.js</code> file includes dependencies such as jQuery and Bootstrap. These dependencies are:</p>
 <ul>
-<li><a href="https://github.com/jquery/jquery">jQuery</a> &gt;= 3.2.1</li>
-<li><a href="https://github.com/twbs/bootstrap">Bootstrap</a> &gt;= 3.3.7</li>
-<li><a href="https://github.com/twitter/typeahead.js">typeahead.js</a> &gt;= 0.11.1</li>
-<li><a href="https://github.com/lodash/lodash">lodash</a> &gt;= 4.17.4</li>
-<li><a href="https://modernizr.com/download?-flexbox-svgfilters-addtest-mq-setclasses-dontmin">Modernizr</a> &gt;= 3.5.0 (the minimum necessary tests are specified with this link)</li>
-<li>jQuery doubleScroll &gt;= 0.6</li>
+<li><a href="https://github.com/jquery/jquery">jQuery</a> 3.3.1</li>
+<li><a href="https://github.com/twbs/bootstrap">Bootstrap</a> 3.3.7</li>
+<li><a href="https://github.com/bassjobsen/Bootstrap-3-Typeahead">bootstrap-3-typeahead</a> 4.0.2</li>
+<li><a href="https://github.com/WickyNilliams/headroom.js">headroom.js</a> 0.9.4</li>
+<li><a href="https://github.com/lodash/lodash">lodash</a> 4.17.11</li>
+<li><a href="https://modernizr.com/download?-flexbox-svgfilters-webp-addtest-mq-setclasses-dontmin">Modernizr</a> 3.6.0 (the minimum necessary tests are specified with this link)</li>
+<li>jQuery doubleScroll 0.6</li>
 </ul>
 <h2 id="icons">Icons</h2>
 <p>Icons are provided by the Font Awesome 5 library. Because our license prevents distribution, this project by default includes Font Awesome 5 Free, which has a good selection of icons built in. If you are a Creator with a license and want to build ID7 with Font Awesome 5 Pro, first <a href="https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers">set up NPM with the token</a>, then install the optional package, and then instead of importing <code>id7</code>, import <code>id7-no-fa</code> and <code>font-awesome-pro</code> under the same path.</p>
-<p>We include the compatibility layer for Font Awesome 4 icon definitions, so those will continue to work, but we recommend switching to the version 5 definitions when possible.</p>
+<p>We don&#39;t include the FA4 compatibility layer by default. It can be imported within LESS with:</p>
+<pre><code class="language-less">@import &#39;@fortawesome/fontawesome-free/less/v4-shims&#39;;</code></pre>
+<p>Replacing <code>fontawesome-free</code> with <code>fontawesome-pro</code> if necessary.</p>
 <h2 id="bugs-and-feature-requests">Bugs and feature requests</h2>
-<p>Have a bug or a feature request? Contact <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x77;&#x65;&#98;&#116;&#101;&#97;&#x6d;&#x40;&#x77;&#97;&#114;&#119;&#105;&#x63;&#107;&#x2e;&#97;&#x63;&#x2e;&#117;&#107;">&#x77;&#x65;&#98;&#116;&#101;&#97;&#x6d;&#x40;&#x77;&#97;&#114;&#119;&#105;&#x63;&#107;&#x2e;&#97;&#x63;&#x2e;&#117;&#107;</a>.</p>
+<p>Have a bug or a feature request? Contact <a href="mailto:&#x77;&#x65;&#98;&#116;&#101;&#x61;&#x6d;&#x40;&#119;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#46;&#97;&#x63;&#x2e;&#117;&#107;">&#x77;&#x65;&#98;&#116;&#101;&#x61;&#x6d;&#x40;&#119;&#x61;&#x72;&#x77;&#x69;&#x63;&#x6b;&#46;&#97;&#x63;&#x2e;&#117;&#107;</a>.</p>
 <h2 id="documentation">Documentation</h2>
 <p>Documentation, included in this repo in the root directory, is built with <a href="http://jekyllrb.com">Jekyll</a> and publicly hosted on GitHub Pages at <a href="http://id7.warwick.ac.uk">http://id7.warwick.ac.uk</a>. The docs may also be run locally.</p>
 <h3 id="running-sample-site-locally">Running sample site locally</h3>
@@ -68,18 +63,28 @@
 <li>Install node.js.</li>
 <li>In the root <code>/id7</code> directory:<ol>
 <li>Run <code>bundle install</code> to install dependent gems.</li>
-<li>Run <code>npm install -g grunt-cli &amp;&amp; npm install -d</code> to install grunt and other node.js dependencies.</li>
-<li>Run <code>grunt</code> to generate CSS/JS, which is used on the sample site.</li>
-<li>Run <code>grunt serve</code> in the command line.</li>
+<li>Run <code>npm i</code> to install webpack and other node.js dependencies.</li>
+<li>Run <code>npm run start</code> in the command line.</li>
 </ol>
 </li>
-<li>Open <a href="http://localhost:9001">http://localhost:9001</a> in your browser, et voilà.</li>
+<li>Open <a href="http://localhost:8080">http://localhost:8080</a> in your browser, et voilà.</li>
 </ol>
 <p>Learn more about using Jekyll by reading its <a href="http://jekyllrb.com/docs/home/">documentation</a>.</p>
+<h2 id="upgrading-from-1-x-to-2-x">Upgrading from 1.x to 2.x</h2>
+<p>From version 2.0.0, ID7 is built with webpack and a slightly different set of resources are delivered with the bundles.
+In your application you will need to do the following:</p>
+<ul>
+<li>Replace references to <code>id7.min.css</code> with <code>id7.css</code></li>
+<li>Replace references to <code>id7-default-theme.min.css</code> with <code>id7-default-theme.css</code></li>
+<li>Replace references to <code>id7-bundle.min.js</code> with <code>id7-bundle.js</code></li>
+<li><code>id7-standalone.js</code> was removed from the distribution; you should build your own bundle if you are using this</li>
+</ul>
 <h2 id="breaking-changes">Breaking changes</h2>
 <ul>
 <li><strong>1.2.0</strong> - Now uses a custom Modernizr build (see <em>What&#39;s included</em> above) with a minimal range of tests. If your application relies on other tests or shims which were included in previous versions, they will likely fail.</li>
 <li><strong>1.4.0</strong> - Support for Internet Explorer 8 was removed, and a reduced range of Modernizr tests is used as a result.</li>
+<li><strong>1.6.0</strong> - Font Awesome v5 is now used by default instead of v4. Icon identifier references may need to be updated, or the <a href="https://github.com/UniversityofWarwick/id7/#icons">shim</a> included.</li>
+<li><strong>2.0.0</strong> - Now built with Webpack instead of Grunt. Removed non-minified resources from packages. Moved from typeahead.js to bootstrap-3-typeahead.</li>
 </ul>
 <h2 id="copyright-and-license">Copyright and license</h2>
 <p>Bootstrap is licensed under the <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT license</a>.</p>
@@ -92,3 +97,4 @@ the University of Warwick.</p>
 non-commercial use. The material on these web pages should not be used, copied, stored or transmitted outside the
 University without the prior written consent of the University or in accordance with the Copyright, Designs and Patents
 Act 1988.</p>
+
