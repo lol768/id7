@@ -19,6 +19,6 @@ jobs:
         bash -c "cat fn.txt"
         bash -c "echo $HOME"
     - name: Upload to Release
-      uses: lol768/upload-to-release@v2.0.2
+      uses: lol768/upload-to-release@v2.0.3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
