@@ -24,4 +24,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         entrypoint: "sh"
-        args: "-c upload-to-release $(cat $HOME/fn.txt)"
+        args: "-c 'cat $HOME/fn.txt; upload-to-release $(cat $HOME/fn.txt)'"
