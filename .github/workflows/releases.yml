@@ -19,9 +19,6 @@ jobs:
         bash -c "cat $HOME/fn.txt"
         bash -c "echo $HOME"
     - name: Upload to Release
-      uses: JasonEtco/upload-to-release@v0.1.1
+      uses: lol768/upload-to-release@v0.2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        entrypoint: "sh"
-        args: "-c 'cat $HOME/fn.txt; upload-to-release $(cat $HOME/fn.txt)'"
