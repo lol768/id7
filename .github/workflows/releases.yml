@@ -15,8 +15,8 @@ jobs:
       run: |
         npm ci
         npm run build
-        bash -c "ls dist/id7*.zip > $HOME/fn.txt"
-        bash -c "cat $HOME/fn.txt"
+        bash -c "ls dist/id7*.zip > fn.txt"
+        bash -c "cat fn.txt"
         bash -c "echo $HOME"
     - name: Upload to Release
       uses: lol768/upload-to-release@v0.2.1
